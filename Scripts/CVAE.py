@@ -65,6 +65,8 @@ class CVAE(nn.Module):
     def encode(self, x, c):
         c = idx2onehot(c, n=10)
         x = torch.cat((x, c), dim=-1)
+        print(c)
+        print(x)
         h1 = self.fc1(self.conv1(x))
         return self.fc21(h1), self.fc22(h1)
 
