@@ -68,8 +68,8 @@ class CVAE(nn.Module):
         c = torch.unsqueeze(c, -1)
         c = c.expand(-1, -1, x.size()[2], x.size()[3])
         x = torch.cat((x, c), dim=1)
-        print(x[1])
-        h1 = self.fc1(self.conv1(x))
+        h1 = self.conv1(x)
+        h1 = self.fc1(h1)
         return self.fc21(h1), self.fc22(h1)
 
     def reparameterize(self, mu, logvar):
