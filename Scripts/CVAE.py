@@ -1,4 +1,6 @@
 from __future__ import print_function
+import os
+import csv
 import argparse
 import torch
 import torch.utils.data
@@ -36,7 +38,6 @@ train_loader = torch.utils.data.DataLoader(
 test_loader = torch.utils.data.DataLoader(
     datasets.MNIST('../data', train=False, transform=transforms.ToTensor()),
     batch_size=args.batch_size, shuffle=True, **kwargs)
-
 
 class CVAE(nn.Module):   
     def __init__(self):
@@ -92,7 +93,6 @@ class CVAE(nn.Module):
 model = CVAE().to(device)
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
-
 # Reconstruction + KL divergence losses summed over all elements and batch
 def loss_function(recon_x, x, mu, logvar):
     BCE = F.mse_loss(recon_x, x.view(-1, 784), size_average=False)
@@ -106,7 +106,7 @@ def loss_function(recon_x, x, mu, logvar):
     return BCE + KLD
 
 
-def train(epoch):
+def train(epoch, writer):
     model.train()
     train_loss = 0
     for batch_idx, (data, label) in enumerate(train_loader):
@@ -127,6 +127,8 @@ def train(epoch):
                 epoch, batch_idx * len(data), len(train_loader.dataset),
                 100. * batch_idx / len(train_loader),
                 loss.item() / len(data)))
+            header = [epoch, batch_idx, loss.item() / len(data)]
+            writer.writerow(header)
 
     print('====> Epoch: {} Average loss: {:.4f}'.format(
           epoch, train_loss / len(train_loader.dataset)))
@@ -151,11 +153,18 @@ def test(epoch):
     print('====> Test set loss: {:.4f}'.format(test_loss))
 
 
+#Open Training loss File
+trainFilename = '../CVAE_TrainingLoss.csv'
+trainFile = open(trainFilename, 'w')
+trainCursor = csv.writer(trainFile)
+
 for epoch in range(1, args.epochs + 1):
-    train(epoch)
+    train(epoch, trainCursor)
     test(epoch)
     with torch.no_grad():
         sample = torch.randn(64, 20).to(device)
         sample = model.decode(sample).cpu()
         save_image(sample.view(64, 1, 28, 28),
                    '../CVAE_Results/sample_' + str(epoch) + '.png')
+
+trainFile.close()
