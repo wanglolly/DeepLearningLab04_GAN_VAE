@@ -111,13 +111,11 @@ def train(epoch, writer):
     model.train()
     train_loss = 0
     for batch_idx, (data, label) in enumerate(train_loader):
-        print(batch_idx)
-        print(data.size())
-        print(label.size())
         #get data & label
         data = to_var(data)
         label = to_var(label)
-        
+        label = label.view(-1, 1)
+
         optimizer.zero_grad()
         recon_batch, mu, logvar, z = model(data, label)
         loss = loss_function(recon_batch, data, mu, logvar)
