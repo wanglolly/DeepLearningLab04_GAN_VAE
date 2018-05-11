@@ -45,6 +45,8 @@ class CVAE(nn.Module):
                     nn.ReLU(),
                     nn.Conv2d(3, 1, kernel_size=3, stride = 1, padding = 1),
                     nn.ReLU())
+        self.conv11 = nn.Conv2d(11, 3, kernel_size=3, stride = 1, padding = 1)
+        self.conv12 = nn.Conv2d(3, 1, kernel_size=3, stride = 1, padding = 1)
         self.fc1 = nn.Sequential(nn.Linear(in_features = 784, out_features = 400, bias = True),
                                 nn.ReLU())
         self.fc21 = nn.Linear(in_features = 400, out_features = 20, bias = True)
@@ -68,7 +70,9 @@ class CVAE(nn.Module):
         c = torch.unsqueeze(c, -1)
         c = c.expand(-1, -1, x.size()[2], x.size()[3])
         x = torch.cat((x, c), dim=1)
-        h1 = self.conv1(x)
+        h1 = F.relu(self.conv11(x))
+        print(h1.size())
+        h1 = F.relu(self.conv12(x))
         print(h1.size())
         h1 = self.fc1(h1)
         print(h1.size())
