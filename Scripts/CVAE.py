@@ -70,15 +70,13 @@ class CVAE(nn.Module):
         x = torch.cat((x, c), dim=1)
         h1 = self.conv1(x)
         h1 = h1.view(-1, 784)
-        print(h1.size())
         h1 = self.fc1(h1)
-        print(h1.size())
         return self.fc21(h1), self.fc22(h1)
 
     def reparameterize(self, mu, logvar):
         if self.training:
             std = torch.exp(0.5*logvar)
-            eps = torch.randn_like(std)
+            eps = torch.rand_like(std)
             return eps.mul(std).add_(mu)
         else:
             return mu
