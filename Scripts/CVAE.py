@@ -72,7 +72,7 @@ class CVAE(nn.Module):
         x = torch.cat((x, c), dim=1)
         h1 = F.relu(self.conv11(x))
         print(h1.size())
-        h1 = F.relu(self.conv12(x))
+        h1 = F.relu(self.conv12(h1))
         print(h1.size())
         h1 = self.fc1(h1)
         print(h1.size())
