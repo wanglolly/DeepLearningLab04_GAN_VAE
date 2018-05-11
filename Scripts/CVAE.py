@@ -146,6 +146,7 @@ def test(epoch):
         for i, (data, label) in enumerate(test_loader):
             data = to_var(data)
             label = to_var(label)
+            label = label.view(-1, 1)
             recon_batch, mu, logvar = model(data, label)
             test_loss += loss_function(recon_batch, data, mu, logvar).item()
             if i == 0:
