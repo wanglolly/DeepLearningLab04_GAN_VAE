@@ -4,12 +4,13 @@ import csv
 import argparse
 import torch
 import torch.utils.data
-import CVAE
+
 from torch import nn, optim
 from torch.nn import functional as F
 from torchvision import datasets, transforms
 from torchvision.utils import save_image
 from utils import to_var, idx2onehot
+from CVAE import CVAE
 
 
 parser = argparse.ArgumentParser(description='CVAE MNIST Example')
