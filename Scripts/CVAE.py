@@ -92,7 +92,7 @@ class CVAE(nn.Module):
     def forward(self, x, c):
         mu, logvar = self.encode(x, c)
         z = self.reparameterize(mu, logvar)
-        return self.decode(z, c), mu, logvar, z
+        return self.decode(z, c), mu, logvar
 
 
 model = CVAE()
@@ -122,7 +122,7 @@ def train(epoch, writer):
         label = label.view(-1, 1)
 
         optimizer.zero_grad()
-        recon_batch, mu, logvar, z = model(data, label)
+        recon_batch, mu, logvar = model(data, label)
         loss = loss_function(recon_batch, data, mu, logvar)
         loss.backward()
         train_loss += loss.item()
@@ -143,9 +143,10 @@ def test(epoch):
     model.eval()
     test_loss = 0
     with torch.no_grad():
-        for i, (data, _) in enumerate(test_loader):
+        for i, (data, label) in enumerate(test_loader):
             data = to_var(data)
-            recon_batch, mu, logvar = model(data)
+            label = to_var(label)
+            recon_batch, mu, logvar = model(data, label)
             test_loss += loss_function(recon_batch, data, mu, logvar).item()
             if i == 0:
                 n = min(data.size(0), 8)
