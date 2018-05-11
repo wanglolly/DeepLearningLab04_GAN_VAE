@@ -63,17 +63,12 @@ class CVAE(nn.Module):
                     nn.Sigmoid())
 
     def encode(self, x, c):
-        print(x.size())
         c = idx2onehot(c, n=10)
-        print(c.size())
         c = torch.unsqueeze(c, -1)
-        print(c.size())
         c = torch.unsqueeze(c, -1)
-        print(c.size())
-        c.expand(-1, -1, x.size()[2], x.size()[3])
+        c = c.expand(-1, -1, x.size()[2], x.size()[3])
         print(c.size())
         x = torch.cat((x, c), dim=-1)
-        print(c.size())
         print(x.size())
         h1 = self.fc1(self.conv1(x))
         return self.fc21(h1), self.fc22(h1)
