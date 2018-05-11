@@ -13,9 +13,9 @@ class CVAE(nn.Module):
         super(CVAE, self).__init__()
         #encoder
         self.conv1 = nn.Sequential(
-                    nn.Conv2d(11, 3, kernel_size=3, stride = 1, padding = 1),
+                    nn.Conv2d(11, 3, kernel_size=3, stride = 1, padding = 1,bias=False),
                     nn.ReLU(),
-                    nn.Conv2d(3, 1, kernel_size=3, stride = 1, padding = 1),
+                    nn.Conv2d(3, 1, kernel_size=3, stride = 1, padding = 1,bias=False),
                     nn.ReLU())
         self.fc1 = nn.Sequential(nn.Linear(in_features = 784, out_features = 400, bias = True),
                                 nn.ReLU())
@@ -26,12 +26,12 @@ class CVAE(nn.Module):
         self.fc3 = nn.Sequential(nn.Linear(in_features = 30, out_features = 392, bias = True),
                                 nn.ReLU())
         self.conv2 = nn.Sequential(
-                    nn.Conv2d(2, 11, kernel_size=3, stride = 1, padding = 1),
+                    nn.Conv2d(2, 11, kernel_size=3, stride = 1, padding = 1,bias=False),
                     nn.ReLU(),
                     nn.UpsamplingNearest2d(scale_factor=2),
-                    nn.Conv2d(11, 3, kernel_size=3, stride = 1, padding = 1),
+                    nn.Conv2d(11, 3, kernel_size=3, stride = 1, padding = 1,bias=False),
                     nn.ReLU(),
-                    nn.Conv2d(3, 1, kernel_size=3, stride = 1, padding = 1),
+                    nn.Conv2d(3, 1, kernel_size=3, stride = 1, padding = 1,bias=False),
                     nn.Sigmoid())
 
     def encode(self, x, c):
