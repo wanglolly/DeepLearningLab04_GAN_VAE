@@ -80,6 +80,7 @@ def train(epoch, writer):
 
     print('====> Epoch: {} Average loss: {:.4f}'.format(
           epoch, train_loss / len(train_loader.dataset)))
+    return train_loss / len(train_loader.dataset)
 
 
 def test(epoch):
@@ -108,10 +109,15 @@ trainFilename = 'CVAE_Results/CVAE_TrainingLoss.csv'
 trainFile = open(trainFilename, 'w')
 trainCursor = csv.writer(trainFile)
 
+bestLoss = 100
+
 for epoch in range(1, args.epochs + 1):
-    train(epoch, trainCursor)
+    loss = train(epoch, trainCursor)
     test(epoch)
-    #save models
-    saveModelName = 'Models/CVAE_' + str(epoch) + '.tar'
-    torch.save(model.state_dict(), saveModelName)
+    #save the best models
+    if loss < bestLoss :
+        bestLoss = loss
+        saveModelName = 'Models/CVAE_best.tar'
+        torch.save(model.state_dict(), saveModelName)
+        print('Save models ' + str(epoch))
 trainFile.close()
