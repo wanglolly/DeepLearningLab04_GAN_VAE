@@ -8,7 +8,7 @@ from torch import nn, optim
 from torch.nn import functional as F
 from torchvision import datasets, transforms
 from torchvision.utils import save_image
-from utils import idx2onehot
+from utils import to_var, idx2onehot
 
 
 parser = argparse.ArgumentParser(description='CVAE MNIST Example')
@@ -27,9 +27,6 @@ args.cuda = not args.no_cuda and torch.cuda.is_available()
 
 
 torch.manual_seed(args.seed)
-
-device = torch.device("cuda" if args.cuda else "cpu")
-
 kwargs = {'num_workers': 1, 'pin_memory': True} if args.cuda else {}
 train_loader = torch.utils.data.DataLoader(
     datasets.MNIST('../data', train=True, download=True,
@@ -90,7 +87,8 @@ class CVAE(nn.Module):
         return self.decode(z, c), mu, logvar, z
 
 
-model = CVAE().to(device)
+model = CVAE()
+model.cuda()
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
 # Reconstruction + KL divergence losses summed over all elements and batch
@@ -111,8 +109,8 @@ def train(epoch, writer):
     train_loss = 0
     for batch_idx, (data, label) in enumerate(train_loader):
         #get data & label
-        data = data.to(device)
-        label = label.to(device)
+        data = to_var(data)
+        label = to_var(label)
         data = data.view(-1, 784)
         label = label.view(-1, 1)
 
@@ -139,7 +137,7 @@ def test(epoch):
     test_loss = 0
     with torch.no_grad():
         for i, (data, _) in enumerate(test_loader):
-            data = data.to(device)
+            data = to_var(data)
             recon_batch, mu, logvar = model(data)
             test_loss += loss_function(recon_batch, data, mu, logvar).item()
             if i == 0:
@@ -162,9 +160,8 @@ for epoch in range(1, args.epochs + 1):
     train(epoch, trainCursor)
     test(epoch)
     with torch.no_grad():
-        sample = torch.randn(64, 20).to(device)
-        sample = model.decode(sample).cpu()
+        sample = to_var(torch.randn(64, 20))
+        sample = model.decode(sample, [0]).cpu()
         save_image(sample.view(64, 1, 28, 28),
                    '../CVAE_Results/sample_' + str(epoch) + '.png')
-
 trainFile.close()
