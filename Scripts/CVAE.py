@@ -65,3 +65,10 @@ class CVAE(nn.Module):
         mu, logvar = self.encode(x, c)
         z = self.reparameterize(mu, logvar)
         return self.decode(z, c), mu, logvar
+
+    def inference(self, n = 1, c = None):
+        batch_size = n
+        z = to_var(torch.randn([batch_size, 20]))
+        recon_x = self.decode(z, c)
+        return recon_x
+

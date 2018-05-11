@@ -104,7 +104,7 @@ def test(epoch):
 
 
 #Open Training loss File
-trainFilename = 'CVAE_TrainingLoss.csv'
+trainFilename = 'CVAE_Results/CVAE_TrainingLoss.csv'
 trainFile = open(trainFilename, 'w')
 trainCursor = csv.writer(trainFile)
 
