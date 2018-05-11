@@ -43,6 +43,6 @@ for i in range(args.sets):
         plt.axis('off')
         plotImageCount = plotImageCount + 1
 
-plt.savefig('CVAE_Results/PARRImage.jpg', dpi=500)
+plt.savefig('CVAE_Results/PARRImage.png', dpi=500)
 plt.clf()
 plt.close()
