@@ -9,7 +9,7 @@ from torch.nn import functional as F
 from torchvision import datasets, transforms
 from torchvision.utils import save_image
 from utils import to_var, idx2onehot
-from modelScripts.CVAE import CVAE
+from .modelScripts.CVAE import CVAE
 
 
 parser = argparse.ArgumentParser(description='CVAE MNIST Example')
