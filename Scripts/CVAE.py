@@ -82,13 +82,13 @@ class CVAE(nn.Module):
             return mu
 
     def decode(self, z, c):
-        print(z.size())
         c = idx2onehot(c, n=10)
-        c = torch.unsqueeze(c, -1)
-        c = torch.unsqueeze(c, -1)
-        c = c.expand(-1, -1, z.size()[2], z.size()[3])
         z = torch.cat((z, c), dim=-1)
-        return self.conv2(self.fc3(z))
+        h2 = self.fc3(z)
+        print(h2.size())
+        h2 = self.conv2(h2)
+        print(h2.size())
+        return h2
 
     def forward(self, x, c):
         mu, logvar = self.encode(x, c)
