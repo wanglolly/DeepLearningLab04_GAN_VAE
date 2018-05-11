@@ -154,14 +154,14 @@ def test(epoch):
                 comparison = torch.cat([data[:n],
                                       recon_batch.view(args.batch_size, 1, 28, 28)[:n]])
                 save_image(comparison.cpu(),
-                         '../CVAE_Results/reconstruction_' + str(epoch) + '.png', nrow=n)
+                         'CVAE_Results/reconstruction_' + str(epoch) + '.png', nrow=n)
 
     test_loss /= len(test_loader.dataset)
     print('====> Test set loss: {:.4f}'.format(test_loss))
 
 
 #Open Training loss File
-trainFilename = '../CVAE_TrainingLoss.csv'
+trainFilename = 'CVAE_TrainingLoss.csv'
 trainFile = open(trainFilename, 'w')
 trainCursor = csv.writer(trainFile)
 
@@ -172,5 +172,5 @@ for epoch in range(1, args.epochs + 1):
         sample = to_var(torch.randn(64, 20))
         sample = model.decode(sample, [0]).cpu()
         save_image(sample.view(64, 1, 28, 28),
-                   '../CVAE_Results/sample_' + str(epoch) + '.png')
+                   'CVAE_Results/sample_' + str(epoch) + '.png')
 trainFile.close()
