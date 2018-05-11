@@ -111,9 +111,10 @@ trainCursor = csv.writer(trainFile)
 for epoch in range(1, args.epochs + 1):
     train(epoch, trainCursor)
     test(epoch)
-    with torch.no_grad():
-        sample = to_var(torch.randn(64, 20))
-        sample = model.decode(sample, torch.LongTensor).cpu()
-        save_image(sample.view(64, 1, 28, 28),
-                   'CVAE_Results/sample_' + str(epoch) + '.png')
+    #save models
+    saveModelName = 'Models/CVAE_' + str(epoch) + '.tar'
+    torch.save({
+        'epoch': epoch,
+        'state_dict': model.state_dict()
+    }, saveModelName)
 trainFile.close()
