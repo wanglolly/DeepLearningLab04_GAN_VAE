@@ -85,9 +85,10 @@ class CVAE(nn.Module):
         c = idx2onehot(c, n=10)
         z = torch.cat((z, c), dim=-1)
         h2 = self.fc3(z)
-        print(h2.size())
+        h2 = torch.unsqueeze(h2, -1)
+        h2 = torch.unsqueeze(h2, -1)
+        h2 = h2.expand(-1, 2, 14, 14)
         h2 = self.conv2(h2)
-        print(h2.size())
         return h2
 
     def forward(self, x, c):
