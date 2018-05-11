@@ -71,6 +71,7 @@ class CVAE(nn.Module):
         h1 = self.conv1(x)
         print(h1.size())
         h1 = self.fc1(h1)
+        print(h1.size())
         return self.fc21(h1), self.fc22(h1)
 
     def reparameterize(self, mu, logvar):
@@ -83,6 +84,13 @@ class CVAE(nn.Module):
 
     def decode(self, z, c):
         c = idx2onehot(c, n=10)
+        print(c.size())
+        c = torch.unsqueeze(c, -1)
+        print(c.size())
+        c = torch.unsqueeze(c, -1)
+        print(c.size())
+        c = c.expand(-1, -1, z.size()[2], z.size()[3])
+        print(c.size())
         z = torch.cat((z, c), dim=-1)
         return self.conv2(self.fc3(z))
 
