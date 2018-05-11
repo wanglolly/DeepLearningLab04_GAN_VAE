@@ -63,11 +63,11 @@ class CVAE(nn.Module):
                     nn.Sigmoid())
 
     def encode(self, x, c):
-        print(x)
+        print(x.size())
         c = idx2onehot(c, n=10)
         x = torch.cat((x, c), dim=-1)
-        print(c)
-        print(x)
+        print(c.size())
+        print(x.size())
         h1 = self.fc1(self.conv1(x))
         return self.fc21(h1), self.fc22(h1)
 
@@ -117,9 +117,7 @@ def train(epoch, writer):
         #get data & label
         data = to_var(data)
         label = to_var(label)
-        data = data.view(-1, 784)
-        label = label.view(-1, 1)
-
+        
         optimizer.zero_grad()
         recon_batch, mu, logvar, z = model(data, label)
         loss = loss_function(recon_batch, data, mu, logvar)
