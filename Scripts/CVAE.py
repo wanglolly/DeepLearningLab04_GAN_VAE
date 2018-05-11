@@ -117,6 +117,7 @@ def train(epoch, writer):
         label = label.view(-1, 1)
 
         optimizer.zero_grad()
+        print(data.size())
         recon_batch, mu, logvar, z = model(data, label)
         loss = loss_function(recon_batch, data, mu, logvar)
         loss.backward()
