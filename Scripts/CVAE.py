@@ -170,7 +170,7 @@ for epoch in range(1, args.epochs + 1):
     test(epoch)
     with torch.no_grad():
         sample = to_var(torch.randn(64, 20))
-        sample = model.decode(sample, [0]).cpu()
+        sample = model.decode(sample, torch.LongTensor([0])).cpu()
         save_image(sample.view(64, 1, 28, 28),
                    'CVAE_Results/sample_' + str(epoch) + '.png')
 trainFile.close()
