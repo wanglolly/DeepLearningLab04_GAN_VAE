@@ -12,7 +12,7 @@ def idx2onehot(idx, n):
     assert torch.max(idx).data[0] < n
 
     onehot = torch.zeros(idx.size(0), n)
-    onehot.scatter_(1, torch.LongTensor(idx.data), 1)
+    onehot.scatter_(1, torch.LongTensor(idx.data[0]), 1)
     onehot = to_var(onehot)
     
     return onehot
