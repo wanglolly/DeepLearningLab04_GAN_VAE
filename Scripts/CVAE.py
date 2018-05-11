@@ -65,7 +65,7 @@ class CVAE(nn.Module):
     def encode(self, x, c):
         print(x.size())
         c = idx2onehot(c, n=10)
-        c = c.expand(-1, -1, x.size[2], x.size[3])
+        c = c.expand(-1, -1, x.size()[2], x.size()[3])
         x = torch.cat((x, c), dim=-1)
         print(c.size())
         print(x.size())
