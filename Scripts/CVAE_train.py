@@ -113,8 +113,5 @@ for epoch in range(1, args.epochs + 1):
     test(epoch)
     #save models
     saveModelName = 'Models/CVAE_' + str(epoch) + '.tar'
-    torch.save({
-        'epoch': epoch,
-        'state_dict': model.state_dict()
-    }, saveModelName)
+    torch.save(model.state_dict(), saveModelName)
 trainFile.close()
