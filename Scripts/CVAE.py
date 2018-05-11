@@ -86,6 +86,7 @@ class CVAE(nn.Module):
         z = torch.cat((z, c), dim=-1)
         h2 = self.fc3(z)
         h2 = torch.unsqueeze(h2, -1)
+        h2 = h2.expand(-1, 2, 196)
         h2 = torch.unsqueeze(h2, -1)
         h2 = h2.expand(-1, 2, 14, 14)
         h2 = self.conv2(h2)
