@@ -22,7 +22,6 @@ parser.add_argument('--model', type=str, default='',
 parser.add_argument('--sets', type=int, default=10,
                     help='number of set to plot (default: 10)')
 args = parser.parse_args()
-args.cuda = not args.no_cuda and torch.cuda.is_available()
 
 #setup models
 model = CVAE()
