@@ -68,6 +68,8 @@ class CVAE(nn.Module):
         print(c.size())
         c = torch.unsqueeze(c, -1)
         print(c.size())
+        c = torch.unsqueeze(c, -1)
+        print(c.size())
         c = torch.expand(x.size()[0], 10, x.size()[2], x.size()[3])
         print(c.size())
         x = torch.cat((x, c), dim=-1)
