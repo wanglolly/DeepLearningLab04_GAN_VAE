@@ -31,6 +31,7 @@ model.eval()
 
 plt.clf()
 plotImageCount = 0
+plt.subplots_adjust(wspace = 0, hspace = 0.1)
 for i in range(args.sets):
     c = to_var(torch.arange(0,10).long().view(-1,1))
     x = model.inference(n = c.size(0), c = c)
@@ -38,8 +39,7 @@ for i in range(args.sets):
     #plot image  
     for p in range(10):
         plt.subplot(args.sets, 10, plotImageCount + 1)
-        plt.text(0,0,"c=%i"%c.data[p][0], color='black', backgroundcolor='white', fontsize=8)
-        plt.imshow(x[p].view(28,28).cpu().data.numpy())
+        plt.imshow(x[p].view(28,28).cpu().data.numpy(), cmap='gray')
         plt.axis('off')
         plotImageCount = plotImageCount + 1
 
