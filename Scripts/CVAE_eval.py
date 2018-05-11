@@ -39,7 +39,7 @@ for i in range(args.sets):
     for p in range(10):
         plt.subplot(args.sets, 10, plotImageCount + 1)
         plt.text(0,0,"c=%i"%c.data[p][0], color='black', backgroundcolor='white', fontsize=8)
-        plt.imshow(x[p].view(28,28).data.numpy())
+        plt.imshow(x[p].view(28,28).cpu().data.numpy())
         plt.axis('off')
         plotImageCount = plotImageCount + 1
 
