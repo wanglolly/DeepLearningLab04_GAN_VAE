@@ -31,7 +31,7 @@ model.eval()
 
 plt.clf()
 plotImageCount = 0
-plt.subplots_adjust(wspace = 0, hspace = 0.1)
+plt.subplots_adjust(wspace = 0, hspace = 0.01)
 for i in range(args.sets):
     c = to_var(torch.arange(0,10).long().view(-1,1))
     x = model.inference(n = c.size(0), c = c)
