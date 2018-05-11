@@ -85,7 +85,7 @@ class CVAE(nn.Module):
         return self.conv2(self.fc3(z))
 
     def forward(self, x, c):
-        mu, logvar = self.encode(x.view(-1, 784), c)
+        mu, logvar = self.encode(x, c)
         z = self.reparameterize(mu, logvar)
         return self.decode(z, c), mu, logvar, z
 
