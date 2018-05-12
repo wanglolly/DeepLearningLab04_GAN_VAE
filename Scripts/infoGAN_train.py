@@ -22,7 +22,6 @@ parser.add_argument('--glr', type=float, default=1e-3, help='learning rate for g
 parser.add_argument('--dlr', type=float, default=2e-4, help='learning rate for discriminator, default=0.0002')
 parser.add_argument('--beta1', type=float, default=0.5, help='beta1 for adam. default=0.5')
 parser.add_argument('--no-cuda', action='store_true', default=False, help='enables CUDA training')
-parser.add_argument('--outf', default='.', help='folder to output images and model checkpoints')
 parser.add_argument('--manualSeed', type=int, help='manual seed')
 opt = parser.parse_args()
 opt.cuda = not opt.no_cuda and torch.cuda.is_available()
@@ -39,11 +38,12 @@ kwargs = {'num_workers': 1, 'pin_memory': True} if opt.cuda else {}
 dataloader = torch.utils.data.DataLoader(
     dset.MNIST('../data', train=True, download=True,
                    transform=transforms.ToTensor()),
-    batch_size=opt.batch_size, shuffle=True, **kwargs)
+    batch_size=opt.batchSize, shuffle=True, **kwargs)
 device = torch.device("cuda:0" if opt.cuda else "cpu")
 
 nz = int(opt.nz)
 nc = 10
+batch_size = int(opt.batchSize)
 
 netG = Generator().to(device)
 netG.apply(weights_init)
