@@ -1,6 +1,7 @@
 from __future__ import print_function
 import argparse
 import os
+import csv
 import random
 import torch
 import torch.nn as nn
@@ -11,11 +12,11 @@ import torch.utils.data
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
 import torchvision.utils as vutils
-from infoGAN import Generator, Discriminator
+from infoGAN import Generator, Discriminator, weights_init, noise_sample
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--batchSize', type=int, default=64, help='input batch size')
-parser.add_argument('--nz', type=int, default=80, help='size of the latent z vector')
+parser.add_argument('--nz', type=int, default=64, help='size of the latent z vector')
 parser.add_argument('--niter', type=int, default=80, help='number of epochs to train for')
 parser.add_argument('--glr', type=float, default=1e-3, help='learning rate for generator, default=0.001')
 parser.add_argument('--dlr', type=float, default=2e-4, help='learning rate for discriminator, default=0.0002')
@@ -35,7 +36,7 @@ torch.manual_seed(opt.manualSeed)
 cudnn.benchmark = True
 
 kwargs = {'num_workers': 1, 'pin_memory': True} if opt.cuda else {}
-data_loader = torch.utils.data.DataLoader(
+dataloader = torch.utils.data.DataLoader(
     dset.MNIST('../data', train=True, download=True,
                    transform=transforms.ToTensor()),
     batch_size=opt.batch_size, shuffle=True, **kwargs)
@@ -43,22 +44,12 @@ device = torch.device("cuda:0" if opt.cuda else "cpu")
 
 nz = int(opt.nz)
 nc = 10
+
 netG = Generator().to(device)
 netG.apply(weights_init)
 if opt.netG != '':
     netG.load_state_dict(torch.load(opt.netG))
 print(netG)
-
-
-# custom weights initialization called on netG and netD
-def weights_init(m):
-    classname = m.__class__.__name__
-    if classname.find('Conv') != -1:
-        m.weight.data.normal_(0.0, 0.02)
-    elif classname.find('BatchNorm') != -1:
-        m.weight.data.normal_(1.0, 0.02)
-        m.bias.data.fill_(0)
-
 
 netD = Discriminator().to(device)
 netD.apply(weights_init)
@@ -66,15 +57,28 @@ if opt.netD != '':
     netD.load_state_dict(torch.load(opt.netD))
 print(netD)
 
-criterion = nn.BCELoss()
-
-fixed_noise = torch.randn(opt.batchSize, nz, 1, 1, device=device)
+criterion_D = nn.BCELoss()
+criterion_Q = nn.CrossEntropyLoss()
+fixed_noise = torch.randn(opt.batchSize, nz - nc, 1, 1, device=device)
 real_label = 1
 fake_label = 0
 
 # setup optimizer
-optimizerD = optim.Adam(netD.parameters(), lr=opt.lr, betas=(opt.beta1, 0.999))
-optimizerG = optim.Adam(netG.parameters(), lr=opt.lr, betas=(opt.beta1, 0.999))
+optimizerD = optim.Adam(netD.parameters(), lr=opt.dlr, betas=(opt.beta1, 0.999))
+optimizerG = optim.Adam(netG.parameters(), lr=opt.glr, betas=(opt.beta1, 0.999))
+
+#Open Training loss File
+LossFilename = 'infoGAN_Results/infoGAN_TrainingLoss.csv'
+LossFile = open(LossFilename, 'w')
+LossCursor = csv.writer(LossFile)
+
+ProbFilename = 'infoGAN_Results/infoGAN_TrainingProb.csv'
+ProbFile = open(ProbFilename, 'w')
+ProbCursor = csv.writer(ProbFile)
+
+bestLoss = 100
+bestLossEpoc = -1
+
 
 for epoch in range(opt.niter):
     for i, data in enumerate(dataloader, 0):
@@ -87,45 +91,57 @@ for epoch in range(opt.niter):
         batch_size = real_cpu.size(0)
         label = torch.full((batch_size,), real_label, device=device)
 
-        output = netD(real_cpu)
-        errD_real = criterion(output, label)
+        prob_real, _ = netD(real_cpu)
+        errD_real = criterion_D(prob_real, label)
         errD_real.backward()
-        D_x = output.mean().item()
+        D_x = prob_real.mean().item()
 
         # train with fake
-        noise = torch.randn(batch_size, nz, 1, 1, device=device)
-        fake = netG(noise)
+        z, idx = noise_sample(bs = batch_size, nz = nz, nc = nc, device = device)
+        fake = netG(z)
         label.fill_(fake_label)
-        output = netD(fake.detach())
-        errD_fake = criterion(output, label)
+        prob_fake, _ = netD(fake.detach())
+        errD_fake = criterion_D(prob_fake, label)
         errD_fake.backward()
-        D_G_z1 = output.mean().item()
+        D_G_z1 = prob_fake.mean().item()
+        
         errD = errD_real + errD_fake
         optimizerD.step()
 
         ############################
-        # (2) Update G network: maximize log(D(G(z)))
+        # (2) Update G network: maximize log(D(G(z))) + L(G,Q)
         ###########################
         netG.zero_grad()
         label.fill_(real_label)  # fake labels are real for generator cost
-        output = netD(fake)
-        errG = criterion(output, label)
+        prob_fake, q_output = netD(fake)
+        err_r = criterion_D(prob_fake, label)
+        D_G_z2 = prob_fake.mean().item()
+
+        class_ = torch.LongTensor(idx).cuda()
+        target = Variable(class_)
+        err_c = criterion_Q(q_output, target)
+        
+        errG = err_r + err_c
         errG.backward()
-        D_G_z2 = output.mean().item()
         optimizerG.step()
 
-        print('[%d/%d][%d/%d] Loss_D: %.4f Loss_G: %.4f D(x): %.4f D(G(z)): %.4f / %.4f'
+        print('[%d/%d][%d/%d] Loss_D: %.4f Loss_G: %.4f Loss_Q: %.4f D(x): %.4f D(G(z)): %.4f / %.4f'
               % (epoch, opt.niter, i, len(dataloader),
-                 errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
+                 errD.item(), err_r.item(), err_c.item(), D_x, D_G_z1, D_G_z2))
         if i % 100 == 0:
             vutils.save_image(real_cpu,
-                    '%s/real_samples.png' % opt.outf,
+                    'infoGAN_Results/real_samples_%03d.png'% (epoch),
                     normalize=True)
             fake = netG(fixed_noise)
             vutils.save_image(fake.detach(),
-                    '%s/fake_samples_epoch_%03d.png' % (opt.outf, epoch),
+                    'infoGAN_Results/fake_samples_epoch_%03d.png' % (epoch),
                     normalize=True)
+            LossHeader = [epoch, i, errD, err_r, err_c]
+            LossCursor.writerow(LossHeader)
+            ProbHeader = [epoch, i, D_x, D_G_z1, D_G_z2]
+            ProbCursor.writerow(ProbHeader)
+            
 
     # do checkpointing
-    torch.save(netG.state_dict(), '%s/netG_epoch_%d.pth' % (opt.outf, epoch))
-    torch.save(netD.state_dict(), '%s/netD_epoch_%d.pth' % (opt.outf, epoch))
+    torch.save(netG.state_dict(), 'Models/netG_epoch_%d.tar' % (epoch))
+    torch.save(netD.state_dict(), 'Models/netD_epoch_%d.tar' % (epoch))

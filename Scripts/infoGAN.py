@@ -6,6 +6,7 @@ from torch import nn, optim
 from torch.nn import functional as F
 from torchvision import datasets, transforms
 from torchvision.utils import save_image
+import numpy as np
 
 class Generator(nn.Module):
     def __init__(self):
@@ -51,11 +52,11 @@ class Discriminator(nn.Module):
             nn.BatchNorm2d(512, eps = 1e-05, momentum = 0.1, affine = True),
             nn.LeakyReLU(0.2, inplace=True),
         )
-        self.Q = nn.Sequential(
+        self.fc = nn.Sequential(
             nn.Conv2d(512, 1, kernel_size = 4, stride = 1, bias=False),
             nn.Sigmoid()
         )
-        self.fc = nn.Sequential(
+        self.Q = nn.Sequential(
             nn.Linear(in_features = 8192, out_features = 100, bias = True),
             nn.ReLU(),
             nn.Linear(in_features = 100, out_features = 10, bias = True)
@@ -63,7 +64,29 @@ class Discriminator(nn.Module):
 
     def forward(self, input):
         output = self.main(input)
-        output = self.Q(output)
-        output = self.fc(output)
+        d_output = self.fc(output)
+        q_output = self.Q(output)
+        return d_output.view(-1, 1), q_output
 
-        return output.view(-1, 1).squeeze(1)
+# custom weights initialization called on netG and netD
+def weights_init(m):
+    classname = m.__class__.__name__
+    if classname.find('Conv') != -1:
+        m.weight.data.normal_(0.0, 0.02)
+    elif classname.find('BatchNorm') != -1:
+        m.weight.data.normal_(1.0, 0.02)
+        m.bias.data.fill_(0)
+
+#generate noise
+def noise_sample(bs, nz, nc, device):
+
+    idx = np.random.randint(nc, size=bs)
+    c = np.zeros((bs, nc))
+    c[range(bs),idx] = 1.0
+
+    noise = torch.randn(bs, nz - nc, device=device)
+    c_tensor = torch.FloatTensor(bs, nc).cuda()
+    c_tensor.data.copy_(torch.Tensor(c))
+    z = torch.cat([noise, c_tensor], 1).view(-1, nz, 1, 1)
+
+    return z, c

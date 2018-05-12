@@ -110,6 +110,7 @@ trainFile = open(trainFilename, 'w')
 trainCursor = csv.writer(trainFile)
 
 bestLoss = 100
+bestLoss_epoch = -1
 
 for epoch in range(1, args.epochs + 1):
     loss = train(epoch, trainCursor)
@@ -117,7 +118,9 @@ for epoch in range(1, args.epochs + 1):
     #save the best models
     if loss < bestLoss :
         bestLoss = loss
+        bestLoss_epoch = epoch
         saveModelName = 'Models/CVAE_best.tar'
         torch.save(model.state_dict(), saveModelName)
         print('Save models ' + str(epoch))
 trainFile.close()
+print('Best Loss: %.4f  Epoc:%d'%(bestLoss,bestLoss_epoch))
