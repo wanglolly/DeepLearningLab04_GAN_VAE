@@ -37,9 +37,13 @@ cudnn.benchmark = True
 kwargs = {'num_workers': 1, 'pin_memory': True} if opt.cuda else {}
 dataloader = torch.utils.data.DataLoader(
     dset.MNIST('../data', train=True, download=True,
-                   transform=transforms.ToTensor()),
-    batch_size=opt.batchSize, shuffle=True, **kwargs)
+                   transform=transforms.Compose([
+                    transforms.Resize(opt.imageSize),
+                    transforms.ToTensor(),
+                    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]),
+    batch_size=opt.batchSize, shuffle=True, **kwargs))
 device = torch.device("cuda:0" if opt.cuda else "cpu")
+print(device)
 
 nz = int(opt.nz)
 nc = 10
