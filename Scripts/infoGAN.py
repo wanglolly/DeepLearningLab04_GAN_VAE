@@ -12,19 +12,19 @@ class Generator(nn.Module):
     def __init__(self):
         super(Generator, self).__init__()
         self.main = nn.Sequential(
-            nn.ConvTranspose2d(64, 512, kernal_size = 4, stride = 1, bias=False),
+            nn.ConvTranspose2d(64, 512, kernel_size = 4, stride = 1, bias=False),
             nn.BatchNorm2d(512, eps = 1e-05, momentum = 0.1, affine = True),
             nn.ReLU(inplace = True),
-            nn.ConvTranspose2d(512, 256, kernal_size = 4, stride = 2, padding = 1, bias=False),
+            nn.ConvTranspose2d(512, 256, kernel_size = 4, stride = 2, padding = 1, bias=False),
             nn.BatchNorm2d(256, eps = 1e-05, momentum = 0.1, affine = True),
             nn.ReLU(inplace = True),
-            nn.ConvTranspose2d(256, 128, kernal_size = 4, stride = 2, padding = 1, bias=False),
+            nn.ConvTranspose2d(256, 128, kernel_size = 4, stride = 2, padding = 1, bias=False),
             nn.BatchNorm2d(128, eps = 1e-05, momentum = 0.1, affine = True),
             nn.ReLU(inplace = True),
-            nn.ConvTranspose2d(128, 64, kernal_size = 4, stride = 2, padding = 1, bias=False),
+            nn.ConvTranspose2d(128, 64, kernel_size = 4, stride = 2, padding = 1, bias=False),
             nn.BatchNorm2d(64, eps = 1e-05, momentum = 0.1, affine = True),
             nn.ReLU(inplace = True),
-            nn.ConvTranspose2d(64, 1, kernal_size = 4, stride = 2, padding = 1, bias=False),
+            nn.ConvTranspose2d(64, 1, kernel_size = 4, stride = 2, padding = 1, bias=False),
             nn.Tanh()
         )
 
