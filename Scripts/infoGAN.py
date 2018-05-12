@@ -66,8 +66,8 @@ class Discriminator(nn.Module):
         print(input.size())
         output = self.main(input)
         print(output.size())
-        d_output = self.fc(output)
         q_output = self.Q(output)
+        d_output = self.fc(output)
         return d_output.view(-1, 1), q_output
 
 # custom weights initialization called on netG and netD
