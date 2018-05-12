@@ -47,11 +47,9 @@ batch_size = int(opt.batchSize)
 
 netG = Generator().to(device)
 netG.apply(weights_init)
-print(netG)
 
 netD = Discriminator().to(device)
 netD.apply(weights_init)
-print(netD)
 
 criterion_D = nn.BCELoss()
 criterion_Q = nn.CrossEntropyLoss()
