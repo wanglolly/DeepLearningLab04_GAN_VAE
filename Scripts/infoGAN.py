@@ -54,7 +54,7 @@ class Discriminator(nn.Module):
         )
         self.fc = nn.Sequential(
             nn.Conv2d(512, 1, kernel_size = 4, stride = 1, bias=False),
-            nn.Sigmoid()
+            #nn.Sigmoid()
         )
         self.Q = nn.Sequential(
             nn.Linear(in_features = 8192, out_features = 100, bias = True),
