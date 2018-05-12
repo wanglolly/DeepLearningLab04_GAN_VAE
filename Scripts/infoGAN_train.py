@@ -114,8 +114,7 @@ for epoch in range(opt.niter):
         err_r = criterion_D(prob_fake, label)
         D_G_z2 = prob_fake.mean().item()
 
-        class_ = torch.LongTensor(idx).cuda()
-        target = Variable(class_)
+        target = torch.LongTensor(idx).cuda()
         err_c = criterion_Q(q_output, target)
         
         errG = err_r + err_c

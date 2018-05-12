@@ -63,9 +63,7 @@ class Discriminator(nn.Module):
         )
 
     def forward(self, input):
-        print(input.size())
         output = self.main(input)
-        print(output.size())
         d_output = self.fc(output)
         q_output = self.Q(output.view(-1, 8192))
         return d_output.view(-1, 1), q_output
