@@ -38,7 +38,7 @@ kwargs = {'num_workers': 1, 'pin_memory': True} if opt.cuda else {}
 dataloader = torch.utils.data.DataLoader(
     dset.MNIST('../data', train=True, download=True,
                    transform=transforms.Compose([
-                    transforms.Resize(opt.imageSize),
+                    transforms.Resize(64),
                     transforms.ToTensor(),
                     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]),
     batch_size=opt.batchSize, shuffle=True, **kwargs))
