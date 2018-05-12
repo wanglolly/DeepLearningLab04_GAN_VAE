@@ -37,7 +37,7 @@ netG.eval()
 def noise_sample(nz, nc, device):
     idx = np.arange(nc)
     c = np.zeros((nc, nc))
-    c[nc,idx] = 1.0
+    c[range(nc),idx] = 1.0
     noise = torch.randn(1, nz - nc, device=device)
     noise = noise.expand(nc, -1)
     c_tensor = torch.FloatTensor(nc, nc).cuda()
