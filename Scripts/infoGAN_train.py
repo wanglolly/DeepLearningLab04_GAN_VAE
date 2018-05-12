@@ -47,14 +47,10 @@ batch_size = int(opt.batchSize)
 
 netG = Generator().to(device)
 netG.apply(weights_init)
-if opt.netG != '':
-    netG.load_state_dict(torch.load(opt.netG))
 print(netG)
 
 netD = Discriminator().to(device)
 netD.apply(weights_init)
-if opt.netD != '':
-    netD.load_state_dict(torch.load(opt.netD))
 print(netD)
 
 criterion_D = nn.BCELoss()
