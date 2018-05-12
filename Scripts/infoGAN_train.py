@@ -43,7 +43,6 @@ dataset = dset.MNIST('../data', train=True, download=True,
 dataloader = torch.utils.data.DataLoader(dataset, batch_size=opt.batchSize,
                                          shuffle=True, **kwargs)
 device = torch.device("cuda:0" if opt.cuda else "cpu")
-print(device)
 
 nz = int(opt.nz)
 nc = 10
