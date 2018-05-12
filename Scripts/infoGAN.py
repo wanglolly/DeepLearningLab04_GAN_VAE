@@ -50,7 +50,7 @@ class Discriminator(nn.Module):
             # state size. (ndf*4) x 8 x 8
             nn.Conv2d(256, 512, kernel_size = 4, stride = 2, padding = 1, bias=False),
             nn.BatchNorm2d(512, eps = 1e-05, momentum = 0.1, affine = True),
-            nn.LeakyReLU(0.2, inplace=True),
+            nn.LeakyReLU(0.2, inplace=True)
         )
         self.fc = nn.Sequential(
             nn.Conv2d(512, 1, kernel_size = 4, stride = 1, bias=False),
