@@ -139,7 +139,7 @@ for epoch in range(opt.niter):
             
 
     # do checkpointing
-    if epoch % 50 == 0: 
+    if epoch % 5 == 0: 
         torch.save(netG.state_dict(), 'Models/CheckPoint/netG_epoch_%d.tar' % (epoch))
         torch.save(netD.state_dict(), 'Models/CheckPoint/netD_epoch_%d.tar' % (epoch))
 torch.save(netG.state_dict(), 'Models/infoGAN_netG.tar')
