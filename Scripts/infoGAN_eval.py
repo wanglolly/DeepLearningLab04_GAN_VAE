@@ -52,6 +52,7 @@ plt.subplots_adjust(wspace = 0.01, hspace = 0.01)
 for i in range(args.sets):
     z = noise_sample(64, 10, device = device)
     x = netG(z)
+    print(x.size())
 
     #plot image  
     for p in range(10):
