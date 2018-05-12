@@ -34,7 +34,7 @@ random.seed(opt.manualSeed)
 torch.manual_seed(opt.manualSeed)
 cudnn.benchmark = True
 
-kwargs = {'num_workers': 1, 'pin_memory': True} if opt.cuda else {}
+kwargs = {'num_workers': 1} if opt.cuda else {}
 dataloader = torch.utils.data.DataLoader(
     dset.MNIST('../data', train=True, download=True,
                    transform=transforms.Compose([
