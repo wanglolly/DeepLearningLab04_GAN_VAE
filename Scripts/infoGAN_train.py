@@ -56,7 +56,7 @@ netD.apply(weights_init)
 
 criterion_D = nn.BCELoss()
 criterion_Q = nn.CrossEntropyLoss()
-fixed_noise = torch.randn(opt.batchSize, nz - nc, 1, 1, device=device)
+fixed_noise,_ = noise_sample(bs = batch_size, nz = nz, nc = nc, device = device)
 real_label = 1
 fake_label = 0
 
@@ -115,8 +115,6 @@ for epoch in range(opt.niter):
         D_G_z2 = prob_fake.mean().item()
 
         target = torch.LongTensor(idx).cuda()
-        print(target.size())
-        print(q_output.size())
         err_c = criterion_Q(q_output.squeeze(), target)
         
         errG = err_r + err_c
