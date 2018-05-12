@@ -143,5 +143,7 @@ for epoch in range(opt.niter):
             
 
     # do checkpointing
-    torch.save(netG.state_dict(), 'Models/netG_epoch_%d.tar' % (epoch))
-    torch.save(netD.state_dict(), 'Models/netD_epoch_%d.tar' % (epoch))
+    #torch.save(netG.state_dict(), 'Models/CheckPoint/netG_epoch_%d.tar' % (epoch))
+    #torch.save(netD.state_dict(), 'Models/CheckPoint/netD_epoch_%d.tar' % (epoch))
+torch.save(netG.state_dict(), 'Models/CheckPoint/netG_epoch_%d.tar' % (epoch))
+torch.save(netD.state_dict(), 'Models/CheckPoint/netD_epoch_%d.tar' % (epoch))
