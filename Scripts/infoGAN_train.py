@@ -112,10 +112,12 @@ for epoch in range(opt.niter):
         target = torch.LongTensor(idx).cuda()
         err_c = criterion_Q(q_output.squeeze(), target)
 
+        print(q_output.squeeze())
+        print(target)
+
         errG = err_r + err_c
         errG.backward()
         optimizerG.step()
-
 
         print('[%d/%d][%d/%d] Loss_D: %.4f Loss_G: %.4f Loss_Q: %.4f D(x): %.4f D(G(z)): %.4f / %.4f'
               % (epoch, opt.niter, i, len(dataloader),
