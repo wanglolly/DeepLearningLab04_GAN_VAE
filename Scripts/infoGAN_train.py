@@ -109,14 +109,15 @@ for epoch in range(opt.niter):
         err_r = criterion_D(prob_fake, label)
         D_G_z2 = prob_fake.mean().item()
 
+        print(q_output.squeeze())
+        print(idx)
         err_c = criterion_Q(q_output.squeeze(), idx)
 
         errG = err_r + err_c
         errG.backward()
         optimizerG.step()
 
-        print(q_output.squeeze())
-        print(idx)
+        
 
         print('[%d/%d][%d/%d] Loss_D: %.4f Loss_G: %.4f Loss_Q: %.4f D(x): %.4f D(G(z)): %.4f / %.4f'
               % (epoch, opt.niter, i, len(dataloader),

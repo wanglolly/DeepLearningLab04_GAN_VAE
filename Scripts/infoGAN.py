@@ -88,7 +88,7 @@ def noise_sample(bs, nz, nc, device):
     c[range(bs),idx] = 1.0
 
     noise = torch.randn(bs, nz - nc, device=device)
-    c_tensor = torch.LongTensor(bs, nc).cuda()
+    c_tensor = torch.FloatTensor(bs, nc).cuda()
     c_tensor.data.copy_(torch.Tensor(c))
     z = torch.cat([noise, c_tensor], 1).view(-1, nz, 1, 1)
 
