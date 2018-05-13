@@ -113,12 +113,12 @@ for epoch in range(opt.niter):
         prob_fake, q_output = netD(fake)
         err_r = criterion_D(prob_fake, label)
         D_G_z2 = prob_fake.mean().item()
+        err_r.backward()
 
         target = torch.LongTensor(idx).cuda()
         err_c = criterion_Q(q_output.squeeze(), target)
-        
-        errG = err_r + err_c
-        errG.backward()
+        err_c.backward()
+
         optimizerG.step()
 
         print('[%d/%d][%d/%d] Loss_D: %.4f Loss_G: %.4f Loss_Q: %.4f D(x): %.4f D(G(z)): %.4f / %.4f'
