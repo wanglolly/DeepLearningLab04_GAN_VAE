@@ -1,326 +1,300 @@
-0,0,"tensor(1.5346, device='cuda:0')","tensor(4.5704, device='cuda:0')","tensor(2.3137, device='cuda:0')"
-0,100,"tensor(1.6072, device='cuda:0')","tensor(4.5264, device='cuda:0')","tensor(2.3187, device='cuda:0')"
-0,200,"tensor(0.9471, device='cuda:0')","tensor(1.5836, device='cuda:0')","tensor(2.2740, device='cuda:0')"
-0,300,"tensor(1.1091, device='cuda:0')","tensor(0.8037, device='cuda:0')","tensor(2.3139, device='cuda:0')"
-0,400,"tensor(1.4957, device='cuda:0')","tensor(5.2429, device='cuda:0')","tensor(2.2783, device='cuda:0')"
-0,500,"tensor(1.0939, device='cuda:0')","tensor(0.9664, device='cuda:0')","tensor(2.2803, device='cuda:0')"
-0,600,"tensor(1.3601, device='cuda:0')","tensor(0.7269, device='cuda:0')","tensor(2.3055, device='cuda:0')"
-0,700,"tensor(0.9407, device='cuda:0')","tensor(2.0462, device='cuda:0')","tensor(2.2926, device='cuda:0')"
-0,800,"tensor(1.1317, device='cuda:0')","tensor(2.2231, device='cuda:0')","tensor(2.3009, device='cuda:0')"
-0,900,"tensor(1.1365, device='cuda:0')","tensor(1.7297, device='cuda:0')","tensor(2.2487, device='cuda:0')"
-1,0,"tensor(1.8437, device='cuda:0')","tensor(1.1925, device='cuda:0')","tensor(2.2683, device='cuda:0')"
-1,100,"tensor(0.9317, device='cuda:0')","tensor(1.6211, device='cuda:0')","tensor(2.2842, device='cuda:0')"
-1,200,"tensor(0.9546, device='cuda:0')","tensor(1.7080, device='cuda:0')","tensor(2.2795, device='cuda:0')"
-1,300,"tensor(0.9843, device='cuda:0')","tensor(2.3031, device='cuda:0')","tensor(2.2506, device='cuda:0')"
-1,400,"tensor(0.8863, device='cuda:0')","tensor(2.3601, device='cuda:0')","tensor(2.2842, device='cuda:0')"
-1,500,"tensor(0.9694, device='cuda:0')","tensor(1.3637, device='cuda:0')","tensor(2.2850, device='cuda:0')"
-1,600,"tensor(1.0113, device='cuda:0')","tensor(0.9772, device='cuda:0')","tensor(2.2661, device='cuda:0')"
-1,700,"tensor(1.3947, device='cuda:0')","tensor(1.8324, device='cuda:0')","tensor(2.2938, device='cuda:0')"
-1,800,"tensor(0.9409, device='cuda:0')","tensor(1.6180, device='cuda:0')","tensor(2.2383, device='cuda:0')"
-1,900,"tensor(0.7034, device='cuda:0')","tensor(1.8348, device='cuda:0')","tensor(2.2522, device='cuda:0')"
-2,0,"tensor(1.0833, device='cuda:0')","tensor(2.5567, device='cuda:0')","tensor(2.2322, device='cuda:0')"
-2,100,"tensor(0.7340, device='cuda:0')","tensor(2.1992, device='cuda:0')","tensor(2.2548, device='cuda:0')"
-2,200,"tensor(1.5292, device='cuda:0')","tensor(0.9888, device='cuda:0')","tensor(2.2425, device='cuda:0')"
-2,300,"tensor(0.9490, device='cuda:0')","tensor(2.2138, device='cuda:0')","tensor(2.2728, device='cuda:0')"
-2,400,"tensor(0.6613, device='cuda:0')","tensor(2.7460, device='cuda:0')","tensor(2.2606, device='cuda:0')"
-2,500,"tensor(0.8267, device='cuda:0')","tensor(1.1139, device='cuda:0')","tensor(2.2761, device='cuda:0')"
-2,600,"tensor(1.7175, device='cuda:0')","tensor(0.8376, device='cuda:0')","tensor(2.2709, device='cuda:0')"
-2,700,"tensor(0.8493, device='cuda:0')","tensor(1.4948, device='cuda:0')","tensor(2.2797, device='cuda:0')"
-2,800,"tensor(1.8835, device='cuda:0')","tensor(0.3730, device='cuda:0')","tensor(2.2526, device='cuda:0')"
-2,900,"tensor(0.7691, device='cuda:0')","tensor(1.4035, device='cuda:0')","tensor(2.2586, device='cuda:0')"
-3,0,"tensor(0.7873, device='cuda:0')","tensor(2.1999, device='cuda:0')","tensor(2.2787, device='cuda:0')"
-3,100,"tensor(0.8745, device='cuda:0')","tensor(3.0731, device='cuda:0')","tensor(2.2910, device='cuda:0')"
-3,200,"tensor(0.6022, device='cuda:0')","tensor(2.7075, device='cuda:0')","tensor(2.2587, device='cuda:0')"
-3,300,"tensor(0.5921, device='cuda:0')","tensor(1.8703, device='cuda:0')","tensor(2.2641, device='cuda:0')"
-3,400,"tensor(1.1394, device='cuda:0')","tensor(0.8395, device='cuda:0')","tensor(2.3045, device='cuda:0')"
-3,500,"tensor(0.8678, device='cuda:0')","tensor(2.4311, device='cuda:0')","tensor(2.2758, device='cuda:0')"
-3,600,"tensor(1.0973, device='cuda:0')","tensor(2.6816, device='cuda:0')","tensor(2.2475, device='cuda:0')"
-3,700,"tensor(0.7462, device='cuda:0')","tensor(3.6366, device='cuda:0')","tensor(2.2332, device='cuda:0')"
-3,800,"tensor(0.6370, device='cuda:0')","tensor(2.9010, device='cuda:0')","tensor(2.2689, device='cuda:0')"
-3,900,"tensor(0.5420, device='cuda:0')","tensor(3.9314, device='cuda:0')","tensor(2.2860, device='cuda:0')"
-4,0,"tensor(2.8468, device='cuda:0')","tensor(0.3869, device='cuda:0')","tensor(2.2897, device='cuda:0')"
-4,100,"tensor(0.6168, device='cuda:0')","tensor(2.8197, device='cuda:0')","tensor(2.2547, device='cuda:0')"
-4,200,"tensor(0.6733, device='cuda:0')","tensor(2.4048, device='cuda:0')","tensor(2.2621, device='cuda:0')"
-4,300,"tensor(0.7442, device='cuda:0')","tensor(1.3633, device='cuda:0')","tensor(2.2999, device='cuda:0')"
-4,400,"tensor(0.3934, device='cuda:0')","tensor(2.1879, device='cuda:0')","tensor(2.2707, device='cuda:0')"
-4,500,"tensor(0.8217, device='cuda:0')","tensor(1.1692, device='cuda:0')","tensor(2.2678, device='cuda:0')"
-4,600,"tensor(0.3929, device='cuda:0')","tensor(2.8206, device='cuda:0')","tensor(2.2684, device='cuda:0')"
-4,700,"tensor(2.5954, device='cuda:0')","tensor(1.0497, device='cuda:0')","tensor(2.2598, device='cuda:0')"
-4,800,"tensor(0.4687, device='cuda:0')","tensor(2.3142, device='cuda:0')","tensor(2.2764, device='cuda:0')"
-4,900,"tensor(0.4579, device='cuda:0')","tensor(3.3073, device='cuda:0')","tensor(2.2626, device='cuda:0')"
-5,0,"tensor(0.7213, device='cuda:0')","tensor(2.6898, device='cuda:0')","tensor(2.2875, device='cuda:0')"
-5,100,"tensor(0.4736, device='cuda:0')","tensor(2.6193, device='cuda:0')","tensor(2.2838, device='cuda:0')"
-5,200,"tensor(0.6340, device='cuda:0')","tensor(2.3012, device='cuda:0')","tensor(2.2802, device='cuda:0')"
-5,300,"tensor(0.8651, device='cuda:0')","tensor(1.1604, device='cuda:0')","tensor(2.2703, device='cuda:0')"
-5,400,"tensor(0.3257, device='cuda:0')","tensor(2.6987, device='cuda:0')","tensor(2.2801, device='cuda:0')"
-5,500,"tensor(0.3969, device='cuda:0')","tensor(2.0859, device='cuda:0')","tensor(2.2707, device='cuda:0')"
-5,600,"tensor(0.4606, device='cuda:0')","tensor(2.4688, device='cuda:0')","tensor(2.2693, device='cuda:0')"
-5,700,"tensor(0.5872, device='cuda:0')","tensor(2.1342, device='cuda:0')","tensor(2.2711, device='cuda:0')"
-5,800,"tensor(0.5524, device='cuda:0')","tensor(1.6543, device='cuda:0')","tensor(2.2866, device='cuda:0')"
-5,900,"tensor(0.2616, device='cuda:0')","tensor(2.9519, device='cuda:0')","tensor(2.2584, device='cuda:0')"
-6,0,"tensor(1.2650, device='cuda:0')","tensor(7.8083, device='cuda:0')","tensor(2.2798, device='cuda:0')"
-6,100,"tensor(1.1406, device='cuda:0')","tensor(8.9783, device='cuda:0')","tensor(2.2818, device='cuda:0')"
-6,200,"tensor(0.3020, device='cuda:0')","tensor(2.8444, device='cuda:0')","tensor(2.2859, device='cuda:0')"
-6,300,"tensor(0.3338, device='cuda:0')","tensor(2.5900, device='cuda:0')","tensor(2.2602, device='cuda:0')"
-6,400,"tensor(0.1373, device='cuda:0')","tensor(3.5125, device='cuda:0')","tensor(2.2590, device='cuda:0')"
-6,500,"tensor(0.7904, device='cuda:0')","tensor(2.7559, device='cuda:0')","tensor(2.2833, device='cuda:0')"
-6,600,"tensor(0.2798, device='cuda:0')","tensor(2.6904, device='cuda:0')","tensor(2.2662, device='cuda:0')"
-6,700,"tensor(0.6333, device='cuda:0')","tensor(1.8120, device='cuda:0')","tensor(2.2677, device='cuda:0')"
-6,800,"tensor(0.4728, device='cuda:0')","tensor(5.1110, device='cuda:0')","tensor(2.2617, device='cuda:0')"
-6,900,"tensor(2.6027, device='cuda:0')","tensor(1.4109, device='cuda:0')","tensor(2.2774, device='cuda:0')"
-7,0,"tensor(0.4925, device='cuda:0')","tensor(2.3649, device='cuda:0')","tensor(2.2718, device='cuda:0')"
-7,100,"tensor(0.6550, device='cuda:0')","tensor(2.2976, device='cuda:0')","tensor(2.2497, device='cuda:0')"
-7,200,"tensor(0.3215, device='cuda:0')","tensor(3.1821, device='cuda:0')","tensor(2.2787, device='cuda:0')"
-7,300,"tensor(0.1365, device='cuda:0')","tensor(3.7409, device='cuda:0')","tensor(2.2921, device='cuda:0')"
-7,400,"tensor(0.2523, device='cuda:0')","tensor(2.5229, device='cuda:0')","tensor(2.2812, device='cuda:0')"
-7,500,"tensor(0.8960, device='cuda:0')","tensor(2.1323, device='cuda:0')","tensor(2.2896, device='cuda:0')"
-7,600,"tensor(0.8818, device='cuda:0')","tensor(1.5371, device='cuda:0')","tensor(2.3111, device='cuda:0')"
-7,700,"tensor(0.2324, device='cuda:0')","tensor(3.4392, device='cuda:0')","tensor(2.3027, device='cuda:0')"
-7,800,"tensor(0.2607, device='cuda:0')","tensor(2.9100, device='cuda:0')","tensor(2.2670, device='cuda:0')"
-7,900,"tensor(0.2213, device='cuda:0')","tensor(4.1890, device='cuda:0')","tensor(2.2562, device='cuda:0')"
-8,0,"tensor(1.00000e-02 *
-       8.2103, device='cuda:0')","tensor(4.4472, device='cuda:0')","tensor(2.2541, device='cuda:0')"
-8,100,"tensor(0.4653, device='cuda:0')","tensor(2.2729, device='cuda:0')","tensor(2.2283, device='cuda:0')"
-8,200,"tensor(0.1301, device='cuda:0')","tensor(4.3632, device='cuda:0')","tensor(2.2679, device='cuda:0')"
-8,300,"tensor(0.7347, device='cuda:0')","tensor(1.0801, device='cuda:0')","tensor(2.3058, device='cuda:0')"
-8,400,"tensor(0.4175, device='cuda:0')","tensor(3.3788, device='cuda:0')","tensor(2.2935, device='cuda:0')"
-8,500,"tensor(1.5065, device='cuda:0')","tensor(6.4465, device='cuda:0')","tensor(2.2781, device='cuda:0')"
-8,600,"tensor(1.0497, device='cuda:0')","tensor(0.4236, device='cuda:0')","tensor(2.2873, device='cuda:0')"
-8,700,"tensor(0.8947, device='cuda:0')","tensor(5.3388, device='cuda:0')","tensor(2.2689, device='cuda:0')"
-8,800,"tensor(1.5344, device='cuda:0')","tensor(10.5929, device='cuda:0')","tensor(2.2606, device='cuda:0')"
-8,900,"tensor(0.3377, device='cuda:0')","tensor(2.5761, device='cuda:0')","tensor(2.2551, device='cuda:0')"
-9,0,"tensor(0.4653, device='cuda:0')","tensor(1.7557, device='cuda:0')","tensor(2.2740, device='cuda:0')"
-9,100,"tensor(1.00000e-02 *
-       4.5245, device='cuda:0')","tensor(4.3429, device='cuda:0')","tensor(2.2782, device='cuda:0')"
-9,200,"tensor(2.1601, device='cuda:0')","tensor(5.5375, device='cuda:0')","tensor(2.2604, device='cuda:0')"
-9,300,"tensor(0.2140, device='cuda:0')","tensor(3.2565, device='cuda:0')","tensor(2.3056, device='cuda:0')"
-9,400,"tensor(0.1892, device='cuda:0')","tensor(3.8450, device='cuda:0')","tensor(2.2841, device='cuda:0')"
-9,500,"tensor(0.5800, device='cuda:0')","tensor(2.4368, device='cuda:0')","tensor(2.2929, device='cuda:0')"
-9,600,"tensor(0.5561, device='cuda:0')","tensor(2.3623, device='cuda:0')","tensor(2.2788, device='cuda:0')"
-9,700,"tensor(1.00000e-02 *
-       6.8856, device='cuda:0')","tensor(3.6279, device='cuda:0')","tensor(2.2669, device='cuda:0')"
-9,800,"tensor(1.00000e-02 *
-       6.5297, device='cuda:0')","tensor(5.0838, device='cuda:0')","tensor(2.2995, device='cuda:0')"
-9,900,"tensor(0.4833, device='cuda:0')","tensor(3.5435, device='cuda:0')","tensor(2.2867, device='cuda:0')"
-10,0,"tensor(0.4646, device='cuda:0')","tensor(5.0674, device='cuda:0')","tensor(2.2617, device='cuda:0')"
-10,100,"tensor(1.9121, device='cuda:0')","tensor(0.5553, device='cuda:0')","tensor(2.2918, device='cuda:0')"
-10,200,"tensor(0.3064, device='cuda:0')","tensor(3.5559, device='cuda:0')","tensor(2.2966, device='cuda:0')"
-10,300,"tensor(0.1501, device='cuda:0')","tensor(5.2883, device='cuda:0')","tensor(2.2892, device='cuda:0')"
-10,400,"tensor(1.00000e-02 *
-       6.4181, device='cuda:0')","tensor(4.2985, device='cuda:0')","tensor(2.3010, device='cuda:0')"
-10,500,"tensor(0.7755, device='cuda:0')","tensor(6.7875, device='cuda:0')","tensor(2.2809, device='cuda:0')"
-10,600,"tensor(0.2322, device='cuda:0')","tensor(5.2094, device='cuda:0')","tensor(2.2671, device='cuda:0')"
-10,700,"tensor(1.00000e-02 *
-       5.0160, device='cuda:0')","tensor(4.5202, device='cuda:0')","tensor(2.2984, device='cuda:0')"
-10,800,"tensor(1.00000e-02 *
-       5.7709, device='cuda:0')","tensor(5.2652, device='cuda:0')","tensor(2.2717, device='cuda:0')"
-10,900,"tensor(1.00000e-02 *
-       3.7275, device='cuda:0')","tensor(5.4945, device='cuda:0')","tensor(2.2971, device='cuda:0')"
-11,0,"tensor(1.3204, device='cuda:0')","tensor(1.2956, device='cuda:0')","tensor(2.3179, device='cuda:0')"
-11,100,"tensor(1.1411, device='cuda:0')","tensor(1.0744, device='cuda:0')","tensor(2.3031, device='cuda:0')"
-11,200,"tensor(0.9354, device='cuda:0')","tensor(1.1872, device='cuda:0')","tensor(2.2688, device='cuda:0')"
-11,300,"tensor(0.8205, device='cuda:0')","tensor(2.3071, device='cuda:0')","tensor(2.2679, device='cuda:0')"
-11,400,"tensor(0.3491, device='cuda:0')","tensor(4.0864, device='cuda:0')","tensor(2.3116, device='cuda:0')"
-11,500,"tensor(0.3772, device='cuda:0')","tensor(3.7413, device='cuda:0')","tensor(2.2731, device='cuda:0')"
-11,600,"tensor(0.7570, device='cuda:0')","tensor(1.4993, device='cuda:0')","tensor(2.2749, device='cuda:0')"
-11,700,"tensor(0.5627, device='cuda:0')","tensor(2.6227, device='cuda:0')","tensor(2.2722, device='cuda:0')"
-11,800,"tensor(0.3978, device='cuda:0')","tensor(5.5043, device='cuda:0')","tensor(2.2943, device='cuda:0')"
-11,900,"tensor(0.8011, device='cuda:0')","tensor(4.5183, device='cuda:0')","tensor(2.2788, device='cuda:0')"
-12,0,"tensor(1.3027, device='cuda:0')","tensor(3.6007, device='cuda:0')","tensor(2.2666, device='cuda:0')"
-12,100,"tensor(0.2026, device='cuda:0')","tensor(4.1638, device='cuda:0')","tensor(2.3207, device='cuda:0')"
-12,200,"tensor(1.0318, device='cuda:0')","tensor(2.7838, device='cuda:0')","tensor(2.2863, device='cuda:0')"
-12,300,"tensor(0.3682, device='cuda:0')","tensor(2.6099, device='cuda:0')","tensor(2.2392, device='cuda:0')"
-12,400,"tensor(0.2920, device='cuda:0')","tensor(5.2024, device='cuda:0')","tensor(2.2686, device='cuda:0')"
-12,500,"tensor(1.00000e-02 *
-       5.9663, device='cuda:0')","tensor(4.3257, device='cuda:0')","tensor(2.2699, device='cuda:0')"
-12,600,"tensor(0.2735, device='cuda:0')","tensor(2.8454, device='cuda:0')","tensor(2.3103, device='cuda:0')"
-12,700,"tensor(0.1836, device='cuda:0')","tensor(2.8920, device='cuda:0')","tensor(2.2878, device='cuda:0')"
-12,800,"tensor(1.00000e-02 *
-       3.1195, device='cuda:0')","tensor(4.8057, device='cuda:0')","tensor(2.3071, device='cuda:0')"
-12,900,"tensor(0.1347, device='cuda:0')","tensor(4.7744, device='cuda:0')","tensor(2.2599, device='cuda:0')"
-13,0,"tensor(1.1782, device='cuda:0')","tensor(7.4596, device='cuda:0')","tensor(2.2790, device='cuda:0')"
-13,100,"tensor(0.1953, device='cuda:0')","tensor(3.5272, device='cuda:0')","tensor(2.2778, device='cuda:0')"
-13,200,"tensor(0.1718, device='cuda:0')","tensor(3.7983, device='cuda:0')","tensor(2.2716, device='cuda:0')"
-13,300,"tensor(1.1156, device='cuda:0')","tensor(1.1166, device='cuda:0')","tensor(2.3051, device='cuda:0')"
-13,400,"tensor(1.1465, device='cuda:0')","tensor(4.4742, device='cuda:0')","tensor(2.2716, device='cuda:0')"
-13,500,"tensor(0.3821, device='cuda:0')","tensor(2.6142, device='cuda:0')","tensor(2.2718, device='cuda:0')"
-13,600,"tensor(0.4955, device='cuda:0')","tensor(2.3892, device='cuda:0')","tensor(2.2604, device='cuda:0')"
-13,700,"tensor(1.00000e-02 *
-       5.9311, device='cuda:0')","tensor(4.7419, device='cuda:0')","tensor(2.2629, device='cuda:0')"
-13,800,"tensor(1.00000e-02 *
-       5.4936, device='cuda:0')","tensor(4.3444, device='cuda:0')","tensor(2.2831, device='cuda:0')"
-13,900,"tensor(1.00000e-02 *
-       3.5660, device='cuda:0')","tensor(4.0558, device='cuda:0')","tensor(2.2723, device='cuda:0')"
-14,0,"tensor(1.00000e-02 *
-       1.6263, device='cuda:0')","tensor(5.2988, device='cuda:0')","tensor(2.2930, device='cuda:0')"
-14,100,"tensor(0.9337, device='cuda:0')","tensor(1.8287, device='cuda:0')","tensor(2.2809, device='cuda:0')"
-14,200,"tensor(0.1834, device='cuda:0')","tensor(3.0292, device='cuda:0')","tensor(2.2997, device='cuda:0')"
-14,300,"tensor(0.5358, device='cuda:0')","tensor(1.7532, device='cuda:0')","tensor(2.2746, device='cuda:0')"
-14,400,"tensor(0.2312, device='cuda:0')","tensor(3.1257, device='cuda:0')","tensor(2.2860, device='cuda:0')"
-14,500,"tensor(1.00000e-02 *
-       6.1423, device='cuda:0')","tensor(3.5350, device='cuda:0')","tensor(2.2633, device='cuda:0')"
-14,600,"tensor(0.5130, device='cuda:0')","tensor(3.4391, device='cuda:0')","tensor(2.2801, device='cuda:0')"
-14,700,"tensor(0.8433, device='cuda:0')","tensor(5.5423, device='cuda:0')","tensor(2.2441, device='cuda:0')"
-14,800,"tensor(0.3995, device='cuda:0')","tensor(2.3926, device='cuda:0')","tensor(2.2841, device='cuda:0')"
-14,900,"tensor(1.00000e-02 *
-       8.2234, device='cuda:0')","tensor(5.2047, device='cuda:0')","tensor(2.2697, device='cuda:0')"
-15,0,"tensor(1.00000e-02 *
-       1.8063, device='cuda:0')","tensor(5.1886, device='cuda:0')","tensor(2.2881, device='cuda:0')"
-15,100,"tensor(1.00000e-02 *
-       6.7063, device='cuda:0')","tensor(4.3676, device='cuda:0')","tensor(2.2605, device='cuda:0')"
-15,200,"tensor(1.00000e-02 *
-       2.6453, device='cuda:0')","tensor(5.7199, device='cuda:0')","tensor(2.2870, device='cuda:0')"
-15,300,"tensor(1.00000e-02 *
-       1.1938, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3313, device='cuda:0')"
-15,400,"tensor(1.00000e-05 *
-       3.0892, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3061, device='cuda:0')"
-15,500,"tensor(1.00000e-05 *
-       2.5355, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3031, device='cuda:0')"
-15,600,"tensor(1.00000e-05 *
-       3.1335, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2919, device='cuda:0')"
-15,700,"tensor(1.00000e-05 *
-       4.4882, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2890, device='cuda:0')"
-15,800,"tensor(1.00000e-06 *
-       5.3217, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2838, device='cuda:0')"
-15,900,"tensor(1.00000e-05 *
-       1.7749, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2674, device='cuda:0')"
-16,0,"tensor(1.00000e-06 *
-       8.3816, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2507, device='cuda:0')"
-16,100,"tensor(1.00000e-06 *
-       3.9004, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2467, device='cuda:0')"
-16,200,"tensor(1.00000e-06 *
-       9.4960, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2507, device='cuda:0')"
-16,300,"tensor(1.00000e-06 *
-       5.0646, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2364, device='cuda:0')"
-16,400,"tensor(1.00000e-06 *
-       7.0279, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2158, device='cuda:0')"
-16,500,"tensor(1.00000e-06 *
-       4.3028, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1573, device='cuda:0')"
-16,600,"tensor(1.00000e-06 *
-       8.6300, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1461, device='cuda:0')"
-16,700,"tensor(1.00000e-05 *
-       1.0438, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.0335, device='cuda:0')"
-16,800,"tensor(1.00000e-06 *
-       3.8557, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.9784, device='cuda:0')"
-16,900,"tensor(1.00000e-06 *
-       6.0781, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.9249, device='cuda:0')"
-17,0,"tensor(1.00000e-06 *
-       2.5612, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.8534, device='cuda:0')"
-17,100,"tensor(1.00000e-06 *
-       3.0212, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.7491, device='cuda:0')"
-17,200,"tensor(1.00000e-06 *
-       3.0380, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.5884, device='cuda:0')"
-17,300,"tensor(1.00000e-06 *
-       1.6801, device='cuda:0')","tensor(27.6309, device='cuda:0')","tensor(1.4529, device='cuda:0')"
-17,400,"tensor(1.00000e-06 *
-       2.4717, device='cuda:0')","tensor(27.6291, device='cuda:0')","tensor(1.2300, device='cuda:0')"
-17,500,"tensor(1.00000e-05 *
-       1.2839, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2516, device='cuda:0')"
-17,600,"tensor(1.00000e-07 *
-       4.6007, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1403, device='cuda:0')"
-17,700,"tensor(1.00000e-07 *
-       6.4448, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.9453, device='cuda:0')"
-17,800,"tensor(1.00000e-07 *
-       3.0920, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.6722, device='cuda:0')"
-17,900,"tensor(1.00000e-08 *
-       1.1176, device='cuda:0')","tensor(27.6213, device='cuda:0')","tensor(2.1275, device='cuda:0')"
-18,0,"tensor(2.1962, device='cuda:0')","tensor(4.2718, device='cuda:0')","tensor(2.2897, device='cuda:0')"
-18,100,"tensor(1.4192, device='cuda:0')","tensor(5.4281, device='cuda:0')","tensor(2.2876, device='cuda:0')"
-18,200,"tensor(0.5937, device='cuda:0')","tensor(2.8751, device='cuda:0')","tensor(2.2635, device='cuda:0')"
-18,300,"tensor(0.9939, device='cuda:0')","tensor(1.1502, device='cuda:0')","tensor(2.2850, device='cuda:0')"
-18,400,"tensor(0.6303, device='cuda:0')","tensor(1.2379, device='cuda:0')","tensor(2.2861, device='cuda:0')"
-18,500,"tensor(1.00000e-02 *
-       6.9133, device='cuda:0')","tensor(3.6867, device='cuda:0')","tensor(2.2864, device='cuda:0')"
-18,600,"tensor(0.4901, device='cuda:0')","tensor(2.9688, device='cuda:0')","tensor(2.2920, device='cuda:0')"
-18,700,"tensor(0.8431, device='cuda:0')","tensor(1.9371, device='cuda:0')","tensor(2.2815, device='cuda:0')"
-18,800,"tensor(0.3853, device='cuda:0')","tensor(2.4773, device='cuda:0')","tensor(2.2798, device='cuda:0')"
-18,900,"tensor(1.00000e-02 *
-       6.1302, device='cuda:0')","tensor(3.9344, device='cuda:0')","tensor(2.3117, device='cuda:0')"
-19,0,"tensor(0.1318, device='cuda:0')","tensor(4.0039, device='cuda:0')","tensor(2.2743, device='cuda:0')"
-19,100,"tensor(0.5769, device='cuda:0')","tensor(3.1999, device='cuda:0')","tensor(2.2858, device='cuda:0')"
-19,200,"tensor(1.00000e-02 *
-       5.9216, device='cuda:0')","tensor(4.5641, device='cuda:0')","tensor(2.2380, device='cuda:0')"
-19,300,"tensor(0.1284, device='cuda:0')","tensor(3.4907, device='cuda:0')","tensor(2.2999, device='cuda:0')"
-19,400,"tensor(0.1287, device='cuda:0')","tensor(3.4436, device='cuda:0')","tensor(2.2868, device='cuda:0')"
-19,500,"tensor(1.00000e-02 *
-       5.1923, device='cuda:0')","tensor(4.2062, device='cuda:0')","tensor(2.2634, device='cuda:0')"
-19,600,"tensor(0.2605, device='cuda:0')","tensor(3.7844, device='cuda:0')","tensor(2.2859, device='cuda:0')"
-19,700,"tensor(1.00000e-02 *
-       6.2767, device='cuda:0')","tensor(3.8213, device='cuda:0')","tensor(2.2999, device='cuda:0')"
-19,800,"tensor(0.7167, device='cuda:0')","tensor(1.9154, device='cuda:0')","tensor(2.2831, device='cuda:0')"
-19,900,"tensor(0.4339, device='cuda:0')","tensor(2.8129, device='cuda:0')","tensor(2.2829, device='cuda:0')"
-20,0,"tensor(0.3216, device='cuda:0')","tensor(4.3480, device='cuda:0')","tensor(2.2658, device='cuda:0')"
-20,100,"tensor(1.00000e-02 *
-       2.4199, device='cuda:0')","tensor(4.8965, device='cuda:0')","tensor(2.2729, device='cuda:0')"
-20,200,"tensor(1.00000e-02 *
-       3.2626, device='cuda:0')","tensor(5.0196, device='cuda:0')","tensor(2.3041, device='cuda:0')"
-20,300,"tensor(1.00000e-02 *
-       1.3809, device='cuda:0')","tensor(5.3253, device='cuda:0')","tensor(2.2374, device='cuda:0')"
-20,400,"tensor(1.00000e-02 *
-       2.4621, device='cuda:0')","tensor(4.9161, device='cuda:0')","tensor(2.3056, device='cuda:0')"
-20,500,"tensor(0.3884, device='cuda:0')","tensor(2.0362, device='cuda:0')","tensor(2.2902, device='cuda:0')"
-20,600,"tensor(0.3256, device='cuda:0')","tensor(2.5618, device='cuda:0')","tensor(2.2871, device='cuda:0')"
-20,700,"tensor(1.1132, device='cuda:0')","tensor(6.0397, device='cuda:0')","tensor(2.2644, device='cuda:0')"
-20,800,"tensor(0.9592, device='cuda:0')","tensor(5.3907, device='cuda:0')","tensor(2.3023, device='cuda:0')"
-20,900,"tensor(0.2781, device='cuda:0')","tensor(4.2792, device='cuda:0')","tensor(2.2991, device='cuda:0')"
-21,0,"tensor(1.00000e-02 *
-       5.7317, device='cuda:0')","tensor(4.1132, device='cuda:0')","tensor(2.2818, device='cuda:0')"
-21,100,"tensor(0.3213, device='cuda:0')","tensor(1.6117, device='cuda:0')","tensor(2.3289, device='cuda:0')"
-21,200,"tensor(0.1518, device='cuda:0')","tensor(4.2228, device='cuda:0')","tensor(2.2332, device='cuda:0')"
-21,300,"tensor(1.00000e-02 *
-       3.2225, device='cuda:0')","tensor(4.6766, device='cuda:0')","tensor(2.2689, device='cuda:0')"
-21,400,"tensor(1.00000e-02 *
-       1.0833, device='cuda:0')","tensor(5.4039, device='cuda:0')","tensor(2.2904, device='cuda:0')"
-21,500,"tensor(1.00000e-02 *
-       3.8611, device='cuda:0')","tensor(4.2977, device='cuda:0')","tensor(2.2492, device='cuda:0')"
-21,600,"tensor(1.00000e-02 *
-       1.5432, device='cuda:0')","tensor(6.0160, device='cuda:0')","tensor(2.3004, device='cuda:0')"
-21,700,"tensor(0.1287, device='cuda:0')","tensor(4.7723, device='cuda:0')","tensor(2.2511, device='cuda:0')"
-21,800,"tensor(0.8118, device='cuda:0')","tensor(4.6732, device='cuda:0')","tensor(2.2729, device='cuda:0')"
-21,900,"tensor(0.3128, device='cuda:0')","tensor(6.9195, device='cuda:0')","tensor(2.2758, device='cuda:0')"
-22,0,"tensor(1.00000e-02 *
-       6.2060, device='cuda:0')","tensor(3.7468, device='cuda:0')","tensor(2.2634, device='cuda:0')"
-22,100,"tensor(0.8538, device='cuda:0')","tensor(2.1145, device='cuda:0')","tensor(2.3013, device='cuda:0')"
-22,200,"tensor(1.00000e-02 *
-       4.4767, device='cuda:0')","tensor(4.5768, device='cuda:0')","tensor(2.2894, device='cuda:0')"
-22,300,"tensor(1.00000e-02 *
-       3.6515, device='cuda:0')","tensor(4.8096, device='cuda:0')","tensor(2.2879, device='cuda:0')"
-22,400,"tensor(1.00000e-02 *
-       1.5091, device='cuda:0')","tensor(6.2292, device='cuda:0')","tensor(2.2879, device='cuda:0')"
-22,500,"tensor(1.0022, device='cuda:0')","tensor(1.7830, device='cuda:0')","tensor(2.2727, device='cuda:0')"
-22,600,"tensor(1.00000e-02 *
-       9.3360, device='cuda:0')","tensor(3.8215, device='cuda:0')","tensor(2.3076, device='cuda:0')"
-22,700,"tensor(0.3999, device='cuda:0')","tensor(4.0276, device='cuda:0')","tensor(2.2759, device='cuda:0')"
-22,800,"tensor(0.2961, device='cuda:0')","tensor(3.4234, device='cuda:0')","tensor(2.2668, device='cuda:0')"
-22,900,"tensor(1.00000e-02 *
-       7.9495, device='cuda:0')","tensor(3.0601, device='cuda:0')","tensor(2.2879, device='cuda:0')"
-23,0,"tensor(1.00000e-02 *
-       3.2557, device='cuda:0')","tensor(5.6131, device='cuda:0')","tensor(2.2544, device='cuda:0')"
-23,100,"tensor(1.00000e-02 *
-       2.4547, device='cuda:0')","tensor(5.2181, device='cuda:0')","tensor(2.2754, device='cuda:0')"
-23,200,"tensor(1.00000e-02 *
-       1.4762, device='cuda:0')","tensor(4.9965, device='cuda:0')","tensor(2.2649, device='cuda:0')"
-23,300,"tensor(1.1335, device='cuda:0')","tensor(1.2572, device='cuda:0')","tensor(2.2701, device='cuda:0')"
-23,400,"tensor(0.8173, device='cuda:0')","tensor(2.4075, device='cuda:0')","tensor(2.2583, device='cuda:0')"
-23,500,"tensor(0.8484, device='cuda:0')","tensor(1.8176, device='cuda:0')","tensor(2.2921, device='cuda:0')"
-23,600,"tensor(0.2430, device='cuda:0')","tensor(3.9783, device='cuda:0')","tensor(2.2667, device='cuda:0')"
-23,700,"tensor(0.2575, device='cuda:0')","tensor(4.6216, device='cuda:0')","tensor(2.2993, device='cuda:0')"
-23,800,"tensor(1.00000e-02 *
-       9.3364, device='cuda:0')","tensor(3.4173, device='cuda:0')","tensor(2.2981, device='cuda:0')"
-23,900,"tensor(1.00000e-02 *
-       8.8546, device='cuda:0')","tensor(2.7087, device='cuda:0')","tensor(2.2612, device='cuda:0')"
-24,0,"tensor(1.00000e-02 *
-       5.7310, device='cuda:0')","tensor(5.1874, device='cuda:0')","tensor(2.2501, device='cuda:0')"
-24,100,"tensor(1.00000e-02 *
-       1.9704, device='cuda:0')","tensor(5.4746, device='cuda:0')","tensor(2.2760, device='cuda:0')"
-24,200,"tensor(1.00000e-02 *
-       3.1547, device='cuda:0')","tensor(4.8061, device='cuda:0')","tensor(2.2841, device='cuda:0')"
-24,300,"tensor(0.4265, device='cuda:0')","tensor(2.1398, device='cuda:0')","tensor(2.2739, device='cuda:0')"
-24,400,"tensor(0.7333, device='cuda:0')","tensor(1.7355, device='cuda:0')","tensor(2.2952, device='cuda:0')"
-24,500,"tensor(0.1566, device='cuda:0')","tensor(2.7823, device='cuda:0')","tensor(2.3133, device='cuda:0')"
-24,600,"tensor(0.4361, device='cuda:0')","tensor(3.4977, device='cuda:0')","tensor(2.2602, device='cuda:0')"
-24,700,"tensor(1.00000e-02 *
-       8.8262, device='cuda:0')","tensor(3.7013, device='cuda:0')","tensor(2.3061, device='cuda:0')"
-24,800,"tensor(1.00000e-02 *
-       4.7576, device='cuda:0')","tensor(4.5115, device='cuda:0')","tensor(2.2969, device='cuda:0')"
-24,900,"tensor(2.8723, device='cuda:0')","tensor(1.1857, device='cuda:0')","tensor(2.2678, device='cuda:0')"
+0,0,2.1165049076080322,3.289949893951416,2.3037664890289307
+0,100,1.2163082361221313,1.6574571132659912,2.2830827236175537
+0,200,0.9759180545806885,1.1588082313537598,2.3021156787872314
+0,300,2.1564831733703613,2.2445664405822754,2.2888078689575195
+0,400,1.076501727104187,1.1070072650909424,2.299957513809204
+0,500,1.1389654874801636,0.983870804309845,2.29571270942688
+0,600,1.1935689449310303,1.9017279148101807,2.312772035598755
+0,700,1.368364930152893,0.374788373708725,2.258352756500244
+0,800,1.6042131185531616,0.5045934319496155,2.280468225479126
+0,900,0.9955145716667175,1.1010231971740723,2.2945332527160645
+1,0,1.3211297988891602,0.976250171661377,2.2566139698028564
+1,100,1.118766188621521,2.0639185905456543,2.2656478881835938
+1,200,0.9675309658050537,1.8037196397781372,2.2781600952148438
+1,300,1.0229891538619995,1.2246280908584595,2.2478184700012207
+1,400,1.0584009885787964,1.1183726787567139,2.272411584854126
+1,500,1.0207672119140625,3.156975269317627,2.2716102600097656
+1,600,0.8000662326812744,1.702911376953125,2.2721610069274902
+1,700,1.5516811609268188,0.6301968097686768,2.265460729598999
+1,800,0.9492680430412292,1.4680507183074951,2.255587100982666
+1,900,1.0881285667419434,1.1927319765090942,2.2682957649230957
+2,0,1.1133912801742554,1.068395972251892,2.2851879596710205
+2,100,1.0215427875518799,1.2521008253097534,2.277247190475464
+2,200,0.9201280474662781,1.279937982559204,2.2734627723693848
+2,300,0.5475404262542725,1.8426506519317627,2.2827353477478027
+2,400,0.7959820032119751,1.6879048347473145,2.2795777320861816
+2,500,0.7467165589332581,2.0265684127807617,2.2668161392211914
+2,600,0.9153069257736206,2.964242935180664,2.281839370727539
+2,700,1.2669790983200073,4.933960914611816,2.3015196323394775
+2,800,1.2809513807296753,1.3555505275726318,2.275118112564087
+2,900,0.9181863069534302,1.5837233066558838,2.278903007507324
+3,0,0.9913209080696106,1.577455759048462,2.2366790771484375
+3,100,0.8552367687225342,2.4337432384490967,2.2832753658294678
+3,200,0.9240806698799133,2.441473960876465,2.252498149871826
+3,300,0.6984249353408813,2.057645797729492,2.2890167236328125
+3,400,1.1320720911026,3.189542770385742,2.2357609272003174
+3,500,0.6391273736953735,2.786638021469116,2.269284248352051
+3,600,0.6251430511474609,3.2019524574279785,2.2669122219085693
+3,700,0.9743684530258179,2.5496878623962402,2.2682595252990723
+3,800,1.6751853227615356,1.1694409847259521,2.2660155296325684
+3,900,0.4887186884880066,1.2266818284988403,2.239293098449707
+4,0,1.3975812196731567,3.3473846912384033,2.2514572143554688
+4,100,0.6736050844192505,3.0445494651794434,2.286403179168701
+4,200,1.5307230949401855,1.1059068441390991,2.290631055831909
+4,300,0.9057043194770813,3.333596706390381,2.2513461112976074
+4,400,0.9477461576461792,0.9160361289978027,2.285848379135132
+4,500,0.9665372967720032,4.375612258911133,2.2549052238464355
+4,600,1.4057188034057617,0.4768891930580139,2.2775919437408447
+4,700,0.7148792743682861,1.7631096839904785,2.2716715335845947
+4,800,1.0697532892227173,1.0911933183670044,2.304365396499634
+4,900,0.8373948335647583,3.9769463539123535,2.2756173610687256
+5,0,0.40811896324157715,3.4704957008361816,2.278871536254883
+5,100,0.8253375887870789,4.028982162475586,2.2759366035461426
+5,200,0.6369042992591858,3.1006040573120117,2.276745557785034
+5,300,0.4843549132347107,2.613124370574951,2.2926037311553955
+5,400,1.2504665851593018,4.19423770904541,2.2716000080108643
+5,500,0.7249794006347656,2.002500057220459,2.2644553184509277
+5,600,1.162879467010498,2.86551833152771,2.259845495223999
+5,700,0.5566482543945312,1.7255473136901855,2.2791237831115723
+5,800,0.2716824412345886,2.8772904872894287,2.295151472091675
+5,900,0.7822180390357971,4.286553859710693,2.29649019241333
+6,0,0.2728206217288971,2.7046287059783936,2.2689337730407715
+6,100,1.397326946258545,4.1070051193237305,2.2902190685272217
+6,200,0.5396677851676941,3.527132987976074,2.244480848312378
+6,300,0.2642030119895935,3.3211538791656494,2.2554800510406494
+6,400,0.28897643089294434,4.259064674377441,2.283167600631714
+6,500,0.7494524717330933,2.015392780303955,2.2792954444885254
+6,600,0.8090884685516357,3.677610397338867,2.244629383087158
+6,700,0.535042941570282,5.193484306335449,2.2994823455810547
+6,800,0.42928454279899597,1.798020839691162,2.313699245452881
+6,900,0.2656554579734802,3.3974738121032715,2.2723140716552734
+7,0,0.10530027747154236,3.862922191619873,2.2839293479919434
+7,100,0.23552429676055908,3.630622148513794,2.2789621353149414
+7,200,0.38668954372406006,3.213003158569336,2.267533779144287
+7,300,0.13369712233543396,3.867985248565674,2.2630369663238525
+7,400,1.0036110877990723,1.0626981258392334,2.2575385570526123
+7,500,1.1279131174087524,5.810667037963867,2.318905830383301
+7,600,0.6705201864242554,4.5471906661987305,2.262407064437866
+7,700,0.11759258061647415,3.7310261726379395,2.2921247482299805
+7,800,0.4789145290851593,1.6077015399932861,2.29526948928833
+7,900,0.6060308218002319,2.5684654712677,2.2963619232177734
+8,0,1.4097418785095215,5.644885063171387,2.28837251663208
+8,100,0.6994302272796631,0.3161562979221344,2.244084596633911
+8,200,1.2674431800842285,0.5490432977676392,2.2853078842163086
+8,300,0.25986021757125854,3.8052680492401123,2.273073434829712
+8,400,0.11694994568824768,4.64592170715332,2.286670207977295
+8,500,0.2704762816429138,1.8840601444244385,2.2882189750671387
+8,600,0.26058200001716614,2.3457512855529785,2.2819058895111084
+8,700,0.9742579460144043,3.933117628097534,2.259737730026245
+8,800,0.6860495209693909,1.6048340797424316,2.2703652381896973
+8,900,0.41542279720306396,2.6340060234069824,2.265608787536621
+9,0,0.41186994314193726,2.1667721271514893,2.2766213417053223
+9,100,0.20698538422584534,3.2277932167053223,2.3157992362976074
+9,200,0.3570586144924164,3.865358829498291,2.2967605590820312
+9,300,0.6355624794960022,1.5340508222579956,2.2882678508758545
+9,400,0.07522226870059967,4.30458927154541,2.248244285583496
+9,500,0.052045539021492004,3.979168176651001,2.261549711227417
+9,600,0.7039785385131836,1.2162666320800781,2.272998332977295
+9,700,0.44500675797462463,2.9718592166900635,2.3196916580200195
+9,800,0.1771480143070221,3.9617223739624023,2.2488491535186768
+9,900,0.12816162407398224,4.138613700866699,2.3046987056732178
+10,0,2.6611239910125732,1.1528842449188232,2.269209146499634
+10,100,0.36127617955207825,4.1476335525512695,2.257397413253784
+10,200,0.05718275159597397,4.221768856048584,2.288541316986084
+10,300,0.507174015045166,2.517125129699707,2.248070001602173
+10,400,0.5088733434677124,3.8424324989318848,2.289189577102661
+10,500,0.06693200021982193,4.566553592681885,2.2636168003082275
+10,600,0.894165575504303,1.252068042755127,2.2635691165924072
+10,700,0.20872747898101807,2.4809141159057617,2.281053304672241
+10,800,0.5476056933403015,5.567472457885742,2.2847273349761963
+10,900,0.12227700650691986,4.493068218231201,2.2814934253692627
+11,0,0.29285958409309387,6.015633583068848,2.281149387359619
+11,100,0.5314335823059082,0.8907677531242371,2.2488598823547363
+11,200,0.44488197565078735,3.642366886138916,2.264904022216797
+11,300,0.05012129247188568,4.499320983886719,2.26774263381958
+11,400,0.019148770719766617,5.1188459396362305,2.272258758544922
+11,500,0.04659613221883774,4.971930503845215,2.2936906814575195
+11,600,0.37705665826797485,5.016506195068359,2.3057663440704346
+11,700,0.14433443546295166,4.858574867248535,2.282736301422119
+11,800,0.8200292587280273,3.3618593215942383,2.284600019454956
+11,900,0.3123934268951416,1.7046374082565308,2.2798547744750977
+12,0,0.8317185044288635,1.730689287185669,2.3172688484191895
+12,100,0.08066198974847794,4.813118934631348,2.2924864292144775
+12,200,0.037401750683784485,4.470900058746338,2.272855043411255
+12,300,0.02789023146033287,5.956855297088623,2.2847671508789062
+12,400,0.566928505897522,1.592273235321045,2.2758116722106934
+12,500,0.4138851761817932,2.2028908729553223,2.2766740322113037
+12,600,0.7090461254119873,1.8895419836044312,2.2884743213653564
+12,700,1.47968327999115,2.8309526443481445,2.277148962020874
+12,800,0.09214611351490021,4.965200901031494,2.2688937187194824
+12,900,0.043624646961688995,4.301192283630371,2.287583827972412
+13,0,0.05031638592481613,6.118195533752441,2.2816050052642822
+13,100,1.0505602359771729,1.436295509338379,2.2666497230529785
+13,200,0.4974219799041748,2.1905436515808105,2.2852659225463867
+13,300,2.424975872039795,6.396132469177246,2.282254695892334
+13,400,0.7488180994987488,4.911967754364014,2.296426296234131
+13,500,0.6462389230728149,2.777066707611084,2.288334846496582
+13,600,0.3331502079963684,3.6167712211608887,2.3119056224823
+13,700,0.22825901210308075,4.856672286987305,2.3071889877319336
+13,800,0.019049368798732758,5.434172630310059,2.283543825149536
+13,900,0.02844524011015892,5.221702575683594,2.3036510944366455
+14,0,0.016291934996843338,5.3339643478393555,2.2975361347198486
+14,100,0.7498156428337097,1.4314509630203247,2.3186795711517334
+14,200,0.1822313815355301,3.7239809036254883,2.2884697914123535
+14,300,0.5043359994888306,2.717705011367798,2.331399917602539
+14,400,0.052779752761125565,4.2116193771362305,2.2735729217529297
+14,500,0.03502596169710159,5.297628879547119,2.290926456451416
+14,600,1.3616873025894165,0.9224004745483398,2.269381046295166
+14,700,0.2078094333410263,3.4062767028808594,2.2856342792510986
+14,800,0.2620942294597626,5.1153411865234375,2.290940046310425
+14,900,0.06180292367935181,4.371960639953613,2.2751846313476562
+15,0,0.02492871880531311,4.730321407318115,2.275432586669922
+15,100,0.6035081744194031,1.5503127574920654,2.3028788566589355
+15,200,0.28237420320510864,1.937743902206421,2.2927281856536865
+15,300,0.02615838497877121,5.743268966674805,2.2815911769866943
+15,400,0.025813989341259003,5.2132134437561035,2.293156862258911
+15,500,0.009099035523831844,6.124872207641602,2.2525861263275146
+15,600,0.00156209128908813,14.583162307739258,2.3171589374542236
+15,700,0.008077953942120075,8.74797248840332,2.2979443073272705
+15,800,0.000618928752373904,8.458641052246094,2.340379238128662
+15,900,0.0060241008177399635,7.978498458862305,2.2950291633605957
+16,0,0.0034649046137928963,6.8136091232299805,2.280238151550293
+16,100,0.0010183474514633417,7.433081150054932,2.311352014541626
+16,200,0.0009439330897293985,8.97668743133545,2.331834077835083
+16,300,0.0009044533944688737,7.976165294647217,2.3406248092651367
+16,400,0.0003147518145851791,8.91336441040039,2.3167507648468018
+16,500,0.0004099117941223085,8.76810073852539,2.3063526153564453
+16,600,0.0012139403261244297,7.510843276977539,2.2945926189422607
+16,700,27.63102149963379,0.0,2.3269200325012207
+16,800,27.63102149963379,0.0,2.3138089179992676
+16,900,27.63102149963379,0.0,2.3203799724578857
+17,0,27.63102149963379,0.0,2.3160932064056396
+17,100,27.63102149963379,0.0,2.331026077270508
+17,200,27.63102149963379,0.0,2.313178300857544
+17,300,27.63102149963379,0.0,2.2834248542785645
+17,400,27.63102149963379,0.0,2.300555467605591
+17,500,27.63102149963379,0.0,2.3005354404449463
+17,600,27.63102149963379,0.0,2.3232638835906982
+17,700,27.63102149963379,0.0,2.3077170848846436
+17,800,27.63102149963379,0.0,2.3322558403015137
+17,900,27.63102149963379,0.0,2.2941935062408447
+18,0,27.63102149963379,0.0,2.297032356262207
+18,100,27.63102149963379,0.0,2.2875828742980957
+18,200,27.63102149963379,0.0,2.2611982822418213
+18,300,27.63102149963379,0.0,2.298401117324829
+18,400,27.63102149963379,0.0,2.25296688079834
+18,500,27.63102149963379,0.0,2.2723002433776855
+18,600,27.63102149963379,0.0,2.2283711433410645
+18,700,27.63102149963379,0.0,2.1978073120117188
+18,800,27.63102149963379,0.0,2.179384231567383
+18,900,27.63102149963379,0.0,2.1513872146606445
+19,0,27.63102149963379,0.0,2.1304290294647217
+19,100,27.63102149963379,0.0,2.1140172481536865
+19,200,27.63102149963379,0.0,2.0757710933685303
+19,300,27.63102149963379,0.0,2.0514235496520996
+19,400,27.63102149963379,0.0,1.956815481185913
+19,500,27.63102149963379,0.0,1.957506537437439
+19,600,27.63102149963379,0.0,1.896533489227295
+19,700,27.63102149963379,0.0,1.794311285018921
+19,800,27.63102149963379,0.0,1.7204127311706543
+19,900,27.63102149963379,0.0,1.5882004499435425
+20,0,27.63102149963379,0.0,1.5324410200119019
+20,100,27.63102149963379,0.0,1.3861727714538574
+20,200,27.63102149963379,0.0,1.1549708843231201
+20,300,0.7243606448173523,5.205842971801758,2.3005194664001465
+20,400,0.6177994608879089,6.036267280578613,2.306020736694336
+20,500,0.8499494194984436,2.8386826515197754,2.295644998550415
+20,600,0.27652525901794434,3.9331367015838623,2.308724880218506
+20,700,0.2137724757194519,3.832406997680664,2.3089258670806885
+20,800,0.28554409742355347,2.712524890899658,2.3087520599365234
+20,900,0.24941131472587585,3.2271780967712402,2.2833735942840576
+21,0,0.16619400680065155,2.7842764854431152,2.264775276184082
+21,100,1.0141208171844482,1.220334768295288,2.3327717781066895
+21,200,0.2566675543785095,3.700137138366699,2.295539140701294
+21,300,0.8709180951118469,6.221660614013672,2.2651076316833496
+21,400,0.03844478726387024,4.519598007202148,2.297301769256592
+21,500,0.04395411163568497,4.5901899337768555,2.3062210083007812
+21,600,4.486947536468506,0.397907018661499,2.2970659732818604
+21,700,0.25136035680770874,2.445338010787964,2.297990560531616
+21,800,1.1956948041915894,1.0452579259872437,2.277170181274414
+21,900,1.3603707551956177,2.5498342514038086,2.283769130706787
+22,0,0.37018007040023804,2.476530075073242,2.285820960998535
+22,100,0.061577506363391876,4.355100154876709,2.3034026622772217
+22,200,0.11028779298067093,4.200656890869141,2.2968368530273438
+22,300,0.1028122529387474,3.879039764404297,2.30021071434021
+22,400,0.017917582765221596,5.054436206817627,2.2935163974761963
+22,500,0.024496667087078094,5.425119400024414,2.3056528568267822
+22,600,1.126862645149231,9.452886581420898,2.2713139057159424
+22,700,0.06500502675771713,4.643759250640869,2.3032519817352295
+22,800,0.1437901109457016,7.409224510192871,2.278045415878296
+22,900,1.1474374532699585,0.6684287786483765,2.279778003692627
+23,0,1.5524286031723022,1.0106512308120728,2.2883570194244385
+23,100,0.2717011570930481,3.00319766998291,2.281158685684204
+23,200,0.07338116317987442,4.561306953430176,2.291229724884033
+23,300,0.20405922830104828,3.2035000324249268,2.2972187995910645
+23,400,0.37354546785354614,3.0410163402557373,2.305098056793213
+23,500,0.08922465145587921,3.970900297164917,2.294656753540039
+23,600,0.04066111147403717,4.640780448913574,2.277327299118042
+23,700,0.021873900666832924,5.383603096008301,2.277017831802368
+23,800,0.030495019629597664,5.195477485656738,2.2814650535583496
+23,900,0.7163577079772949,3.6587088108062744,2.271679401397705
+24,0,0.7108300924301147,3.651994466781616,2.302114725112915
+24,100,4.747011661529541,2.1533775329589844,2.273698091506958
+24,200,0.030077077448368073,4.846457481384277,2.29121732711792
+24,300,0.027448683977127075,4.730329513549805,2.3264548778533936
+24,400,0.014423452317714691,5.576663970947266,2.261841058731079
+24,500,0.0051183742471039295,6.169376373291016,2.274355173110962
+24,600,0.010593930259346962,5.587156295776367,2.288496971130371
+24,700,0.007109877187758684,6.233952522277832,2.2919678688049316
+24,800,0.14473652839660645,3.4897637367248535,2.307248830795288
+24,900,0.7425230741500854,1.2890453338623047,2.330521583557129
+25,0,0.5971666574478149,2.483175754547119,2.2999658584594727
+25,100,0.9908599853515625,4.131196022033691,2.281841278076172
+25,200,0.8513591289520264,1.5649847984313965,2.28891921043396
+25,300,0.11860957741737366,4.17005729675293,2.2884511947631836
+25,400,0.03650785982608795,4.713062286376953,2.279524803161621
+25,500,0.0439961738884449,3.995239734649658,2.2966384887695312
+25,600,0.01906285434961319,5.4474778175354,2.297389507293701
+25,700,0.8536556959152222,1.2067993879318237,2.291752338409424
+25,800,1.0097912549972534,4.632837295532227,2.2873053550720215
+25,900,1.18091881275177,2.503354072570801,2.274843215942383
+26,0,0.8346701264381409,1.7989416122436523,2.3031818866729736
+26,100,0.9992770552635193,1.82768714427948,2.3297910690307617
+26,200,0.4766015410423279,2.9431650638580322,2.2784583568573
+26,300,0.15148767828941345,3.347270965576172,2.291372776031494
+26,400,0.020423203706741333,5.311866760253906,2.288048505783081
+26,500,0.13365741074085236,3.6370134353637695,2.293668031692505
+26,600,0.09708628058433533,5.137892723083496,2.2823565006256104
+26,700,0.011210289783775806,6.193693161010742,2.2810616493225098
+26,800,0.010212333872914314,5.891195297241211,2.3068480491638184
+26,900,0.007681215647608042,5.988446235656738,2.2847049236297607
+27,0,0.014549155719578266,5.896929740905762,2.277477741241455
+27,100,0.01543446071445942,6.026325702667236,2.259836196899414
+27,200,0.7173364162445068,1.5424113273620605,2.3297483921051025
+27,300,0.4854182004928589,1.867187738418579,2.3066325187683105
+27,400,4.391963005065918,1.9534791707992554,2.2497878074645996
+27,500,0.43761464953422546,1.8129550218582153,2.259723663330078
+27,600,0.24650275707244873,4.71640157699585,2.3040149211883545
+27,700,0.0360182523727417,5.07305908203125,2.248342275619507
+27,800,0.6212329864501953,1.5048917531967163,2.27842378616333
+27,900,0.16039389371871948,4.018543720245361,2.2996292114257812
+28,0,0.3462487757205963,2.6708946228027344,2.2926268577575684
+28,100,0.028035344555974007,4.847303867340088,2.2933380603790283
+28,200,0.014801557175815105,5.100874900817871,2.2790510654449463
+28,300,0.4254996180534363,3.0544934272766113,2.2842209339141846
+28,400,0.0512443371117115,4.241265296936035,2.294593334197998
+28,500,0.02169680967926979,5.711565971374512,2.2744534015655518
+28,600,0.008341675624251366,5.92603874206543,2.268110990524292
+28,700,0.012321922928094864,5.4108428955078125,2.278400421142578
+28,800,0.014078766107559204,6.284646034240723,2.325387954711914
+28,900,0.0065706814639270306,5.80470085144043,2.348278284072876
+29,0,0.011648221872746944,5.668829441070557,2.3137717247009277
+29,100,0.0016750432550907135,7.832585334777832,2.3459055423736572
+29,200,0.0006287965225055814,8.518867492675781,2.287806749343872
+29,300,0.001217488432303071,7.889679908752441,2.3231444358825684
+29,400,0.0021494373213499784,7.4075469970703125,2.298687219619751
+29,500,0.0013255462981760502,7.904420375823975,2.3198623657226562
+29,600,0.0014861838426440954,7.658173561096191,2.318394899368286
+29,700,0.00044344706111587584,8.499449729919434,2.297361373901367
+29,800,0.0011277747107669711,7.7973175048828125,2.330836296081543
+29,900,0.00016593059990555048,9.194799423217773,2.2872776985168457
