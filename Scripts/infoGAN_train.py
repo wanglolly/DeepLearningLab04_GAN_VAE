@@ -106,7 +106,7 @@ for epoch in range(opt.niter):
         netG.zero_grad()
         label.fill_(real_label)  # fake labels are real for generator cost
         prob_fake, q_output = netD(fake, Qoutput = True)
-        err_r = -criterion_D(prob_fake, label)
+        err_r = criterion_D(prob_fake, label)
         D_G_z2 = prob_fake.mean().item()
 
         target = torch.LongTensor(idx).cuda()
