@@ -110,9 +110,9 @@ for epoch in range(opt.niter):
         err_r = criterion_D(prob_fake, label)
         D_G_z2 = prob_fake.mean().item()
 
-        print(q_output.squeeze())
+        print(q_output.squeeze().size())
         target = Variable(torch.LongTensor(idx).cuda())
-        print(target)
+        print(target.size())
         err_c = criterion_Q(q_output.squeeze(), target)
 
         errG = err_r + err_c
