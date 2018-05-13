@@ -64,8 +64,8 @@ real_label = 1
 fake_label = 0
 
 # setup optimizer
-optimizerD = optim.Adam({'params':netCH.parameters()}, {'params': netD.parameters()}, lr=opt.dlr, betas=(opt.beta1, 0.999))
-optimizerG = optim.Adam({'params':netG.parameters()}, {'params': netQ.parameters()}, lr=opt.glr, betas=(opt.beta1, 0.999))
+optimizerD = optim.Adam([{'params':netCH.parameters()}, {'params': netD.parameters()}], lr=opt.dlr, betas=(opt.beta1, 0.999))
+optimizerG = optim.Adam([{'params':netG.parameters()}, {'params': netQ.parameters()}], lr=opt.glr, betas=(opt.beta1, 0.999))
 
 #Open Training loss File
 LossFilename = 'infoGAN_Results/infoGAN_TrainingLoss.csv'
@@ -144,5 +144,9 @@ for epoch in range(opt.niter):
     if epoch % 5 == 0: 
         torch.save(netG.state_dict(), 'Models/CheckPoint/netG_epoch_%d.tar' % (epoch))
         torch.save(netD.state_dict(), 'Models/CheckPoint/netD_epoch_%d.tar' % (epoch))
+        torch.save(netCH.state_dict(), 'Models/CheckPoint/netCH_epoch_%d.tar' % (epoch))
+        torch.save(netQ.state_dict(), 'Models/CheckPoint/netQ_epoch_%d.tar' % (epoch))
 torch.save(netG.state_dict(), 'Models/infoGAN_netG.tar')
 torch.save(netD.state_dict(), 'Models/infoGAN_netD.tar')
+torch.save(netCH.state_dict(), 'Models/infoGAN_netCH.tar')
+torch.save(netQ.state_dict(), 'Models/infoGAN_netQ.tar')
