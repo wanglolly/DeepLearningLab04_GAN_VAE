@@ -82,7 +82,8 @@ for epoch in range(opt.niter):
         # (1) Update D network: maximize log(D(x)) + log(1 - D(G(z)))
         ###########################
         # train with real
-        netD.zero_grad()
+        optimizerD.zero_grad()
+
         real_cpu = data[0].to(device)
         batch_size = real_cpu.size(0)
         label = torch.full((batch_size,), real_label, device=device)
@@ -107,7 +108,8 @@ for epoch in range(opt.niter):
         ############################
         # (2) Update G network: maximize log(D(G(z))) + L(G,Q)
         ###########################
-        netG.zero_grad()
+        optimizerG.zero_grad()
+
         label.fill_(real_label)  # fake labels are real for generator cost
 
         CH_out = netCH(fake)
