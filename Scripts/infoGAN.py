@@ -32,9 +32,9 @@ class Generator(nn.Module):
         output = self.main(input)
         return output
 
-class Discriminator(nn.Module):
+class CommonHead(nn.Module):
     def __init__(self):
-        super(Discriminator, self).__init__()
+        super(CommonHead, self).__init__()
         self.main = nn.Sequential(
             # input is (nc) x 64 x 64
             nn.Conv2d(1, 64, kernel_size = 4, stride = 2, padding = 1, bias=False),
@@ -56,20 +56,30 @@ class Discriminator(nn.Module):
             nn.Conv2d(512, 1, kernel_size = 4, stride = 1, bias=False),
             nn.Sigmoid()
         )
-        self.Q = nn.Sequential(
+
+    def forward(self, input):
+        return self.main(input)
+
+class Discriminator(nn.Module):
+    def __init__(self):
+        super(Discriminator, self).__init__()
+        self.main = nn.Sequential(
+            nn.Conv2d(512, 1, kernel_size = 4, stride = 1, bias=False),
+            nn.Sigmoid()
+        )
+    def forward(self, input):
+        return self.main(input).view(-1, 1)
+
+class Q(nn.Module):
+    def __init__(self):
+        super(Q, self).__init__()
+        self.main = nn.Sequential(
             nn.Linear(in_features = 8192, out_features = 100, bias = True),
             nn.ReLU(),
             nn.Linear(in_features = 100, out_features = 10, bias = True)
         )
-
-    def forward(self, input, Qoutput = False):
-        output = self.main(input)
-        d_output = self.fc(output)
-        if Qoutput == True:
-            q_output = self.Q(output.view(-1, 8192))
-            return d_output.view(-1, 1), q_output
-        else:
-            return d_output.view(-1, 1)
+    def forward(self, input):
+        return self.main(input.view(-1, 8192))
 
 # custom weights initialization called on netG and netD
 def weights_init(m):

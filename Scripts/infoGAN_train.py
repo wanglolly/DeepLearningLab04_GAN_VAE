@@ -13,7 +13,7 @@ import torchvision.datasets as dset
 import torchvision.transforms as transforms
 import torchvision.utils as vutils
 from torch.autograd import Variable
-from infoGAN import Generator, Discriminator, weights_init, noise_sample, fixedNoise_sample
+from infoGAN import Generator, CommonHead, Discriminator, Q, weights_init, noise_sample, fixedNoise_sample
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--batchSize', type=int, default=64, help='input batch size')
@@ -50,9 +50,12 @@ batch_size = int(opt.batchSize)
 
 netG = Generator().to(device)
 netG.apply(weights_init)
-
+netCH = CommonHead().to(device)
+netCH.apply(weights_init)
 netD = Discriminator().to(device)
 netD.apply(weights_init)
+netQ = Q().to(device)
+netQ.apply(weights_init)
 
 criterion_D = nn.BCELoss()
 criterion_Q = nn.CrossEntropyLoss()
@@ -61,8 +64,8 @@ real_label = 1
 fake_label = 0
 
 # setup optimizer
-optimizerD = optim.Adam(netD.parameters(), lr=opt.dlr, betas=(opt.beta1, 0.999))
-optimizerG = optim.Adam(netG.parameters(), lr=opt.glr, betas=(opt.beta1, 0.999))
+optimizerD = optim.Adam({'params':netCH.parameters()}, {'params': netD.parameters()}, lr=opt.dlr, betas=(opt.beta1, 0.999))
+optimizerG = optim.Adam({'params':netG.parameters()}, {'params': netQ.parameters()}, lr=opt.glr, betas=(opt.beta1, 0.999))
 
 #Open Training loss File
 LossFilename = 'infoGAN_Results/infoGAN_TrainingLoss.csv'
@@ -84,7 +87,7 @@ for epoch in range(opt.niter):
         batch_size = real_cpu.size(0)
         label = torch.full((batch_size,), real_label, device=device)
 
-        prob_real = netD(real_cpu)
+        prob_real = netD(netCH(real_cpu))
         errD_real = criterion_D(prob_real, label)
         errD_real.backward()
         D_x = prob_real.mean().item()
@@ -93,7 +96,7 @@ for epoch in range(opt.niter):
         z, idx = noise_sample(bs = batch_size, nz = nz, nc = nc, device = device)
         fake = netG(z)
         label.fill_(fake_label)
-        prob_fake = netD(fake.detach())
+        prob_fake = netD(netCH(fake.detach()))
         errD_fake = criterion_D(prob_fake, label)
         errD_fake.backward()
         D_G_z1 = prob_fake.mean().item()
@@ -106,10 +109,13 @@ for epoch in range(opt.niter):
         ###########################
         netG.zero_grad()
         label.fill_(real_label)  # fake labels are real for generator cost
-        prob_fake, q_output = netD(fake, Qoutput = True)
+
+        CH_out = netCH(fake)
+        prob_fake = netD(CH_out)
         err_r = criterion_D(prob_fake, label)
         D_G_z2 = prob_fake.mean().item()
 
+        q_output = netQ(CH_out)
         target = Variable(torch.LongTensor(idx).cuda())
         err_c = criterion_Q(q_output.squeeze(), target)
 
