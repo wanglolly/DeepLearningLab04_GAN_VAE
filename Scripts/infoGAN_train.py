@@ -72,10 +72,6 @@ ProbFilename = 'infoGAN_Results/infoGAN_TrainingProb.csv'
 ProbFile = open(ProbFilename, 'w')
 ProbCursor = csv.writer(ProbFile)
 
-bestLoss = 100
-bestLossEpoc = -1
-
-
 for epoch in range(opt.niter):
     for i, data in enumerate(dataloader, 0):
         ############################
@@ -110,7 +106,7 @@ for epoch in range(opt.niter):
         netG.zero_grad()
         label.fill_(real_label)  # fake labels are real for generator cost
         prob_fake, q_output = netD(fake, Qoutput = True)
-        err_r = criterion_D(prob_fake, label)
+        err_r = -criterion_D(prob_fake, label)
         D_G_z2 = prob_fake.mean().item()
 
         target = torch.LongTensor(idx).cuda()

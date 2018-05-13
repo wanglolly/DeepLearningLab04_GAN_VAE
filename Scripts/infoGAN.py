@@ -104,5 +104,4 @@ def fixedNoise_sample(nz, nc, device):
     c_tensor = torch.FloatTensor(nc, nc).cuda()
     c_tensor.data.copy_(torch.Tensor(c))
     z = torch.cat([noise, c_tensor], 1).view(-1, nz, 1, 1)
-    print(z.size())
     return z
