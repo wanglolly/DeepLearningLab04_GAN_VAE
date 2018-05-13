@@ -58,6 +58,7 @@ criterion_Q = nn.CrossEntropyLoss()
 fixed_noise = fixedNoise_sample(nz = nz, nc = nc, device = device)
 real_label = 1
 fake_label = 0
+print(fixed_noise)
 
 # setup optimizer
 optimizerD = optim.Adam(netD.parameters(), lr=opt.dlr, betas=(opt.beta1, 0.999))
