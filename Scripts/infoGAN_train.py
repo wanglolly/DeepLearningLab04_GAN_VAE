@@ -12,6 +12,7 @@ import torch.utils.data
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
 import torchvision.utils as vutils
+from torch.autograd import Variable
 from infoGAN import Generator, Discriminator, weights_init, noise_sample, fixedNoise_sample
 
 parser = argparse.ArgumentParser()
@@ -110,8 +111,9 @@ for epoch in range(opt.niter):
         D_G_z2 = prob_fake.mean().item()
 
         print(q_output.squeeze())
-        print(idx)
-        err_c = criterion_Q(q_output.squeeze(), idx)
+        target = Variable(torch.LongTensor(idx).cuda())
+        print(target)
+        err_c = criterion_Q(q_output.squeeze(), target)
 
         errG = err_r + err_c
         errG.backward()
