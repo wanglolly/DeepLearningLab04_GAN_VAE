@@ -116,6 +116,8 @@ for epoch in range(opt.niter):
         errG.backward()
         optimizerG.step()
 
+        print(q_output.squeeze())
+
         print('[%d/%d][%d/%d] Loss_D: %.4f Loss_G: %.4f Loss_Q: %.4f D(x): %.4f D(G(z)): %.4f / %.4f'
               % (epoch, opt.niter, i, len(dataloader),
                  errD.item(), err_r.item(), err_c.item(), D_x, D_G_z1, D_G_z2))
