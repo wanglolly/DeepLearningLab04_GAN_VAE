@@ -48,7 +48,7 @@ class CVAE(nn.Module):
     def reparameterize(self, mu, logvar):
         if self.training:
             std = torch.exp(0.5*logvar)
-            eps = torch.rand_like(std)
+            eps = torch.randn(std)
             return eps.mul(std).add_(mu)
         else:
             return mu
