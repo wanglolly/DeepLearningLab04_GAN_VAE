@@ -62,11 +62,14 @@ class Discriminator(nn.Module):
             nn.Linear(in_features = 100, out_features = 10, bias = True)
         )
 
-    def forward(self, input):
+    def forward(self, input, Qoutput = False):
         output = self.main(input)
         d_output = self.fc(output)
-        q_output = self.Q(output.view(-1, 8192))
-        return d_output.view(-1, 1), q_output
+        if Qoutput == True:
+            q_output = self.Q(output.view(-1, 8192))
+            return d_output.view(-1, 1), q_output
+        else:
+            return d_output.view(-1, 1)
 
 # custom weights initialization called on netG and netD
 def weights_init(m):

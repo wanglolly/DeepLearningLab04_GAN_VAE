@@ -88,7 +88,7 @@ for epoch in range(opt.niter):
         batch_size = real_cpu.size(0)
         label = torch.full((batch_size,), real_label, device=device)
 
-        prob_real, _ = netD(real_cpu)
+        prob_real = netD(real_cpu)
         errD_real = criterion_D(prob_real, label)
         errD_real.backward()
         D_x = prob_real.mean().item()
@@ -97,7 +97,7 @@ for epoch in range(opt.niter):
         z, idx = noise_sample(bs = batch_size, nz = nz, nc = nc, device = device)
         fake = netG(z)
         label.fill_(fake_label)
-        prob_fake, _ = netD(fake.detach())
+        prob_fake = netD(fake.detach())
         errD_fake = criterion_D(prob_fake, label)
         errD_fake.backward()
         D_G_z1 = prob_fake.mean().item()
@@ -110,18 +110,15 @@ for epoch in range(opt.niter):
         ###########################
         netG.zero_grad()
         label.fill_(real_label)  # fake labels are real for generator cost
-        prob_fake, q_output = netD(fake)
+        prob_fake, q_output = netD(fake, Qoutput = True)
         err_r = criterion_D(prob_fake, label)
         D_G_z2 = prob_fake.mean().item()
-        err_r.backward()
 
         target = torch.LongTensor(idx).cuda()
         err_c = criterion_Q(q_output.squeeze(), target)
-        if epoch == 0 and i == 0 :
-            err_c.backward(retain_graph=True)
-        else:
-            err_c.backward()
 
+        errG = err_r + err_c
+        errG.backward()
         optimizerG.step()
 
         print('[%d/%d][%d/%d] Loss_D: %.4f Loss_G: %.4f Loss_Q: %.4f D(x): %.4f D(G(z)): %.4f / %.4f'
