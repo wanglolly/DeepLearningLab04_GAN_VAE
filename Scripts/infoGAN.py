@@ -92,7 +92,7 @@ def noise_sample(bs, nz, nc, device):
     c_tensor.data.copy_(torch.Tensor(c))
     z = torch.cat([noise, c_tensor], 1).view(-1, nz, 1, 1)
 
-    return z, idx
+    return z, c
 
 #generate noise
 def fixedNoise_sample(nz, nc, device):
