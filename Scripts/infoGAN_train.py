@@ -12,7 +12,7 @@ import torch.utils.data
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
 import torchvision.utils as vutils
-from infoGAN import Generator, Discriminator, weights_init, noise_sample
+from infoGAN import Generator, Discriminator, weights_init, noise_sample, fixedNoise_sample
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--batchSize', type=int, default=64, help='input batch size')
@@ -56,7 +56,7 @@ netD.apply(weights_init)
 
 criterion_D = nn.BCELoss()
 criterion_Q = nn.CrossEntropyLoss()
-fixed_noise,_ = noise_sample(bs = batch_size, nz = nz, nc = nc, device = device)
+fixed_noise = fixedNoise_sample(nz = nz, nc = nc, device = device)
 real_label = 1
 fake_label = 0
 
@@ -132,7 +132,7 @@ for epoch in range(opt.niter):
             vutils.save_image(fake.detach(),
                     'infoGAN_Results/fake_samples_epoch_%03d.png' % (epoch),
                     normalize=True)
-            LossHeader = [epoch, i, errD, err_r, err_c]
+            LossHeader = [epoch, i, errD.item(), err_r.item(), err_c.item()]
             LossCursor.writerow(LossHeader)
             ProbHeader = [epoch, i, D_x, D_G_z1, D_G_z2]
             ProbCursor.writerow(ProbHeader)

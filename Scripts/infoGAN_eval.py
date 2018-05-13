@@ -14,7 +14,7 @@ from torch.nn import functional as F
 from torchvision import datasets, transforms
 from torchvision.utils import save_image
 from utils import to_var, idx2onehot
-from infoGAN import Generator
+from infoGAN import Generator, fixedNoise_sample
 
 #input parser
 parser = argparse.ArgumentParser()
@@ -33,24 +33,12 @@ netG.load_state_dict(torch.load(args.model))
 netG.cuda()
 netG.eval()
 
-#generate noise
-def noise_sample(nz, nc, device):
-    idx = np.arange(nc)
-    c = np.zeros((nc, nc))
-    c[range(nc),idx] = 1.0
-    noise = torch.randn(1, nz - nc, device=device)
-    noise = noise.expand(nc, -1)
-    c_tensor = torch.FloatTensor(nc, nc).cuda()
-    c_tensor.data.copy_(torch.Tensor(c))
-    z = torch.cat([noise, c_tensor], 1).view(-1, nz, 1, 1)
-    return z
-
-
+#Start to plot
 plt.clf()
 plotImageCount = 0
 plt.subplots_adjust(wspace = 0.01, hspace = 0.01)
 for i in range(args.sets):
-    z = noise_sample(64, 10, device = device)
+    z = fixedNoise_sample(64, 10, device = device)
     x = netG(z)
     print(x.size())
 
