@@ -71,10 +71,10 @@ def train(epoch, writer):
         train_loss += loss.item()
         optimizer.step()
         if batch_idx % args.log_interval == 0:
-            print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\t Mu: {:.6f}'.format(
+            print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\t Mu: {:.6f}\t Var: {:.6f}'.format(
                 epoch, batch_idx * len(data), len(train_loader.dataset),
                 100. * batch_idx / len(train_loader),
-                loss.item() / len(data), mu.mean().item()))
+                loss.item() / len(data), mu.mean().item(), logvar.mean().item()))
             header = [epoch, batch_idx, loss.item() / len(data)]
             writer.writerow(header)
 
