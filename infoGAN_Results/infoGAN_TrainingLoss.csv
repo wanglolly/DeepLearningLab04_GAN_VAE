@@ -1,103 +1,1335 @@
-0,0,"tensor(1.8674, device='cuda:0')","tensor(2.8986, device='cuda:0')","tensor(2.3206, device='cuda:0')"
-0,100,"tensor(1.3054, device='cuda:0')","tensor(4.2349, device='cuda:0')","tensor(2.2832, device='cuda:0')"
-0,200,"tensor(0.7868, device='cuda:0')","tensor(2.1762, device='cuda:0')","tensor(2.3250, device='cuda:0')"
-0,300,"tensor(1.0983, device='cuda:0')","tensor(1.4006, device='cuda:0')","tensor(2.2779, device='cuda:0')"
-0,400,"tensor(1.0488, device='cuda:0')","tensor(1.4319, device='cuda:0')","tensor(2.2846, device='cuda:0')"
-0,500,"tensor(1.3124, device='cuda:0')","tensor(1.4046, device='cuda:0')","tensor(2.2498, device='cuda:0')"
-0,600,"tensor(1.0557, device='cuda:0')","tensor(1.7552, device='cuda:0')","tensor(2.2942, device='cuda:0')"
-0,700,"tensor(1.1785, device='cuda:0')","tensor(1.6728, device='cuda:0')","tensor(2.2389, device='cuda:0')"
-0,800,"tensor(0.9110, device='cuda:0')","tensor(1.0903, device='cuda:0')","tensor(2.2874, device='cuda:0')"
-0,900,"tensor(0.8719, device='cuda:0')","tensor(1.8671, device='cuda:0')","tensor(2.2647, device='cuda:0')"
-1,0,"tensor(1.4465, device='cuda:0')","tensor(3.7256, device='cuda:0')","tensor(2.2530, device='cuda:0')"
-1,100,"tensor(0.9118, device='cuda:0')","tensor(1.6688, device='cuda:0')","tensor(2.3180, device='cuda:0')"
-1,200,"tensor(0.9508, device='cuda:0')","tensor(1.5932, device='cuda:0')","tensor(2.2228, device='cuda:0')"
-1,300,"tensor(1.0915, device='cuda:0')","tensor(1.4811, device='cuda:0')","tensor(2.2991, device='cuda:0')"
-1,400,"tensor(0.8666, device='cuda:0')","tensor(2.1758, device='cuda:0')","tensor(2.2820, device='cuda:0')"
-1,500,"tensor(1.1065, device='cuda:0')","tensor(1.6399, device='cuda:0')","tensor(2.2726, device='cuda:0')"
-1,600,"tensor(1.9410, device='cuda:0')","tensor(0.9276, device='cuda:0')","tensor(2.2642, device='cuda:0')"
-1,700,"tensor(0.9064, device='cuda:0')","tensor(1.7313, device='cuda:0')","tensor(2.2688, device='cuda:0')"
-1,800,"tensor(1.2279, device='cuda:0')","tensor(3.1815, device='cuda:0')","tensor(2.2538, device='cuda:0')"
-1,900,"tensor(1.4538, device='cuda:0')","tensor(1.1091, device='cuda:0')","tensor(2.2444, device='cuda:0')"
-2,0,"tensor(1.0654, device='cuda:0')","tensor(2.6671, device='cuda:0')","tensor(2.2744, device='cuda:0')"
-2,100,"tensor(1.0523, device='cuda:0')","tensor(2.6165, device='cuda:0')","tensor(2.3138, device='cuda:0')"
-2,200,"tensor(1.2582, device='cuda:0')","tensor(0.7857, device='cuda:0')","tensor(2.2722, device='cuda:0')"
-2,300,"tensor(1.3533, device='cuda:0')","tensor(2.6957, device='cuda:0')","tensor(2.2949, device='cuda:0')"
-2,400,"tensor(1.2269, device='cuda:0')","tensor(4.5480, device='cuda:0')","tensor(2.2700, device='cuda:0')"
-2,500,"tensor(1.3544, device='cuda:0')","tensor(0.9488, device='cuda:0')","tensor(2.2858, device='cuda:0')"
-2,600,"tensor(1.3553, device='cuda:0')","tensor(3.5337, device='cuda:0')","tensor(2.2856, device='cuda:0')"
-2,700,"tensor(0.6964, device='cuda:0')","tensor(2.4859, device='cuda:0')","tensor(2.2920, device='cuda:0')"
-2,800,"tensor(2.0634, device='cuda:0')","tensor(4.8559, device='cuda:0')","tensor(2.2793, device='cuda:0')"
-2,900,"tensor(0.7321, device='cuda:0')","tensor(1.2882, device='cuda:0')","tensor(2.2582, device='cuda:0')"
-3,0,"tensor(0.8534, device='cuda:0')","tensor(1.8454, device='cuda:0')","tensor(2.2487, device='cuda:0')"
-3,100,"tensor(0.9051, device='cuda:0')","tensor(3.2825, device='cuda:0')","tensor(2.2713, device='cuda:0')"
-3,200,"tensor(0.8040, device='cuda:0')","tensor(1.4174, device='cuda:0')","tensor(2.2762, device='cuda:0')"
-3,300,"tensor(1.4222, device='cuda:0')","tensor(2.8333, device='cuda:0')","tensor(2.2971, device='cuda:0')"
-3,400,"tensor(1.7576, device='cuda:0')","tensor(3.4869, device='cuda:0')","tensor(2.2672, device='cuda:0')"
-3,500,"tensor(1.0646, device='cuda:0')","tensor(3.1629, device='cuda:0')","tensor(2.2704, device='cuda:0')"
-3,600,"tensor(0.9803, device='cuda:0')","tensor(2.0626, device='cuda:0')","tensor(2.2914, device='cuda:0')"
-3,700,"tensor(0.6047, device='cuda:0')","tensor(2.4974, device='cuda:0')","tensor(2.3010, device='cuda:0')"
-3,800,"tensor(1.3820, device='cuda:0')","tensor(3.7486, device='cuda:0')","tensor(2.2510, device='cuda:0')"
-3,900,"tensor(0.9330, device='cuda:0')","tensor(1.6878, device='cuda:0')","tensor(2.2597, device='cuda:0')"
-4,0,"tensor(0.8100, device='cuda:0')","tensor(3.2794, device='cuda:0')","tensor(2.2786, device='cuda:0')"
-4,100,"tensor(0.3975, device='cuda:0')","tensor(3.4052, device='cuda:0')","tensor(2.2778, device='cuda:0')"
-4,200,"tensor(0.6478, device='cuda:0')","tensor(2.2053, device='cuda:0')","tensor(2.2792, device='cuda:0')"
-4,300,"tensor(0.4153, device='cuda:0')","tensor(3.0728, device='cuda:0')","tensor(2.3060, device='cuda:0')"
-4,400,"tensor(0.5802, device='cuda:0')","tensor(2.0109, device='cuda:0')","tensor(2.2538, device='cuda:0')"
-4,500,"tensor(1.3374, device='cuda:0')","tensor(1.5097, device='cuda:0')","tensor(2.2543, device='cuda:0')"
-4,600,"tensor(1.3344, device='cuda:0')","tensor(2.4159, device='cuda:0')","tensor(2.2802, device='cuda:0')"
-4,700,"tensor(0.7272, device='cuda:0')","tensor(5.6499, device='cuda:0')","tensor(2.2638, device='cuda:0')"
-4,800,"tensor(0.5673, device='cuda:0')","tensor(2.0356, device='cuda:0')","tensor(2.2439, device='cuda:0')"
-4,900,"tensor(1.1131, device='cuda:0')","tensor(0.5611, device='cuda:0')","tensor(2.3105, device='cuda:0')"
-5,0,"tensor(1.1624, device='cuda:0')","tensor(0.6651, device='cuda:0')","tensor(2.2949, device='cuda:0')"
-5,100,"tensor(0.6635, device='cuda:0')","tensor(1.3056, device='cuda:0')","tensor(2.3027, device='cuda:0')"
-5,200,"tensor(2.6906, device='cuda:0')","tensor(0.2799, device='cuda:0')","tensor(2.2781, device='cuda:0')"
-5,300,"tensor(0.4239, device='cuda:0')","tensor(1.9243, device='cuda:0')","tensor(2.2664, device='cuda:0')"
-5,400,"tensor(0.8432, device='cuda:0')","tensor(1.3044, device='cuda:0')","tensor(2.2932, device='cuda:0')"
-5,500,"tensor(1.1836, device='cuda:0')","tensor(1.3692, device='cuda:0')","tensor(2.2763, device='cuda:0')"
-5,600,"tensor(0.2636, device='cuda:0')","tensor(3.0318, device='cuda:0')","tensor(2.2634, device='cuda:0')"
-5,700,"tensor(0.6512, device='cuda:0')","tensor(3.5327, device='cuda:0')","tensor(2.2842, device='cuda:0')"
-5,800,"tensor(1.2096, device='cuda:0')","tensor(3.5458, device='cuda:0')","tensor(2.2969, device='cuda:0')"
-5,900,"tensor(0.3287, device='cuda:0')","tensor(1.9892, device='cuda:0')","tensor(2.2915, device='cuda:0')"
-6,0,"tensor(0.6697, device='cuda:0')","tensor(3.8417, device='cuda:0')","tensor(2.2584, device='cuda:0')"
-6,100,"tensor(0.3673, device='cuda:0')","tensor(3.0023, device='cuda:0')","tensor(2.2696, device='cuda:0')"
-6,200,"tensor(0.2572, device='cuda:0')","tensor(2.4012, device='cuda:0')","tensor(2.2537, device='cuda:0')"
-6,300,"tensor(0.7492, device='cuda:0')","tensor(1.5570, device='cuda:0')","tensor(2.2801, device='cuda:0')"
-6,400,"tensor(1.1195, device='cuda:0')","tensor(0.7170, device='cuda:0')","tensor(2.2659, device='cuda:0')"
-6,500,"tensor(1.0349, device='cuda:0')","tensor(1.8224, device='cuda:0')","tensor(2.2876, device='cuda:0')"
-6,600,"tensor(0.4180, device='cuda:0')","tensor(4.4432, device='cuda:0')","tensor(2.3110, device='cuda:0')"
-6,700,"tensor(0.2844, device='cuda:0')","tensor(3.5401, device='cuda:0')","tensor(2.2965, device='cuda:0')"
-6,800,"tensor(0.3519, device='cuda:0')","tensor(3.4312, device='cuda:0')","tensor(2.2571, device='cuda:0')"
-6,900,"tensor(0.4422, device='cuda:0')","tensor(1.5463, device='cuda:0')","tensor(2.2482, device='cuda:0')"
-7,0,"tensor(0.9715, device='cuda:0')","tensor(1.5348, device='cuda:0')","tensor(2.3112, device='cuda:0')"
-7,100,"tensor(1.1042, device='cuda:0')","tensor(5.4050, device='cuda:0')","tensor(2.2764, device='cuda:0')"
-7,200,"tensor(0.8691, device='cuda:0')","tensor(1.9058, device='cuda:0')","tensor(2.3068, device='cuda:0')"
-7,300,"tensor(1.9330, device='cuda:0')","tensor(0.5205, device='cuda:0')","tensor(2.2975, device='cuda:0')"
-7,400,"tensor(1.4508, device='cuda:0')","tensor(6.1871, device='cuda:0')","tensor(2.3398, device='cuda:0')"
-7,500,"tensor(1.2611, device='cuda:0')","tensor(3.9670, device='cuda:0')","tensor(2.3237, device='cuda:0')"
-7,600,"tensor(0.6142, device='cuda:0')","tensor(1.4820, device='cuda:0')","tensor(2.2950, device='cuda:0')"
-7,700,"tensor(0.1538, device='cuda:0')","tensor(3.8439, device='cuda:0')","tensor(2.2968, device='cuda:0')"
-7,800,"tensor(0.7889, device='cuda:0')","tensor(1.5288, device='cuda:0')","tensor(2.2929, device='cuda:0')"
-7,900,"tensor(0.4417, device='cuda:0')","tensor(2.4236, device='cuda:0')","tensor(2.2913, device='cuda:0')"
-8,0,"tensor(0.8687, device='cuda:0')","tensor(1.2838, device='cuda:0')","tensor(2.3033, device='cuda:0')"
-8,100,"tensor(0.4518, device='cuda:0')","tensor(3.0096, device='cuda:0')","tensor(2.2903, device='cuda:0')"
-8,200,"tensor(0.4475, device='cuda:0')","tensor(2.3723, device='cuda:0')","tensor(2.2805, device='cuda:0')"
-8,300,"tensor(0.1234, device='cuda:0')","tensor(4.3930, device='cuda:0')","tensor(2.2680, device='cuda:0')"
-8,400,"tensor(0.6153, device='cuda:0')","tensor(4.2199, device='cuda:0')","tensor(2.2676, device='cuda:0')"
-8,500,"tensor(1.00000e-02 *
-       8.6922, device='cuda:0')","tensor(4.4146, device='cuda:0')","tensor(2.3084, device='cuda:0')"
-8,600,"tensor(0.2737, device='cuda:0')","tensor(3.5315, device='cuda:0')","tensor(2.2610, device='cuda:0')"
-8,700,"tensor(0.1969, device='cuda:0')","tensor(3.2418, device='cuda:0')","tensor(2.3410, device='cuda:0')"
-8,800,"tensor(1.00000e-02 *
-       8.6815, device='cuda:0')","tensor(5.3847, device='cuda:0')","tensor(2.2534, device='cuda:0')"
-8,900,"tensor(1.5421, device='cuda:0')","tensor(7.6101, device='cuda:0')","tensor(2.2508, device='cuda:0')"
-9,0,"tensor(0.5962, device='cuda:0')","tensor(4.0531, device='cuda:0')","tensor(2.2495, device='cuda:0')"
-9,100,"tensor(0.3783, device='cuda:0')","tensor(3.0638, device='cuda:0')","tensor(2.2763, device='cuda:0')"
-9,200,"tensor(0.4289, device='cuda:0')","tensor(2.4121, device='cuda:0')","tensor(2.2527, device='cuda:0')"
-9,300,"tensor(0.6129, device='cuda:0')","tensor(2.2137, device='cuda:0')","tensor(2.2596, device='cuda:0')"
-9,400,"tensor(1.00000e-02 *
-       7.5589, device='cuda:0')","tensor(4.0281, device='cuda:0')","tensor(2.2852, device='cuda:0')"
-9,500,"tensor(0.3817, device='cuda:0')","tensor(2.1213, device='cuda:0')","tensor(2.2636, device='cuda:0')"
-9,600,"tensor(1.0556, device='cuda:0')","tensor(1.4578, device='cuda:0')","tensor(2.2930, device='cuda:0')"
-9,700,"tensor(0.6066, device='cuda:0')","tensor(2.5677, device='cuda:0')","tensor(2.3103, device='cuda:0')"
-9,800,"tensor(0.1067, device='cuda:0')","tensor(3.5979, device='cuda:0')","tensor(2.3270, device='cuda:0')"
-9,900,"tensor(0.4915, device='cuda:0')","tensor(2.0681, device='cuda:0')","tensor(2.2874, device='cuda:0')"
+0,0,"tensor(1.3013, device='cuda:0')","tensor(4.6288, device='cuda:0')","tensor(2.3079, device='cuda:0')"
+0,100,"tensor(0.6793, device='cuda:0')","tensor(3.8659, device='cuda:0')","tensor(2.2925, device='cuda:0')"
+0,200,"tensor(0.9710, device='cuda:0')","tensor(1.7536, device='cuda:0')","tensor(2.2889, device='cuda:0')"
+0,300,"tensor(1.0437, device='cuda:0')","tensor(1.3421, device='cuda:0')","tensor(2.3048, device='cuda:0')"
+0,400,"tensor(1.1036, device='cuda:0')","tensor(1.8843, device='cuda:0')","tensor(2.2811, device='cuda:0')"
+0,500,"tensor(1.3788, device='cuda:0')","tensor(2.1288, device='cuda:0')","tensor(2.2667, device='cuda:0')"
+0,600,"tensor(1.0027, device='cuda:0')","tensor(1.7495, device='cuda:0')","tensor(2.2519, device='cuda:0')"
+0,700,"tensor(1.1841, device='cuda:0')","tensor(2.4815, device='cuda:0')","tensor(2.2687, device='cuda:0')"
+0,800,"tensor(1.9263, device='cuda:0')","tensor(0.5673, device='cuda:0')","tensor(2.2385, device='cuda:0')"
+0,900,"tensor(1.4093, device='cuda:0')","tensor(0.7434, device='cuda:0')","tensor(2.2558, device='cuda:0')"
+1,0,"tensor(0.8478, device='cuda:0')","tensor(0.9935, device='cuda:0')","tensor(2.2660, device='cuda:0')"
+1,100,"tensor(0.9858, device='cuda:0')","tensor(2.2892, device='cuda:0')","tensor(2.2716, device='cuda:0')"
+1,200,"tensor(0.8806, device='cuda:0')","tensor(1.4219, device='cuda:0')","tensor(2.2622, device='cuda:0')"
+1,300,"tensor(1.0605, device='cuda:0')","tensor(3.2892, device='cuda:0')","tensor(2.2609, device='cuda:0')"
+1,400,"tensor(1.6146, device='cuda:0')","tensor(0.6443, device='cuda:0')","tensor(2.2843, device='cuda:0')"
+1,500,"tensor(1.3196, device='cuda:0')","tensor(2.3434, device='cuda:0')","tensor(2.2827, device='cuda:0')"
+1,600,"tensor(0.9743, device='cuda:0')","tensor(1.1441, device='cuda:0')","tensor(2.2547, device='cuda:0')"
+1,700,"tensor(1.0460, device='cuda:0')","tensor(1.2985, device='cuda:0')","tensor(2.2510, device='cuda:0')"
+1,800,"tensor(0.8981, device='cuda:0')","tensor(2.0036, device='cuda:0')","tensor(2.2879, device='cuda:0')"
+1,900,"tensor(0.9076, device='cuda:0')","tensor(1.7863, device='cuda:0')","tensor(2.2748, device='cuda:0')"
+2,0,"tensor(1.1111, device='cuda:0')","tensor(1.0262, device='cuda:0')","tensor(2.2354, device='cuda:0')"
+2,100,"tensor(1.4098, device='cuda:0')","tensor(0.8417, device='cuda:0')","tensor(2.2623, device='cuda:0')"
+2,200,"tensor(0.9576, device='cuda:0')","tensor(1.0159, device='cuda:0')","tensor(2.2617, device='cuda:0')"
+2,300,"tensor(0.8305, device='cuda:0')","tensor(1.4664, device='cuda:0')","tensor(2.2405, device='cuda:0')"
+2,400,"tensor(0.7982, device='cuda:0')","tensor(1.7121, device='cuda:0')","tensor(2.2545, device='cuda:0')"
+2,500,"tensor(1.2731, device='cuda:0')","tensor(2.7182, device='cuda:0')","tensor(2.2494, device='cuda:0')"
+2,600,"tensor(0.5599, device='cuda:0')","tensor(2.2682, device='cuda:0')","tensor(2.2869, device='cuda:0')"
+2,700,"tensor(1.5537, device='cuda:0')","tensor(0.4842, device='cuda:0')","tensor(2.2643, device='cuda:0')"
+2,800,"tensor(0.9869, device='cuda:0')","tensor(2.7293, device='cuda:0')","tensor(2.2841, device='cuda:0')"
+2,900,"tensor(1.0942, device='cuda:0')","tensor(1.6306, device='cuda:0')","tensor(2.2492, device='cuda:0')"
+3,0,"tensor(0.9517, device='cuda:0')","tensor(2.2880, device='cuda:0')","tensor(2.2151, device='cuda:0')"
+3,100,"tensor(0.7953, device='cuda:0')","tensor(1.6156, device='cuda:0')","tensor(2.2661, device='cuda:0')"
+3,200,"tensor(0.7952, device='cuda:0')","tensor(1.5965, device='cuda:0')","tensor(2.2839, device='cuda:0')"
+3,300,"tensor(0.8071, device='cuda:0')","tensor(2.0578, device='cuda:0')","tensor(2.2609, device='cuda:0')"
+3,400,"tensor(0.8947, device='cuda:0')","tensor(1.8016, device='cuda:0')","tensor(2.2668, device='cuda:0')"
+3,500,"tensor(0.5860, device='cuda:0')","tensor(2.2780, device='cuda:0')","tensor(2.2557, device='cuda:0')"
+3,600,"tensor(0.7556, device='cuda:0')","tensor(1.7263, device='cuda:0')","tensor(2.2375, device='cuda:0')"
+3,700,"tensor(0.7498, device='cuda:0')","tensor(1.9709, device='cuda:0')","tensor(2.2736, device='cuda:0')"
+3,800,"tensor(0.5342, device='cuda:0')","tensor(2.2538, device='cuda:0')","tensor(2.2826, device='cuda:0')"
+3,900,"tensor(0.5330, device='cuda:0')","tensor(3.3953, device='cuda:0')","tensor(2.2443, device='cuda:0')"
+4,0,"tensor(0.4879, device='cuda:0')","tensor(1.8826, device='cuda:0')","tensor(2.2752, device='cuda:0')"
+4,100,"tensor(0.7023, device='cuda:0')","tensor(3.0834, device='cuda:0')","tensor(2.2576, device='cuda:0')"
+4,200,"tensor(0.6825, device='cuda:0')","tensor(2.4486, device='cuda:0')","tensor(2.2569, device='cuda:0')"
+4,300,"tensor(1.1705, device='cuda:0')","tensor(0.7130, device='cuda:0')","tensor(2.2640, device='cuda:0')"
+4,400,"tensor(1.4616, device='cuda:0')","tensor(4.5180, device='cuda:0')","tensor(2.2608, device='cuda:0')"
+4,500,"tensor(0.6940, device='cuda:0')","tensor(3.7003, device='cuda:0')","tensor(2.2601, device='cuda:0')"
+4,600,"tensor(0.7212, device='cuda:0')","tensor(2.8030, device='cuda:0')","tensor(2.2668, device='cuda:0')"
+4,700,"tensor(0.5112, device='cuda:0')","tensor(2.5727, device='cuda:0')","tensor(2.2596, device='cuda:0')"
+4,800,"tensor(0.6458, device='cuda:0')","tensor(3.8050, device='cuda:0')","tensor(2.2610, device='cuda:0')"
+4,900,"tensor(0.5445, device='cuda:0')","tensor(1.4765, device='cuda:0')","tensor(2.2631, device='cuda:0')"
+5,0,"tensor(1.0935, device='cuda:0')","tensor(4.9356, device='cuda:0')","tensor(2.2497, device='cuda:0')"
+5,100,"tensor(0.8556, device='cuda:0')","tensor(2.0861, device='cuda:0')","tensor(2.2304, device='cuda:0')"
+5,200,"tensor(0.3030, device='cuda:0')","tensor(1.3724, device='cuda:0')","tensor(2.2377, device='cuda:0')"
+5,300,"tensor(2.2317, device='cuda:0')","tensor(0.3025, device='cuda:0')","tensor(2.2845, device='cuda:0')"
+5,400,"tensor(0.4258, device='cuda:0')","tensor(5.0822, device='cuda:0')","tensor(2.2792, device='cuda:0')"
+5,500,"tensor(1.2987, device='cuda:0')","tensor(0.7331, device='cuda:0')","tensor(2.2582, device='cuda:0')"
+5,600,"tensor(1.3698, device='cuda:0')","tensor(5.4754, device='cuda:0')","tensor(2.2503, device='cuda:0')"
+5,700,"tensor(0.2843, device='cuda:0')","tensor(2.7638, device='cuda:0')","tensor(2.3048, device='cuda:0')"
+5,800,"tensor(0.7413, device='cuda:0')","tensor(4.5125, device='cuda:0')","tensor(2.2559, device='cuda:0')"
+5,900,"tensor(0.5150, device='cuda:0')","tensor(2.5545, device='cuda:0')","tensor(2.2373, device='cuda:0')"
+6,0,"tensor(0.6081, device='cuda:0')","tensor(4.8836, device='cuda:0')","tensor(2.2597, device='cuda:0')"
+6,100,"tensor(0.4220, device='cuda:0')","tensor(3.3192, device='cuda:0')","tensor(2.2884, device='cuda:0')"
+6,200,"tensor(0.3589, device='cuda:0')","tensor(2.8261, device='cuda:0')","tensor(2.2844, device='cuda:0')"
+6,300,"tensor(0.4573, device='cuda:0')","tensor(4.0611, device='cuda:0')","tensor(2.2872, device='cuda:0')"
+6,400,"tensor(0.5118, device='cuda:0')","tensor(4.6775, device='cuda:0')","tensor(2.2816, device='cuda:0')"
+6,500,"tensor(1.00000e-02 *
+       5.0255, device='cuda:0')","tensor(4.6355, device='cuda:0')","tensor(2.2522, device='cuda:0')"
+6,600,"tensor(0.6007, device='cuda:0')","tensor(1.5060, device='cuda:0')","tensor(2.2517, device='cuda:0')"
+6,700,"tensor(0.1318, device='cuda:0')","tensor(3.9032, device='cuda:0')","tensor(2.2317, device='cuda:0')"
+6,800,"tensor(0.4633, device='cuda:0')","tensor(1.8571, device='cuda:0')","tensor(2.2624, device='cuda:0')"
+6,900,"tensor(0.2285, device='cuda:0')","tensor(3.0504, device='cuda:0')","tensor(2.2691, device='cuda:0')"
+7,0,"tensor(0.6455, device='cuda:0')","tensor(3.6280, device='cuda:0')","tensor(2.2728, device='cuda:0')"
+7,100,"tensor(0.5566, device='cuda:0')","tensor(2.2636, device='cuda:0')","tensor(2.2808, device='cuda:0')"
+7,200,"tensor(0.2193, device='cuda:0')","tensor(3.0267, device='cuda:0')","tensor(2.2807, device='cuda:0')"
+7,300,"tensor(1.4214, device='cuda:0')","tensor(0.3648, device='cuda:0')","tensor(2.2678, device='cuda:0')"
+7,400,"tensor(0.9960, device='cuda:0')","tensor(1.9431, device='cuda:0')","tensor(2.2669, device='cuda:0')"
+7,500,"tensor(1.00000e-02 *
+       9.0054, device='cuda:0')","tensor(3.8861, device='cuda:0')","tensor(2.2844, device='cuda:0')"
+7,600,"tensor(1.3756, device='cuda:0')","tensor(0.9251, device='cuda:0')","tensor(2.2605, device='cuda:0')"
+7,700,"tensor(0.6630, device='cuda:0')","tensor(3.2179, device='cuda:0')","tensor(2.2397, device='cuda:0')"
+7,800,"tensor(0.3841, device='cuda:0')","tensor(4.8795, device='cuda:0')","tensor(2.2893, device='cuda:0')"
+7,900,"tensor(0.6594, device='cuda:0')","tensor(3.7926, device='cuda:0')","tensor(2.2738, device='cuda:0')"
+8,0,"tensor(1.4885, device='cuda:0')","tensor(3.1850, device='cuda:0')","tensor(2.2974, device='cuda:0')"
+8,100,"tensor(0.6154, device='cuda:0')","tensor(2.8930, device='cuda:0')","tensor(2.2404, device='cuda:0')"
+8,200,"tensor(0.3346, device='cuda:0')","tensor(3.2175, device='cuda:0')","tensor(2.2577, device='cuda:0')"
+8,300,"tensor(0.4971, device='cuda:0')","tensor(2.1817, device='cuda:0')","tensor(2.2757, device='cuda:0')"
+8,400,"tensor(0.7760, device='cuda:0')","tensor(2.2333, device='cuda:0')","tensor(2.2711, device='cuda:0')"
+8,500,"tensor(1.3713, device='cuda:0')","tensor(10.7648, device='cuda:0')","tensor(2.3117, device='cuda:0')"
+8,600,"tensor(0.4950, device='cuda:0')","tensor(3.2865, device='cuda:0')","tensor(2.2662, device='cuda:0')"
+8,700,"tensor(0.5394, device='cuda:0')","tensor(3.4859, device='cuda:0')","tensor(2.2584, device='cuda:0')"
+8,800,"tensor(0.2583, device='cuda:0')","tensor(3.2646, device='cuda:0')","tensor(2.2942, device='cuda:0')"
+8,900,"tensor(1.9381, device='cuda:0')","tensor(9.7276, device='cuda:0')","tensor(2.3003, device='cuda:0')"
+9,0,"tensor(0.3031, device='cuda:0')","tensor(2.2108, device='cuda:0')","tensor(2.2930, device='cuda:0')"
+9,100,"tensor(1.00000e-02 *
+       2.6686, device='cuda:0')","tensor(4.9731, device='cuda:0')","tensor(2.2815, device='cuda:0')"
+9,200,"tensor(1.00000e-02 *
+       5.9083, device='cuda:0')","tensor(4.0338, device='cuda:0')","tensor(2.2708, device='cuda:0')"
+9,300,"tensor(1.00000e-02 *
+       1.6370, device='cuda:0')","tensor(5.2408, device='cuda:0')","tensor(2.2676, device='cuda:0')"
+9,400,"tensor(0.5403, device='cuda:0')","tensor(4.0555, device='cuda:0')","tensor(2.2673, device='cuda:0')"
+9,500,"tensor(0.7280, device='cuda:0')","tensor(1.4470, device='cuda:0')","tensor(2.2776, device='cuda:0')"
+9,600,"tensor(0.2364, device='cuda:0')","tensor(3.2582, device='cuda:0')","tensor(2.2655, device='cuda:0')"
+9,700,"tensor(1.0872, device='cuda:0')","tensor(2.1524, device='cuda:0')","tensor(2.2838, device='cuda:0')"
+9,800,"tensor(0.1939, device='cuda:0')","tensor(4.3363, device='cuda:0')","tensor(2.2779, device='cuda:0')"
+9,900,"tensor(1.9408, device='cuda:0')","tensor(0.2023, device='cuda:0')","tensor(2.2768, device='cuda:0')"
+10,0,"tensor(0.5379, device='cuda:0')","tensor(4.8758, device='cuda:0')","tensor(2.2786, device='cuda:0')"
+10,100,"tensor(1.00000e-02 *
+       5.7464, device='cuda:0')","tensor(4.1890, device='cuda:0')","tensor(2.2268, device='cuda:0')"
+10,200,"tensor(1.00000e-02 *
+       9.7484, device='cuda:0')","tensor(4.0551, device='cuda:0')","tensor(2.3056, device='cuda:0')"
+10,300,"tensor(0.6499, device='cuda:0')","tensor(2.5081, device='cuda:0')","tensor(2.2855, device='cuda:0')"
+10,400,"tensor(1.00000e-02 *
+       8.4470, device='cuda:0')","tensor(4.6621, device='cuda:0')","tensor(2.2537, device='cuda:0')"
+10,500,"tensor(1.00000e-02 *
+       4.4804, device='cuda:0')","tensor(4.9724, device='cuda:0')","tensor(2.2767, device='cuda:0')"
+10,600,"tensor(1.2090, device='cuda:0')","tensor(1.4219, device='cuda:0')","tensor(2.3073, device='cuda:0')"
+10,700,"tensor(1.0823, device='cuda:0')","tensor(3.0377, device='cuda:0')","tensor(2.2684, device='cuda:0')"
+10,800,"tensor(1.9143, device='cuda:0')","tensor(1.0969, device='cuda:0')","tensor(2.2775, device='cuda:0')"
+10,900,"tensor(0.4827, device='cuda:0')","tensor(3.8935, device='cuda:0')","tensor(2.2556, device='cuda:0')"
+11,0,"tensor(0.9454, device='cuda:0')","tensor(0.9605, device='cuda:0')","tensor(2.2635, device='cuda:0')"
+11,100,"tensor(0.3045, device='cuda:0')","tensor(3.7244, device='cuda:0')","tensor(2.2757, device='cuda:0')"
+11,200,"tensor(0.8095, device='cuda:0')","tensor(1.6179, device='cuda:0')","tensor(2.2466, device='cuda:0')"
+11,300,"tensor(0.4746, device='cuda:0')","tensor(2.5824, device='cuda:0')","tensor(2.2736, device='cuda:0')"
+11,400,"tensor(1.00000e-02 *
+       8.4581, device='cuda:0')","tensor(4.6542, device='cuda:0')","tensor(2.2667, device='cuda:0')"
+11,500,"tensor(0.9918, device='cuda:0')","tensor(0.8893, device='cuda:0')","tensor(2.2433, device='cuda:0')"
+11,600,"tensor(1.00000e-02 *
+       3.6168, device='cuda:0')","tensor(4.9243, device='cuda:0')","tensor(2.2534, device='cuda:0')"
+11,700,"tensor(1.00000e-02 *
+       2.6684, device='cuda:0')","tensor(5.5436, device='cuda:0')","tensor(2.2802, device='cuda:0')"
+11,800,"tensor(0.3806, device='cuda:0')","tensor(2.1849, device='cuda:0')","tensor(2.2688, device='cuda:0')"
+11,900,"tensor(0.2936, device='cuda:0')","tensor(4.9239, device='cuda:0')","tensor(2.2897, device='cuda:0')"
+12,0,"tensor(0.4197, device='cuda:0')","tensor(1.9877, device='cuda:0')","tensor(2.2908, device='cuda:0')"
+12,100,"tensor(1.00000e-02 *
+       5.1453, device='cuda:0')","tensor(5.0358, device='cuda:0')","tensor(2.2974, device='cuda:0')"
+12,200,"tensor(1.00000e-02 *
+       1.8981, device='cuda:0')","tensor(5.0768, device='cuda:0')","tensor(2.3059, device='cuda:0')"
+12,300,"tensor(3.5989, device='cuda:0')","tensor(0.6855, device='cuda:0')","tensor(2.2673, device='cuda:0')"
+12,400,"tensor(0.5727, device='cuda:0')","tensor(3.7247, device='cuda:0')","tensor(2.2748, device='cuda:0')"
+12,500,"tensor(0.5897, device='cuda:0')","tensor(1.9782, device='cuda:0')","tensor(2.2502, device='cuda:0')"
+12,600,"tensor(0.2444, device='cuda:0')","tensor(3.3217, device='cuda:0')","tensor(2.2830, device='cuda:0')"
+12,700,"tensor(2.3163, device='cuda:0')","tensor(1.3868, device='cuda:0')","tensor(2.2785, device='cuda:0')"
+12,800,"tensor(1.00000e-02 *
+       6.6818, device='cuda:0')","tensor(4.1788, device='cuda:0')","tensor(2.2714, device='cuda:0')"
+12,900,"tensor(0.1045, device='cuda:0')","tensor(4.7715, device='cuda:0')","tensor(2.2719, device='cuda:0')"
+13,0,"tensor(0.5760, device='cuda:0')","tensor(1.9298, device='cuda:0')","tensor(2.2556, device='cuda:0')"
+13,100,"tensor(0.4991, device='cuda:0')","tensor(1.3958, device='cuda:0')","tensor(2.2497, device='cuda:0')"
+13,200,"tensor(1.00000e-02 *
+       6.5655, device='cuda:0')","tensor(4.0543, device='cuda:0')","tensor(2.2434, device='cuda:0')"
+13,300,"tensor(0.2994, device='cuda:0')","tensor(3.4409, device='cuda:0')","tensor(2.2530, device='cuda:0')"
+13,400,"tensor(1.00000e-02 *
+       3.6628, device='cuda:0')","tensor(5.0699, device='cuda:0')","tensor(2.2745, device='cuda:0')"
+13,500,"tensor(2.2075, device='cuda:0')","tensor(2.6131, device='cuda:0')","tensor(2.2909, device='cuda:0')"
+13,600,"tensor(0.2117, device='cuda:0')","tensor(3.9921, device='cuda:0')","tensor(2.2610, device='cuda:0')"
+13,700,"tensor(0.4536, device='cuda:0')","tensor(10.6199, device='cuda:0')","tensor(2.2613, device='cuda:0')"
+13,800,"tensor(1.00000e-02 *
+       8.3377, device='cuda:0')","tensor(3.8190, device='cuda:0')","tensor(2.2654, device='cuda:0')"
+13,900,"tensor(1.00000e-02 *
+       2.8948, device='cuda:0')","tensor(4.9285, device='cuda:0')","tensor(2.2742, device='cuda:0')"
+14,0,"tensor(1.00000e-02 *
+       1.9668, device='cuda:0')","tensor(5.2141, device='cuda:0')","tensor(2.2919, device='cuda:0')"
+14,100,"tensor(1.00000e-02 *
+       1.0421, device='cuda:0')","tensor(5.9165, device='cuda:0')","tensor(2.2726, device='cuda:0')"
+14,200,"tensor(1.00000e-02 *
+       3.0775, device='cuda:0')","tensor(5.5033, device='cuda:0')","tensor(2.2832, device='cuda:0')"
+14,300,"tensor(3.4164, device='cuda:0')","tensor(4.7093, device='cuda:0')","tensor(2.2897, device='cuda:0')"
+14,400,"tensor(0.2193, device='cuda:0')","tensor(2.9937, device='cuda:0')","tensor(2.2682, device='cuda:0')"
+14,500,"tensor(4.1735, device='cuda:0')","tensor(2.0628, device='cuda:0')","tensor(2.2461, device='cuda:0')"
+14,600,"tensor(0.4526, device='cuda:0')","tensor(2.5485, device='cuda:0')","tensor(2.2706, device='cuda:0')"
+14,700,"tensor(0.5066, device='cuda:0')","tensor(3.3121, device='cuda:0')","tensor(2.2653, device='cuda:0')"
+14,800,"tensor(0.4572, device='cuda:0')","tensor(4.5202, device='cuda:0')","tensor(2.2538, device='cuda:0')"
+14,900,"tensor(1.00000e-02 *
+       3.3997, device='cuda:0')","tensor(4.7398, device='cuda:0')","tensor(2.2684, device='cuda:0')"
+15,0,"tensor(1.00000e-02 *
+       4.0097, device='cuda:0')","tensor(4.7150, device='cuda:0')","tensor(2.3087, device='cuda:0')"
+15,100,"tensor(1.00000e-02 *
+       1.5230, device='cuda:0')","tensor(5.3523, device='cuda:0')","tensor(2.2904, device='cuda:0')"
+15,200,"tensor(1.00000e-02 *
+       1.2261, device='cuda:0')","tensor(5.3654, device='cuda:0')","tensor(2.2493, device='cuda:0')"
+15,300,"tensor(0.2361, device='cuda:0')","tensor(3.8882, device='cuda:0')","tensor(2.2986, device='cuda:0')"
+15,400,"tensor(0.1499, device='cuda:0')","tensor(3.3497, device='cuda:0')","tensor(2.2485, device='cuda:0')"
+15,500,"tensor(0.4504, device='cuda:0')","tensor(7.0509, device='cuda:0')","tensor(2.2890, device='cuda:0')"
+15,600,"tensor(0.1892, device='cuda:0')","tensor(5.1676, device='cuda:0')","tensor(2.2864, device='cuda:0')"
+15,700,"tensor(1.00000e-02 *
+       3.1489, device='cuda:0')","tensor(4.6901, device='cuda:0')","tensor(2.3040, device='cuda:0')"
+15,800,"tensor(1.0698, device='cuda:0')","tensor(1.4268, device='cuda:0')","tensor(2.2850, device='cuda:0')"
+15,900,"tensor(0.5765, device='cuda:0')","tensor(3.5135, device='cuda:0')","tensor(2.2522, device='cuda:0')"
+16,0,"tensor(0.1774, device='cuda:0')","tensor(6.0270, device='cuda:0')","tensor(2.2512, device='cuda:0')"
+16,100,"tensor(2.2207, device='cuda:0')","tensor(4.1796, device='cuda:0')","tensor(2.3074, device='cuda:0')"
+16,200,"tensor(0.1596, device='cuda:0')","tensor(4.2898, device='cuda:0')","tensor(2.2765, device='cuda:0')"
+16,300,"tensor(0.1310, device='cuda:0')","tensor(3.9313, device='cuda:0')","tensor(2.2807, device='cuda:0')"
+16,400,"tensor(1.00000e-02 *
+       2.6080, device='cuda:0')","tensor(4.2655, device='cuda:0')","tensor(2.2769, device='cuda:0')"
+16,500,"tensor(1.00000e-02 *
+       4.3600, device='cuda:0')","tensor(4.2948, device='cuda:0')","tensor(2.3003, device='cuda:0')"
+16,600,"tensor(0.5760, device='cuda:0')","tensor(1.7036, device='cuda:0')","tensor(2.2798, device='cuda:0')"
+16,700,"tensor(1.00000e-02 *
+       2.4133, device='cuda:0')","tensor(5.2787, device='cuda:0')","tensor(2.2796, device='cuda:0')"
+16,800,"tensor(0.2983, device='cuda:0')","tensor(3.9760, device='cuda:0')","tensor(2.2675, device='cuda:0')"
+16,900,"tensor(0.3580, device='cuda:0')","tensor(6.5310, device='cuda:0')","tensor(2.2802, device='cuda:0')"
+17,0,"tensor(0.2627, device='cuda:0')","tensor(2.6045, device='cuda:0')","tensor(2.2581, device='cuda:0')"
+17,100,"tensor(0.4546, device='cuda:0')","tensor(4.7485, device='cuda:0')","tensor(2.2527, device='cuda:0')"
+17,200,"tensor(0.9454, device='cuda:0')","tensor(1.2556, device='cuda:0')","tensor(2.3042, device='cuda:0')"
+17,300,"tensor(0.3810, device='cuda:0')","tensor(3.0999, device='cuda:0')","tensor(2.2890, device='cuda:0')"
+17,400,"tensor(0.1851, device='cuda:0')","tensor(7.1565, device='cuda:0')","tensor(2.2548, device='cuda:0')"
+17,500,"tensor(1.00000e-02 *
+       1.4707, device='cuda:0')","tensor(5.4367, device='cuda:0')","tensor(2.2732, device='cuda:0')"
+17,600,"tensor(1.00000e-02 *
+       1.1444, device='cuda:0')","tensor(5.4158, device='cuda:0')","tensor(2.2782, device='cuda:0')"
+17,700,"tensor(0.8308, device='cuda:0')","tensor(2.0741, device='cuda:0')","tensor(2.2787, device='cuda:0')"
+17,800,"tensor(1.00000e-02 *
+       8.8650, device='cuda:0')","tensor(4.4275, device='cuda:0')","tensor(2.2672, device='cuda:0')"
+17,900,"tensor(0.4686, device='cuda:0')","tensor(0.8044, device='cuda:0')","tensor(2.2685, device='cuda:0')"
+18,0,"tensor(1.00000e-02 *
+       5.2051, device='cuda:0')","tensor(5.0679, device='cuda:0')","tensor(2.2534, device='cuda:0')"
+18,100,"tensor(0.6729, device='cuda:0')","tensor(3.5616, device='cuda:0')","tensor(2.2769, device='cuda:0')"
+18,200,"tensor(2.3692, device='cuda:0')","tensor(1.00000e-02 *
+       4.7859, device='cuda:0')","tensor(2.2874, device='cuda:0')"
+18,300,"tensor(1.00000e-02 *
+       9.8703, device='cuda:0')","tensor(4.8196, device='cuda:0')","tensor(2.2518, device='cuda:0')"
+18,400,"tensor(1.00000e-02 *
+       1.9419, device='cuda:0')","tensor(5.4456, device='cuda:0')","tensor(2.2321, device='cuda:0')"
+18,500,"tensor(1.00000e-02 *
+       1.1377, device='cuda:0')","tensor(6.6781, device='cuda:0')","tensor(2.2752, device='cuda:0')"
+18,600,"tensor(0.2531, device='cuda:0')","tensor(2.7652, device='cuda:0')","tensor(2.2562, device='cuda:0')"
+18,700,"tensor(1.00000e-02 *
+       5.5540, device='cuda:0')","tensor(4.1871, device='cuda:0')","tensor(2.2476, device='cuda:0')"
+18,800,"tensor(0.6632, device='cuda:0')","tensor(4.0469, device='cuda:0')","tensor(2.2852, device='cuda:0')"
+18,900,"tensor(0.5739, device='cuda:0')","tensor(1.4881, device='cuda:0')","tensor(2.2717, device='cuda:0')"
+19,0,"tensor(0.4238, device='cuda:0')","tensor(3.9492, device='cuda:0')","tensor(2.2978, device='cuda:0')"
+19,100,"tensor(1.00000e-02 *
+       2.2346, device='cuda:0')","tensor(5.4237, device='cuda:0')","tensor(2.2699, device='cuda:0')"
+19,200,"tensor(1.00000e-02 *
+       1.8815, device='cuda:0')","tensor(5.1417, device='cuda:0')","tensor(2.2510, device='cuda:0')"
+19,300,"tensor(1.00000e-02 *
+       1.4632, device='cuda:0')","tensor(5.1302, device='cuda:0')","tensor(2.2803, device='cuda:0')"
+19,400,"tensor(1.00000e-02 *
+       2.2224, device='cuda:0')","tensor(6.0821, device='cuda:0')","tensor(2.2683, device='cuda:0')"
+19,500,"tensor(1.00000e-02 *
+       1.4488, device='cuda:0')","tensor(5.9732, device='cuda:0')","tensor(2.2857, device='cuda:0')"
+19,600,"tensor(0.7598, device='cuda:0')","tensor(1.9897, device='cuda:0')","tensor(2.2945, device='cuda:0')"
+19,700,"tensor(1.0813, device='cuda:0')","tensor(1.9005, device='cuda:0')","tensor(2.2868, device='cuda:0')"
+19,800,"tensor(0.9651, device='cuda:0')","tensor(3.5149, device='cuda:0')","tensor(2.2656, device='cuda:0')"
+19,900,"tensor(1.0455, device='cuda:0')","tensor(0.2494, device='cuda:0')","tensor(2.2800, device='cuda:0')"
+20,0,"tensor(1.00000e-02 *
+       9.4298, device='cuda:0')","tensor(3.9060, device='cuda:0')","tensor(2.2935, device='cuda:0')"
+20,100,"tensor(1.3500, device='cuda:0')","tensor(0.7819, device='cuda:0')","tensor(2.2829, device='cuda:0')"
+20,200,"tensor(2.1553, device='cuda:0')","tensor(1.7866, device='cuda:0')","tensor(2.2936, device='cuda:0')"
+20,300,"tensor(1.00000e-02 *
+       7.2083, device='cuda:0')","tensor(3.8024, device='cuda:0')","tensor(2.2996, device='cuda:0')"
+20,400,"tensor(1.00000e-02 *
+       1.7643, device='cuda:0')","tensor(5.3208, device='cuda:0')","tensor(2.2652, device='cuda:0')"
+20,500,"tensor(1.00000e-03 *
+       8.4767, device='cuda:0')","tensor(5.8340, device='cuda:0')","tensor(2.2822, device='cuda:0')"
+20,600,"tensor(1.00000e-02 *
+       1.5809, device='cuda:0')","tensor(5.2258, device='cuda:0')","tensor(2.2323, device='cuda:0')"
+20,700,"tensor(1.00000e-02 *
+       1.1521, device='cuda:0')","tensor(6.7199, device='cuda:0')","tensor(2.2556, device='cuda:0')"
+20,800,"tensor(1.00000e-02 *
+       1.8309, device='cuda:0')","tensor(5.4781, device='cuda:0')","tensor(2.2723, device='cuda:0')"
+20,900,"tensor(0.1989, device='cuda:0')","tensor(3.3502, device='cuda:0')","tensor(2.2991, device='cuda:0')"
+21,0,"tensor(0.1180, device='cuda:0')","tensor(3.4443, device='cuda:0')","tensor(2.3009, device='cuda:0')"
+21,100,"tensor(1.1599, device='cuda:0')","tensor(5.9597, device='cuda:0')","tensor(2.3190, device='cuda:0')"
+21,200,"tensor(1.00000e-02 *
+       5.8303, device='cuda:0')","tensor(5.2846, device='cuda:0')","tensor(2.2685, device='cuda:0')"
+21,300,"tensor(0.3026, device='cuda:0')","tensor(2.3591, device='cuda:0')","tensor(2.2683, device='cuda:0')"
+21,400,"tensor(0.2449, device='cuda:0')","tensor(3.1865, device='cuda:0')","tensor(2.2609, device='cuda:0')"
+21,500,"tensor(0.3043, device='cuda:0')","tensor(3.9136, device='cuda:0')","tensor(2.2777, device='cuda:0')"
+21,600,"tensor(0.1783, device='cuda:0')","tensor(3.4437, device='cuda:0')","tensor(2.2752, device='cuda:0')"
+21,700,"tensor(1.00000e-02 *
+       3.1617, device='cuda:0')","tensor(5.0432, device='cuda:0')","tensor(2.2669, device='cuda:0')"
+21,800,"tensor(1.00000e-02 *
+       4.6405, device='cuda:0')","tensor(5.9839, device='cuda:0')","tensor(2.2634, device='cuda:0')"
+21,900,"tensor(1.00000e-03 *
+       7.9317, device='cuda:0')","tensor(5.7967, device='cuda:0')","tensor(2.3141, device='cuda:0')"
+22,0,"tensor(1.00000e-02 *
+       1.2478, device='cuda:0')","tensor(5.4802, device='cuda:0')","tensor(2.2983, device='cuda:0')"
+22,100,"tensor(1.00000e-02 *
+       1.2212, device='cuda:0')","tensor(6.0859, device='cuda:0')","tensor(2.2883, device='cuda:0')"
+22,200,"tensor(0.8179, device='cuda:0')","tensor(1.5141, device='cuda:0')","tensor(2.2788, device='cuda:0')"
+22,300,"tensor(0.6351, device='cuda:0')","tensor(2.8331, device='cuda:0')","tensor(2.2912, device='cuda:0')"
+22,400,"tensor(0.4353, device='cuda:0')","tensor(3.3007, device='cuda:0')","tensor(2.2719, device='cuda:0')"
+22,500,"tensor(0.3567, device='cuda:0')","tensor(3.6989, device='cuda:0')","tensor(2.2780, device='cuda:0')"
+22,600,"tensor(1.1940, device='cuda:0')","tensor(2.3304, device='cuda:0')","tensor(2.2610, device='cuda:0')"
+22,700,"tensor(1.00000e-02 *
+       4.2601, device='cuda:0')","tensor(4.7960, device='cuda:0')","tensor(2.2608, device='cuda:0')"
+22,800,"tensor(1.00000e-02 *
+       1.8113, device='cuda:0')","tensor(5.1990, device='cuda:0')","tensor(2.2702, device='cuda:0')"
+22,900,"tensor(1.00000e-02 *
+       2.6437, device='cuda:0')","tensor(5.2985, device='cuda:0')","tensor(2.3165, device='cuda:0')"
+23,0,"tensor(1.00000e-02 *
+       2.1762, device='cuda:0')","tensor(5.9201, device='cuda:0')","tensor(2.2829, device='cuda:0')"
+23,100,"tensor(1.00000e-03 *
+       8.8475, device='cuda:0')","tensor(6.4387, device='cuda:0')","tensor(2.2652, device='cuda:0')"
+23,200,"tensor(1.00000e-02 *
+       1.1981, device='cuda:0')","tensor(7.8498, device='cuda:0')","tensor(2.3128, device='cuda:0')"
+23,300,"tensor(1.00000e-03 *
+       3.9694, device='cuda:0')","tensor(7.3518, device='cuda:0')","tensor(2.2903, device='cuda:0')"
+23,400,"tensor(1.00000e-04 *
+       8.9936, device='cuda:0')","tensor(8.4590, device='cuda:0')","tensor(2.3031, device='cuda:0')"
+23,500,"tensor(1.00000e-03 *
+       1.1587, device='cuda:0')","tensor(7.4510, device='cuda:0')","tensor(2.3024, device='cuda:0')"
+23,600,"tensor(1.00000e-03 *
+       2.1266, device='cuda:0')","tensor(7.1643, device='cuda:0')","tensor(2.3283, device='cuda:0')"
+23,700,"tensor(1.00000e-03 *
+       2.7728, device='cuda:0')","tensor(7.1523, device='cuda:0')","tensor(2.3188, device='cuda:0')"
+23,800,"tensor(1.00000e-03 *
+       3.0874, device='cuda:0')","tensor(8.2579, device='cuda:0')","tensor(2.3308, device='cuda:0')"
+23,900,"tensor(1.00000e-03 *
+       1.4028, device='cuda:0')","tensor(7.3345, device='cuda:0')","tensor(2.3297, device='cuda:0')"
+24,0,"tensor(1.00000e-03 *
+       2.1870, device='cuda:0')","tensor(7.9515, device='cuda:0')","tensor(2.3396, device='cuda:0')"
+24,100,"tensor(1.00000e-04 *
+       2.8022, device='cuda:0')","tensor(8.6930, device='cuda:0')","tensor(2.3358, device='cuda:0')"
+24,200,"tensor(1.00000e-04 *
+       2.5200, device='cuda:0')","tensor(8.6259, device='cuda:0')","tensor(2.3346, device='cuda:0')"
+24,300,"tensor(1.00000e-04 *
+       4.9617, device='cuda:0')","tensor(8.2625, device='cuda:0')","tensor(2.3126, device='cuda:0')"
+24,400,"tensor(1.00000e-04 *
+       6.4376, device='cuda:0')","tensor(7.8973, device='cuda:0')","tensor(2.3276, device='cuda:0')"
+24,500,"tensor(1.00000e-05 *
+       5.5884, device='cuda:0')","tensor(10.4577, device='cuda:0')","tensor(2.3107, device='cuda:0')"
+24,600,"tensor(1.00000e-04 *
+       4.1657, device='cuda:0')","tensor(8.2609, device='cuda:0')","tensor(2.2942, device='cuda:0')"
+24,700,"tensor(1.00000e-04 *
+       4.4331, device='cuda:0')","tensor(8.4586, device='cuda:0')","tensor(2.2935, device='cuda:0')"
+24,800,"tensor(1.00000e-04 *
+       1.3325, device='cuda:0')","tensor(9.5549, device='cuda:0')","tensor(2.3072, device='cuda:0')"
+24,900,"tensor(1.00000e-04 *
+       1.4833, device='cuda:0')","tensor(9.3785, device='cuda:0')","tensor(2.3413, device='cuda:0')"
+25,0,"tensor(1.00000e-04 *
+       2.5493, device='cuda:0')","tensor(8.3875, device='cuda:0')","tensor(2.2949, device='cuda:0')"
+25,100,"tensor(1.00000e-04 *
+       2.9403, device='cuda:0')","tensor(9.0483, device='cuda:0')","tensor(2.3205, device='cuda:0')"
+25,200,"tensor(1.00000e-04 *
+       5.5147, device='cuda:0')","tensor(8.2751, device='cuda:0')","tensor(2.3111, device='cuda:0')"
+25,300,"tensor(1.00000e-04 *
+       2.7567, device='cuda:0')","tensor(9.0024, device='cuda:0')","tensor(2.2989, device='cuda:0')"
+25,400,"tensor(1.00000e-04 *
+       7.9174, device='cuda:0')","tensor(7.9100, device='cuda:0')","tensor(2.3082, device='cuda:0')"
+25,500,"tensor(1.00000e-04 *
+       7.2335, device='cuda:0')","tensor(9.6332, device='cuda:0')","tensor(2.3077, device='cuda:0')"
+25,600,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.3276, device='cuda:0')"
+25,700,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.3065, device='cuda:0')"
+25,800,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.3360, device='cuda:0')"
+25,900,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.3092, device='cuda:0')"
+26,0,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.3198, device='cuda:0')"
+26,100,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2913, device='cuda:0')"
+26,200,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.3149, device='cuda:0')"
+26,300,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2688, device='cuda:0')"
+26,400,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2950, device='cuda:0')"
+26,500,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.3041, device='cuda:0')"
+26,600,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2669, device='cuda:0')"
+26,700,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2524, device='cuda:0')"
+26,800,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2540, device='cuda:0')"
+26,900,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2306, device='cuda:0')"
+27,0,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2229, device='cuda:0')"
+27,100,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2145, device='cuda:0')"
+27,200,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1905, device='cuda:0')"
+27,300,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1873, device='cuda:0')"
+27,400,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1742, device='cuda:0')"
+27,500,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1653, device='cuda:0')"
+27,600,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1268, device='cuda:0')"
+27,700,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.0649, device='cuda:0')"
+27,800,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.0659, device='cuda:0')"
+27,900,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.0179, device='cuda:0')"
+28,0,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.0134, device='cuda:0')"
+28,100,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.9711, device='cuda:0')"
+28,200,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.9550, device='cuda:0')"
+28,300,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.8391, device='cuda:0')"
+28,400,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.8343, device='cuda:0')"
+28,500,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.7324, device='cuda:0')"
+28,600,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1396, device='cuda:0')"
+28,700,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.9803, device='cuda:0')"
+28,800,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.8333, device='cuda:0')"
+28,900,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.6779, device='cuda:0')"
+29,0,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.6319, device='cuda:0')"
+29,100,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.4491, device='cuda:0')"
+29,200,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.2729, device='cuda:0')"
+29,300,"tensor(2.2461, device='cuda:0')","tensor(27.6309, device='cuda:0')","tensor(2.3061, device='cuda:0')"
+29,400,"tensor(27.6311, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2845, device='cuda:0')"
+29,500,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2608, device='cuda:0')"
+29,600,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2438, device='cuda:0')"
+29,700,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1949, device='cuda:0')"
+29,800,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1109, device='cuda:0')"
+29,900,"tensor(1.2616, device='cuda:0')","tensor(4.0969, device='cuda:0')","tensor(2.2995, device='cuda:0')"
+30,0,"tensor(0.4717, device='cuda:0')","tensor(2.8740, device='cuda:0')","tensor(2.2415, device='cuda:0')"
+30,100,"tensor(0.1721, device='cuda:0')","tensor(3.9227, device='cuda:0')","tensor(2.2919, device='cuda:0')"
+30,200,"tensor(1.00000e-04 *
+       2.3315, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2981, device='cuda:0')"
+30,300,"tensor(1.00000e-05 *
+       3.9392, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2370, device='cuda:0')"
+30,400,"tensor(1.00000e-05 *
+       6.5224, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1873, device='cuda:0')"
+30,500,"tensor(1.00000e-04 *
+       1.6360, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.0040, device='cuda:0')"
+30,600,"tensor(1.00000e-05 *
+       1.2586, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.7441, device='cuda:0')"
+30,700,"tensor(1.00000e-06 *
+       4.2022, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.4555, device='cuda:0')"
+30,800,"tensor(1.00000e-05 *
+       1.5840, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.1942, device='cuda:0')"
+30,900,"tensor(1.00000e-05 *
+       1.0023, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(0.9430, device='cuda:0')"
+31,0,"tensor(1.00000e-05 *
+       1.0892, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(0.8679, device='cuda:0')"
+31,100,"tensor(1.00000e-06 *
+       4.3028, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(0.6670, device='cuda:0')"
+31,200,"tensor(1.00000e-06 *
+       6.9702, device='cuda:0')","tensor(27.6308, device='cuda:0')","tensor(0.5407, device='cuda:0')"
+31,300,"tensor(1.00000e-05 *
+       1.7230, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1785, device='cuda:0')"
+31,400,"tensor(1.00000e-06 *
+       7.3522, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.8646, device='cuda:0')"
+31,500,"tensor(1.00000e-05 *
+       4.0979, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.2571, device='cuda:0')"
+31,600,"tensor(1.00000e-06 *
+       6.2247, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(0.7859, device='cuda:0')"
+31,700,"tensor(0.1837, device='cuda:0')","tensor(5.7698, device='cuda:0')","tensor(2.2823, device='cuda:0')"
+31,800,"tensor(0.1221, device='cuda:0')","tensor(4.7012, device='cuda:0')","tensor(2.2743, device='cuda:0')"
+31,900,"tensor(1.00000e-02 *
+       1.9326, device='cuda:0')","tensor(4.9794, device='cuda:0')","tensor(2.3213, device='cuda:0')"
+32,0,"tensor(0.2272, device='cuda:0')","tensor(5.2775, device='cuda:0')","tensor(2.3279, device='cuda:0')"
+32,100,"tensor(1.00000e-02 *
+       5.8670, device='cuda:0')","tensor(4.5238, device='cuda:0')","tensor(2.2988, device='cuda:0')"
+32,200,"tensor(1.00000e-02 *
+       5.3095, device='cuda:0')","tensor(4.7409, device='cuda:0')","tensor(2.3099, device='cuda:0')"
+32,300,"tensor(1.00000e-02 *
+       3.5441, device='cuda:0')","tensor(4.0827, device='cuda:0')","tensor(2.2873, device='cuda:0')"
+32,400,"tensor(0.3046, device='cuda:0')","tensor(4.8482, device='cuda:0')","tensor(2.2813, device='cuda:0')"
+32,500,"tensor(1.00000e-02 *
+       3.1286, device='cuda:0')","tensor(5.3872, device='cuda:0')","tensor(2.3085, device='cuda:0')"
+32,600,"tensor(1.00000e-02 *
+       9.6788, device='cuda:0')","tensor(6.1317, device='cuda:0')","tensor(2.2896, device='cuda:0')"
+32,700,"tensor(1.00000e-02 *
+       3.1866, device='cuda:0')","tensor(5.1814, device='cuda:0')","tensor(2.3006, device='cuda:0')"
+32,800,"tensor(1.00000e-02 *
+       1.6440, device='cuda:0')","tensor(5.3002, device='cuda:0')","tensor(2.3103, device='cuda:0')"
+32,900,"tensor(0.2358, device='cuda:0')","tensor(4.3489, device='cuda:0')","tensor(2.3234, device='cuda:0')"
+33,0,"tensor(0.1052, device='cuda:0')","tensor(4.4515, device='cuda:0')","tensor(2.2923, device='cuda:0')"
+33,100,"tensor(1.00000e-02 *
+       8.3986, device='cuda:0')","tensor(4.6873, device='cuda:0')","tensor(2.2692, device='cuda:0')"
+33,200,"tensor(0.1982, device='cuda:0')","tensor(3.2706, device='cuda:0')","tensor(2.2951, device='cuda:0')"
+33,300,"tensor(1.00000e-02 *
+       1.9329, device='cuda:0')","tensor(5.5330, device='cuda:0')","tensor(2.2861, device='cuda:0')"
+33,400,"tensor(1.00000e-02 *
+       1.6105, device='cuda:0')","tensor(5.0136, device='cuda:0')","tensor(2.2981, device='cuda:0')"
+33,500,"tensor(1.00000e-02 *
+       8.7894, device='cuda:0')","tensor(4.8070, device='cuda:0')","tensor(2.2874, device='cuda:0')"
+33,600,"tensor(1.00000e-02 *
+       1.8013, device='cuda:0')","tensor(5.6361, device='cuda:0')","tensor(2.3016, device='cuda:0')"
+33,700,"tensor(1.00000e-02 *
+       3.0695, device='cuda:0')","tensor(5.5247, device='cuda:0')","tensor(2.2871, device='cuda:0')"
+33,800,"tensor(0.3985, device='cuda:0')","tensor(2.4767, device='cuda:0')","tensor(2.3043, device='cuda:0')"
+33,900,"tensor(0.5657, device='cuda:0')","tensor(2.1340, device='cuda:0')","tensor(2.3065, device='cuda:0')"
+34,0,"tensor(0.1360, device='cuda:0')","tensor(3.6400, device='cuda:0')","tensor(2.2661, device='cuda:0')"
+34,100,"tensor(1.00000e-02 *
+       4.5531, device='cuda:0')","tensor(5.3401, device='cuda:0')","tensor(2.3139, device='cuda:0')"
+34,200,"tensor(0.3268, device='cuda:0')","tensor(5.8445, device='cuda:0')","tensor(2.2651, device='cuda:0')"
+34,300,"tensor(1.00000e-02 *
+       4.9810, device='cuda:0')","tensor(4.7262, device='cuda:0')","tensor(2.2827, device='cuda:0')"
+34,400,"tensor(0.1264, device='cuda:0')","tensor(1.4256, device='cuda:0')","tensor(2.2834, device='cuda:0')"
+34,500,"tensor(0.1627, device='cuda:0')","tensor(3.4661, device='cuda:0')","tensor(2.2844, device='cuda:0')"
+34,600,"tensor(1.00000e-02 *
+       8.1936, device='cuda:0')","tensor(4.0198, device='cuda:0')","tensor(2.2812, device='cuda:0')"
+34,700,"tensor(1.00000e-02 *
+       2.8591, device='cuda:0')","tensor(4.9028, device='cuda:0')","tensor(2.3147, device='cuda:0')"
+34,800,"tensor(0.1627, device='cuda:0')","tensor(3.4223, device='cuda:0')","tensor(2.3013, device='cuda:0')"
+34,900,"tensor(1.00000e-02 *
+       3.5710, device='cuda:0')","tensor(5.0533, device='cuda:0')","tensor(2.2875, device='cuda:0')"
+35,0,"tensor(1.00000e-02 *
+       3.5406, device='cuda:0')","tensor(4.7833, device='cuda:0')","tensor(2.2786, device='cuda:0')"
+35,100,"tensor(1.00000e-02 *
+       1.4745, device='cuda:0')","tensor(5.5831, device='cuda:0')","tensor(2.3038, device='cuda:0')"
+35,200,"tensor(1.00000e-02 *
+       1.0410, device='cuda:0')","tensor(5.9868, device='cuda:0')","tensor(2.2634, device='cuda:0')"
+35,300,"tensor(0.4574, device='cuda:0')","tensor(2.1615, device='cuda:0')","tensor(2.2652, device='cuda:0')"
+35,400,"tensor(0.3430, device='cuda:0')","tensor(2.7785, device='cuda:0')","tensor(2.2895, device='cuda:0')"
+35,500,"tensor(0.1964, device='cuda:0')","tensor(5.3500, device='cuda:0')","tensor(2.3116, device='cuda:0')"
+35,600,"tensor(0.1777, device='cuda:0')","tensor(4.4721, device='cuda:0')","tensor(2.3072, device='cuda:0')"
+35,700,"tensor(12.8357, device='cuda:0')","tensor(6.5342, device='cuda:0')","tensor(2.3068, device='cuda:0')"
+35,800,"tensor(1.1652, device='cuda:0')","tensor(2.5403, device='cuda:0')","tensor(2.2837, device='cuda:0')"
+35,900,"tensor(1.00000e-02 *
+       3.3548, device='cuda:0')","tensor(4.7105, device='cuda:0')","tensor(2.3106, device='cuda:0')"
+36,0,"tensor(1.00000e-02 *
+       2.4740, device='cuda:0')","tensor(5.0869, device='cuda:0')","tensor(2.2798, device='cuda:0')"
+36,100,"tensor(0.1304, device='cuda:0')","tensor(3.4525, device='cuda:0')","tensor(2.2829, device='cuda:0')"
+36,200,"tensor(1.00000e-02 *
+       2.7777, device='cuda:0')","tensor(5.3371, device='cuda:0')","tensor(2.2718, device='cuda:0')"
+36,300,"tensor(1.00000e-03 *
+       8.3856, device='cuda:0')","tensor(6.0470, device='cuda:0')","tensor(2.3073, device='cuda:0')"
+36,400,"tensor(0.6139, device='cuda:0')","tensor(2.3465, device='cuda:0')","tensor(2.2809, device='cuda:0')"
+36,500,"tensor(0.4617, device='cuda:0')","tensor(2.9019, device='cuda:0')","tensor(2.2917, device='cuda:0')"
+36,600,"tensor(0.8241, device='cuda:0')","tensor(1.8501, device='cuda:0')","tensor(2.2932, device='cuda:0')"
+36,700,"tensor(0.1195, device='cuda:0')","tensor(3.4783, device='cuda:0')","tensor(2.2991, device='cuda:0')"
+36,800,"tensor(0.1630, device='cuda:0')","tensor(4.5795, device='cuda:0')","tensor(2.2641, device='cuda:0')"
+36,900,"tensor(1.00000e-02 *
+       3.0623, device='cuda:0')","tensor(5.0391, device='cuda:0')","tensor(2.2695, device='cuda:0')"
+37,0,"tensor(1.00000e-02 *
+       1.8466, device='cuda:0')","tensor(5.4383, device='cuda:0')","tensor(2.2817, device='cuda:0')"
+37,100,"tensor(0.2013, device='cuda:0')","tensor(3.1822, device='cuda:0')","tensor(2.3032, device='cuda:0')"
+37,200,"tensor(1.00000e-02 *
+       2.4962, device='cuda:0')","tensor(5.4874, device='cuda:0')","tensor(2.2988, device='cuda:0')"
+37,300,"tensor(1.00000e-02 *
+       1.3766, device='cuda:0')","tensor(4.9504, device='cuda:0')","tensor(2.2714, device='cuda:0')"
+37,400,"tensor(0.7360, device='cuda:0')","tensor(2.2087, device='cuda:0')","tensor(2.3010, device='cuda:0')"
+37,500,"tensor(0.1931, device='cuda:0')","tensor(3.8383, device='cuda:0')","tensor(2.2851, device='cuda:0')"
+37,600,"tensor(1.00000e-02 *
+       5.9610, device='cuda:0')","tensor(4.3937, device='cuda:0')","tensor(2.2930, device='cuda:0')"
+37,700,"tensor(1.00000e-02 *
+       1.5741, device='cuda:0')","tensor(5.7098, device='cuda:0')","tensor(2.2675, device='cuda:0')"
+37,800,"tensor(1.00000e-02 *
+       2.3729, device='cuda:0')","tensor(5.2323, device='cuda:0')","tensor(2.2736, device='cuda:0')"
+37,900,"tensor(1.00000e-02 *
+       1.0256, device='cuda:0')","tensor(5.9682, device='cuda:0')","tensor(2.2975, device='cuda:0')"
+38,0,"tensor(1.00000e-03 *
+       5.4382, device='cuda:0')","tensor(6.1158, device='cuda:0')","tensor(2.2829, device='cuda:0')"
+38,100,"tensor(1.00000e-03 *
+       5.8559, device='cuda:0')","tensor(5.9550, device='cuda:0')","tensor(2.2946, device='cuda:0')"
+38,200,"tensor(1.00000e-02 *
+       1.1761, device='cuda:0')","tensor(6.3754, device='cuda:0')","tensor(2.3106, device='cuda:0')"
+38,300,"tensor(1.00000e-03 *
+       4.9521, device='cuda:0')","tensor(6.3496, device='cuda:0')","tensor(2.2940, device='cuda:0')"
+38,400,"tensor(0.5802, device='cuda:0')","tensor(2.0948, device='cuda:0')","tensor(2.2902, device='cuda:0')"
+38,500,"tensor(0.2301, device='cuda:0')","tensor(3.0271, device='cuda:0')","tensor(2.2832, device='cuda:0')"
+38,600,"tensor(0.3947, device='cuda:0')","tensor(2.6224, device='cuda:0')","tensor(2.3051, device='cuda:0')"
+38,700,"tensor(1.00000e-02 *
+       2.0501, device='cuda:0')","tensor(5.4790, device='cuda:0')","tensor(2.2949, device='cuda:0')"
+38,800,"tensor(1.0022, device='cuda:0')","tensor(1.4104, device='cuda:0')","tensor(2.2919, device='cuda:0')"
+38,900,"tensor(0.8093, device='cuda:0')","tensor(1.8908, device='cuda:0')","tensor(2.2990, device='cuda:0')"
+39,0,"tensor(0.5770, device='cuda:0')","tensor(2.3398, device='cuda:0')","tensor(2.3219, device='cuda:0')"
+39,100,"tensor(0.4829, device='cuda:0')","tensor(2.7317, device='cuda:0')","tensor(2.2890, device='cuda:0')"
+39,200,"tensor(0.7069, device='cuda:0')","tensor(2.0755, device='cuda:0')","tensor(2.2842, device='cuda:0')"
+39,300,"tensor(1.00000e-02 *
+       2.1541, device='cuda:0')","tensor(5.4315, device='cuda:0')","tensor(2.2740, device='cuda:0')"
+39,400,"tensor(1.00000e-03 *
+       9.2821, device='cuda:0')","tensor(5.6940, device='cuda:0')","tensor(2.2812, device='cuda:0')"
+39,500,"tensor(1.00000e-03 *
+       6.4498, device='cuda:0')","tensor(6.0639, device='cuda:0')","tensor(2.2914, device='cuda:0')"
+39,600,"tensor(0.7625, device='cuda:0')","tensor(1.8129, device='cuda:0')","tensor(2.3093, device='cuda:0')"
+39,700,"tensor(0.5166, device='cuda:0')","tensor(2.7620, device='cuda:0')","tensor(2.2937, device='cuda:0')"
+39,800,"tensor(1.00000e-02 *
+       8.2506, device='cuda:0')","tensor(4.2916, device='cuda:0')","tensor(2.2996, device='cuda:0')"
+39,900,"tensor(1.00000e-02 *
+       7.1290, device='cuda:0')","tensor(4.2762, device='cuda:0')","tensor(2.2756, device='cuda:0')"
+40,0,"tensor(1.00000e-02 *
+       4.2438, device='cuda:0')","tensor(4.7032, device='cuda:0')","tensor(2.3043, device='cuda:0')"
+40,100,"tensor(1.00000e-02 *
+       1.2198, device='cuda:0')","tensor(6.1943, device='cuda:0')","tensor(2.2919, device='cuda:0')"
+40,200,"tensor(1.00000e-02 *
+       1.4482, device='cuda:0')","tensor(5.2675, device='cuda:0')","tensor(2.2967, device='cuda:0')"
+40,300,"tensor(1.00000e-03 *
+       8.7858, device='cuda:0')","tensor(5.5997, device='cuda:0')","tensor(2.2885, device='cuda:0')"
+40,400,"tensor(1.00000e-03 *
+       9.1877, device='cuda:0')","tensor(5.5903, device='cuda:0')","tensor(2.3244, device='cuda:0')"
+40,500,"tensor(1.00000e-03 *
+       8.4198, device='cuda:0')","tensor(6.5155, device='cuda:0')","tensor(2.3113, device='cuda:0')"
+40,600,"tensor(1.00000e-02 *
+       1.4596, device='cuda:0')","tensor(7.5569, device='cuda:0')","tensor(2.3168, device='cuda:0')"
+40,700,"tensor(1.00000e-03 *
+       2.8944, device='cuda:0')","tensor(7.3540, device='cuda:0')","tensor(2.2824, device='cuda:0')"
+40,800,"tensor(1.00000e-03 *
+       1.1107, device='cuda:0')","tensor(7.7843, device='cuda:0')","tensor(2.3306, device='cuda:0')"
+40,900,"tensor(1.00000e-04 *
+       9.4037, device='cuda:0')","tensor(8.1114, device='cuda:0')","tensor(2.2952, device='cuda:0')"
+41,0,"tensor(1.00000e-04 *
+       3.5021, device='cuda:0')","tensor(11.3248, device='cuda:0')","tensor(2.3100, device='cuda:0')"
+41,100,"tensor(1.00000e-03 *
+       1.0682, device='cuda:0')","tensor(7.4893, device='cuda:0')","tensor(2.3171, device='cuda:0')"
+41,200,"tensor(1.00000e-04 *
+       4.3848, device='cuda:0')","tensor(8.3639, device='cuda:0')","tensor(2.2736, device='cuda:0')"
+41,300,"tensor(1.00000e-04 *
+       2.3095, device='cuda:0')","tensor(9.1994, device='cuda:0')","tensor(2.2865, device='cuda:0')"
+41,400,"tensor(1.00000e-04 *
+       3.0080, device='cuda:0')","tensor(8.5564, device='cuda:0')","tensor(2.3097, device='cuda:0')"
+41,500,"tensor(1.00000e-04 *
+       2.4604, device='cuda:0')","tensor(9.1143, device='cuda:0')","tensor(2.3034, device='cuda:0')"
+41,600,"tensor(1.00000e-04 *
+       6.6486, device='cuda:0')","tensor(7.9450, device='cuda:0')","tensor(2.2907, device='cuda:0')"
+41,700,"tensor(1.00000e-04 *
+       1.9552, device='cuda:0')","tensor(9.0761, device='cuda:0')","tensor(2.3013, device='cuda:0')"
+41,800,"tensor(1.00000e-05 *
+       6.9362, device='cuda:0')","tensor(12.5853, device='cuda:0')","tensor(2.3205, device='cuda:0')"
+41,900,"tensor(1.00000e-04 *
+       2.0283, device='cuda:0')","tensor(9.2730, device='cuda:0')","tensor(2.3033, device='cuda:0')"
+42,0,"tensor(1.00000e-04 *
+       2.7711, device='cuda:0')","tensor(9.5286, device='cuda:0')","tensor(2.3603, device='cuda:0')"
+42,100,"tensor(1.00000e-04 *
+       6.8054, device='cuda:0')","tensor(8.2409, device='cuda:0')","tensor(2.3039, device='cuda:0')"
+42,200,"tensor(1.00000e-04 *
+       1.1029, device='cuda:0')","tensor(14.2806, device='cuda:0')","tensor(2.3057, device='cuda:0')"
+42,300,"tensor(1.00000e-04 *
+       1.3188, device='cuda:0')","tensor(10.3986, device='cuda:0')","tensor(2.3647, device='cuda:0')"
+42,400,"tensor(1.00000e-03 *
+       3.1642, device='cuda:0')","tensor(8.6207, device='cuda:0')","tensor(2.2966, device='cuda:0')"
+42,500,"tensor(1.00000e-05 *
+       6.8148, device='cuda:0')","tensor(11.0475, device='cuda:0')","tensor(2.2900, device='cuda:0')"
+42,600,"tensor(1.00000e-04 *
+       1.2093, device='cuda:0')","tensor(9.3830, device='cuda:0')","tensor(2.3156, device='cuda:0')"
+42,700,"tensor(1.00000e-04 *
+       1.3171, device='cuda:0')","tensor(10.5459, device='cuda:0')","tensor(2.3189, device='cuda:0')"
+42,800,"tensor(1.00000e-04 *
+       5.6467, device='cuda:0')","tensor(9.7789, device='cuda:0')","tensor(2.3183, device='cuda:0')"
+42,900,"tensor(1.00000e-04 *
+       1.9125, device='cuda:0')","tensor(10.0542, device='cuda:0')","tensor(2.3522, device='cuda:0')"
+43,0,"tensor(1.00000e-04 *
+       1.6802, device='cuda:0')","tensor(9.5848, device='cuda:0')","tensor(2.3421, device='cuda:0')"
+43,100,"tensor(1.00000e-05 *
+       8.2138, device='cuda:0')","tensor(10.7778, device='cuda:0')","tensor(2.3222, device='cuda:0')"
+43,200,"tensor(1.00000e-05 *
+       6.9302, device='cuda:0')","tensor(9.9969, device='cuda:0')","tensor(2.2830, device='cuda:0')"
+43,300,"tensor(1.00000e-05 *
+       8.1258, device='cuda:0')","tensor(10.5111, device='cuda:0')","tensor(2.2861, device='cuda:0')"
+43,400,"tensor(1.00000e-04 *
+       1.9843, device='cuda:0')","tensor(10.3347, device='cuda:0')","tensor(2.2830, device='cuda:0')"
+43,500,"tensor(1.00000e-04 *
+       1.7488, device='cuda:0')","tensor(9.4832, device='cuda:0')","tensor(2.2802, device='cuda:0')"
+43,600,"tensor(1.00000e-04 *
+       3.7496, device='cuda:0')","tensor(9.0664, device='cuda:0')","tensor(2.3135, device='cuda:0')"
+43,700,"tensor(1.00000e-05 *
+       6.4332, device='cuda:0')","tensor(10.2004, device='cuda:0')","tensor(2.3245, device='cuda:0')"
+43,800,"tensor(1.00000e-05 *
+       9.9131, device='cuda:0')","tensor(9.5782, device='cuda:0')","tensor(2.3117, device='cuda:0')"
+43,900,"tensor(1.00000e-05 *
+       4.5004, device='cuda:0')","tensor(10.3112, device='cuda:0')","tensor(2.3026, device='cuda:0')"
+44,0,"tensor(1.00000e-05 *
+       3.5320, device='cuda:0')","tensor(10.5455, device='cuda:0')","tensor(2.3001, device='cuda:0')"
+44,100,"tensor(1.00000e-05 *
+       5.0175, device='cuda:0')","tensor(10.2913, device='cuda:0')","tensor(2.3522, device='cuda:0')"
+44,200,"tensor(1.00000e-05 *
+       8.6531, device='cuda:0')","tensor(10.4686, device='cuda:0')","tensor(2.2890, device='cuda:0')"
+44,300,"tensor(1.00000e-05 *
+       6.0600, device='cuda:0')","tensor(10.1720, device='cuda:0')","tensor(2.3409, device='cuda:0')"
+44,400,"tensor(1.00000e-05 *
+       4.6404, device='cuda:0')","tensor(10.2675, device='cuda:0')","tensor(2.3265, device='cuda:0')"
+44,500,"tensor(1.00000e-05 *
+       1.6036, device='cuda:0')","tensor(11.3851, device='cuda:0')","tensor(2.3282, device='cuda:0')"
+44,600,"tensor(1.00000e-05 *
+       1.2900, device='cuda:0')","tensor(11.8453, device='cuda:0')","tensor(2.3239, device='cuda:0')"
+44,700,"tensor(1.00000e-05 *
+       1.5726, device='cuda:0')","tensor(11.5346, device='cuda:0')","tensor(2.3049, device='cuda:0')"
+44,800,"tensor(1.00000e-05 *
+       9.9754, device='cuda:0')","tensor(10.0546, device='cuda:0')","tensor(2.3066, device='cuda:0')"
+44,900,"tensor(1.00000e-03 *
+       1.1649, device='cuda:0')","tensor(8.0145, device='cuda:0')","tensor(2.3083, device='cuda:0')"
+45,0,"tensor(1.00000e-05 *
+       2.9765, device='cuda:0')","tensor(11.3270, device='cuda:0')","tensor(2.3306, device='cuda:0')"
+45,100,"tensor(1.00000e-05 *
+       3.8684, device='cuda:0')","tensor(10.5965, device='cuda:0')","tensor(2.3561, device='cuda:0')"
+45,200,"tensor(1.00000e-05 *
+       1.6475, device='cuda:0')","tensor(11.2642, device='cuda:0')","tensor(2.2831, device='cuda:0')"
+45,300,"tensor(1.00000e-05 *
+       1.5687, device='cuda:0')","tensor(11.9244, device='cuda:0')","tensor(2.3118, device='cuda:0')"
+45,400,"tensor(1.00000e-06 *
+       6.2269, device='cuda:0')","tensor(12.4374, device='cuda:0')","tensor(2.3127, device='cuda:0')"
+45,500,"tensor(1.00000e-05 *
+       1.5225, device='cuda:0')","tensor(12.0725, device='cuda:0')","tensor(2.3097, device='cuda:0')"
+45,600,"tensor(1.00000e-05 *
+       2.1060, device='cuda:0')","tensor(11.0250, device='cuda:0')","tensor(2.3180, device='cuda:0')"
+45,700,"tensor(1.00000e-05 *
+       1.0248, device='cuda:0')","tensor(12.3830, device='cuda:0')","tensor(2.3127, device='cuda:0')"
+45,800,"tensor(1.00000e-05 *
+       2.6914, device='cuda:0')","tensor(11.2324, device='cuda:0')","tensor(2.2947, device='cuda:0')"
+45,900,"tensor(1.00000e-05 *
+       1.9509, device='cuda:0')","tensor(11.1638, device='cuda:0')","tensor(2.3234, device='cuda:0')"
+46,0,"tensor(1.00000e-05 *
+       1.5040, device='cuda:0')","tensor(11.6144, device='cuda:0')","tensor(2.3135, device='cuda:0')"
+46,100,"tensor(1.00000e-05 *
+       1.1495, device='cuda:0')","tensor(11.9427, device='cuda:0')","tensor(2.3030, device='cuda:0')"
+46,200,"tensor(1.00000e-05 *
+       3.0651, device='cuda:0')","tensor(11.0213, device='cuda:0')","tensor(2.2722, device='cuda:0')"
+46,300,"tensor(1.00000e-05 *
+       1.0924, device='cuda:0')","tensor(11.7669, device='cuda:0')","tensor(2.3169, device='cuda:0')"
+46,400,"tensor(1.00000e-05 *
+       2.1746, device='cuda:0')","tensor(11.1229, device='cuda:0')","tensor(2.3224, device='cuda:0')"
+46,500,"tensor(1.00000e-04 *
+       7.5397, device='cuda:0')","tensor(9.1501, device='cuda:0')","tensor(2.2978, device='cuda:0')"
+46,600,"tensor(0.2203, device='cuda:0')","tensor(27.3699, device='cuda:0')","tensor(2.2957, device='cuda:0')"
+46,700,"tensor(1.00000e-04 *
+       1.3934, device='cuda:0')","tensor(27.6259, device='cuda:0')","tensor(2.3148, device='cuda:0')"
+46,800,"tensor(1.00000e-05 *
+       6.0497, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2828, device='cuda:0')"
+46,900,"tensor(1.00000e-06 *
+       7.4118, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3002, device='cuda:0')"
+47,0,"tensor(1.00000e-05 *
+       2.3199, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3363, device='cuda:0')"
+47,100,"tensor(1.00000e-06 *
+       5.7874, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3008, device='cuda:0')"
+47,200,"tensor(1.00000e-05 *
+       4.3963, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3079, device='cuda:0')"
+47,300,"tensor(1.00000e-05 *
+       2.8502, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3099, device='cuda:0')"
+47,400,"tensor(1.00000e-05 *
+       4.8240, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2910, device='cuda:0')"
+47,500,"tensor(1.00000e-05 *
+       4.7608, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2794, device='cuda:0')"
+47,600,"tensor(1.00000e-05 *
+       2.1491, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2694, device='cuda:0')"
+47,700,"tensor(1.00000e-07 *
+       6.4448, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2366, device='cuda:0')"
+47,800,"tensor(1.00000e-06 *
+       6.1395, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2135, device='cuda:0')"
+47,900,"tensor(0.7567, device='cuda:0')","tensor(9.3624, device='cuda:0')","tensor(2.2835, device='cuda:0')"
+48,0,"tensor(1.00000e-05 *
+       1.4020, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2847, device='cuda:0')"
+48,100,"tensor(1.00000e-06 *
+       4.0061, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2615, device='cuda:0')"
+48,200,"tensor(1.00000e-05 *
+       1.1250, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2588, device='cuda:0')"
+48,300,"tensor(1.00000e-08 *
+       8.9407, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2323, device='cuda:0')"
+48,400,"tensor(1.00000e-06 *
+       1.1530, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1752, device='cuda:0')"
+48,500,"tensor(1.00000e-05 *
+       2.6283, device='cuda:0')","tensor(27.6309, device='cuda:0')","tensor(2.2644, device='cuda:0')"
+48,600,"tensor(1.00000e-06 *
+       7.0870, device='cuda:0')","tensor(27.6307, device='cuda:0')","tensor(2.2985, device='cuda:0')"
+48,700,"tensor(1.00000e-06 *
+       9.7368, device='cuda:0')","tensor(27.6306, device='cuda:0')","tensor(2.2959, device='cuda:0')"
+48,800,"tensor(1.00000e-03 *
+       1.0768, device='cuda:0')","tensor(9.3285, device='cuda:0')","tensor(2.2518, device='cuda:0')"
+48,900,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2395, device='cuda:0')"
+49,0,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.2336, device='cuda:0')"
+49,100,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.1875, device='cuda:0')"
+49,200,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(2.0686, device='cuda:0')"
+49,300,"tensor(27.6310, device='cuda:0')","tensor(0., device='cuda:0')","tensor(1.9976, device='cuda:0')"
+49,400,"tensor(1.00000e-02 *
+       2.4014, device='cuda:0')","tensor(7.5169, device='cuda:0')","tensor(2.2938, device='cuda:0')"
+49,500,"tensor(1.00000e-02 *
+       6.4892, device='cuda:0')","tensor(5.9894, device='cuda:0')","tensor(2.2959, device='cuda:0')"
+49,600,"tensor(1.00000e-02 *
+       1.6995, device='cuda:0')","tensor(7.7082, device='cuda:0')","tensor(2.2855, device='cuda:0')"
+49,700,"tensor(1.00000e-03 *
+       2.8131, device='cuda:0')","tensor(7.0182, device='cuda:0')","tensor(2.3102, device='cuda:0')"
+49,800,"tensor(1.00000e-04 *
+       3.3816, device='cuda:0')","tensor(10.3429, device='cuda:0')","tensor(2.2857, device='cuda:0')"
+49,900,"tensor(1.00000e-03 *
+       3.9972, device='cuda:0')","tensor(6.8504, device='cuda:0')","tensor(2.2982, device='cuda:0')"
+50,0,"tensor(1.00000e-03 *
+       3.7125, device='cuda:0')","tensor(7.0255, device='cuda:0')","tensor(2.3142, device='cuda:0')"
+50,100,"tensor(1.00000e-03 *
+       3.7209, device='cuda:0')","tensor(7.0734, device='cuda:0')","tensor(2.3077, device='cuda:0')"
+50,200,"tensor(1.00000e-03 *
+       8.3649, device='cuda:0')","tensor(6.6876, device='cuda:0')","tensor(2.3229, device='cuda:0')"
+50,300,"tensor(1.00000e-03 *
+       1.1204, device='cuda:0')","tensor(27.6023, device='cuda:0')","tensor(2.2976, device='cuda:0')"
+50,400,"tensor(1.00000e-03 *
+       8.5690, device='cuda:0')","tensor(6.7866, device='cuda:0')","tensor(2.2797, device='cuda:0')"
+50,500,"tensor(1.00000e-03 *
+       2.7229, device='cuda:0')","tensor(7.0798, device='cuda:0')","tensor(2.3087, device='cuda:0')"
+50,600,"tensor(1.00000e-03 *
+       4.1923, device='cuda:0')","tensor(6.5370, device='cuda:0')","tensor(2.2915, device='cuda:0')"
+50,700,"tensor(1.00000e-03 *
+       5.8440, device='cuda:0')","tensor(6.9391, device='cuda:0')","tensor(2.3144, device='cuda:0')"
+50,800,"tensor(1.00000e-02 *
+       2.9593, device='cuda:0')","tensor(4.9905, device='cuda:0')","tensor(2.3000, device='cuda:0')"
+50,900,"tensor(1.00000e-03 *
+       1.0543, device='cuda:0')","tensor(7.4792, device='cuda:0')","tensor(2.3197, device='cuda:0')"
+51,0,"tensor(1.00000e-03 *
+       3.2254, device='cuda:0')","tensor(6.8487, device='cuda:0')","tensor(2.3094, device='cuda:0')"
+51,100,"tensor(1.00000e-02 *
+       1.9237, device='cuda:0')","tensor(6.6322, device='cuda:0')","tensor(2.3038, device='cuda:0')"
+51,200,"tensor(1.00000e-02 *
+       1.6591, device='cuda:0')","tensor(7.3822, device='cuda:0')","tensor(2.3442, device='cuda:0')"
+51,300,"tensor(1.00000e-03 *
+       2.3454, device='cuda:0')","tensor(7.3727, device='cuda:0')","tensor(2.3084, device='cuda:0')"
+51,400,"tensor(1.00000e-02 *
+       1.3449, device='cuda:0')","tensor(6.7056, device='cuda:0')","tensor(2.3039, device='cuda:0')"
+51,500,"tensor(1.00000e-02 *
+       8.3518, device='cuda:0')","tensor(5.1012, device='cuda:0')","tensor(2.3152, device='cuda:0')"
+51,600,"tensor(1.00000e-03 *
+       2.9204, device='cuda:0')","tensor(7.6280, device='cuda:0')","tensor(2.2846, device='cuda:0')"
+51,700,"tensor(1.00000e-03 *
+       3.4595, device='cuda:0')","tensor(7.1229, device='cuda:0')","tensor(2.3011, device='cuda:0')"
+51,800,"tensor(1.00000e-03 *
+       1.4740, device='cuda:0')","tensor(7.2584, device='cuda:0')","tensor(2.2998, device='cuda:0')"
+51,900,"tensor(1.00000e-03 *
+       4.6851, device='cuda:0')","tensor(6.8465, device='cuda:0')","tensor(2.3091, device='cuda:0')"
+52,0,"tensor(1.00000e-03 *
+       4.1930, device='cuda:0')","tensor(7.1951, device='cuda:0')","tensor(2.2991, device='cuda:0')"
+52,100,"tensor(1.00000e-03 *
+       1.2364, device='cuda:0')","tensor(7.6204, device='cuda:0')","tensor(2.2748, device='cuda:0')"
+52,200,"tensor(1.00000e-04 *
+       4.2942, device='cuda:0')","tensor(10.1107, device='cuda:0')","tensor(2.3004, device='cuda:0')"
+52,300,"tensor(1.00000e-03 *
+       2.8064, device='cuda:0')","tensor(7.3963, device='cuda:0')","tensor(2.2831, device='cuda:0')"
+52,400,"tensor(1.00000e-02 *
+       5.4229, device='cuda:0')","tensor(4.9168, device='cuda:0')","tensor(2.3211, device='cuda:0')"
+52,500,"tensor(1.00000e-02 *
+       1.8322, device='cuda:0')","tensor(6.2306, device='cuda:0')","tensor(2.2893, device='cuda:0')"
+52,600,"tensor(1.00000e-03 *
+       1.1639, device='cuda:0')","tensor(8.0742, device='cuda:0')","tensor(2.2857, device='cuda:0')"
+52,700,"tensor(1.00000e-04 *
+       6.4787, device='cuda:0')","tensor(7.9746, device='cuda:0')","tensor(2.3012, device='cuda:0')"
+52,800,"tensor(1.00000e-04 *
+       8.1401, device='cuda:0')","tensor(7.8634, device='cuda:0')","tensor(2.3096, device='cuda:0')"
+52,900,"tensor(1.00000e-03 *
+       1.2823, device='cuda:0')","tensor(7.8140, device='cuda:0')","tensor(2.3516, device='cuda:0')"
+53,0,"tensor(1.00000e-03 *
+       2.1041, device='cuda:0')","tensor(7.9151, device='cuda:0')","tensor(2.2984, device='cuda:0')"
+53,100,"tensor(1.00000e-04 *
+       1.3662, device='cuda:0')","tensor(22.9923, device='cuda:0')","tensor(2.2826, device='cuda:0')"
+53,200,"tensor(1.00000e-04 *
+       3.4904, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2822, device='cuda:0')"
+53,300,"tensor(0., device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3484, device='cuda:0')"
+53,400,"tensor(1.00000e-08 *
+       1.3039, device='cuda:0')","tensor(27.6309, device='cuda:0')","tensor(2.3314, device='cuda:0')"
+53,500,"tensor(1.00000e-09 *
+       1.8626, device='cuda:0')","tensor(27.6308, device='cuda:0')","tensor(2.3341, device='cuda:0')"
+53,600,"tensor(1.00000e-09 *
+       1.8626, device='cuda:0')","tensor(27.6308, device='cuda:0')","tensor(2.3209, device='cuda:0')"
+53,700,"tensor(1.00000e-08 *
+       3.3528, device='cuda:0')","tensor(27.6307, device='cuda:0')","tensor(2.3192, device='cuda:0')"
+53,800,"tensor(1.00000e-06 *
+       9.5811, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3098, device='cuda:0')"
+53,900,"tensor(1.00000e-06 *
+       1.2964, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3073, device='cuda:0')"
+54,0,"tensor(1.00000e-06 *
+       4.1223, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2854, device='cuda:0')"
+54,100,"tensor(1.00000e-07 *
+       9.0153, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3008, device='cuda:0')"
+54,200,"tensor(1.00000e-06 *
+       1.4343, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2775, device='cuda:0')"
+54,300,"tensor(1.00000e-07 *
+       2.3283, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2687, device='cuda:0')"
+54,400,"tensor(1.00000e-06 *
+       3.1863, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2951, device='cuda:0')"
+54,500,"tensor(1.00000e-07 *
+       5.3458, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2526, device='cuda:0')"
+54,600,"tensor(1.00000e-06 *
+       2.4699, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2546, device='cuda:0')"
+54,700,"tensor(1.00000e-07 *
+       2.0117, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1965, device='cuda:0')"
+54,800,"tensor(1.00000e-07 *
+       4.8615, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1418, device='cuda:0')"
+54,900,"tensor(1.00000e-07 *
+       1.2852, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.0601, device='cuda:0')"
+55,0,"tensor(1.00000e-07 *
+       1.1921, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.0347, device='cuda:0')"
+55,100,"tensor(1.00000e-07 *
+       1.0431, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.9442, device='cuda:0')"
+55,200,"tensor(1.00000e-06 *
+       1.2257, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(1.8694, device='cuda:0')"
+55,300,"tensor(1.00000e-06 *
+       7.6282, device='cuda:0')","tensor(27.6309, device='cuda:0')","tensor(1.7598, device='cuda:0')"
+55,400,"tensor(1.00000e-07 *
+       2.9057, device='cuda:0')","tensor(27.6308, device='cuda:0')","tensor(1.6778, device='cuda:0')"
+55,500,"tensor(4.9179, device='cuda:0')","tensor(27.5202, device='cuda:0')","tensor(2.2757, device='cuda:0')"
+55,600,"tensor(1.00000e-02 *
+       1.4040, device='cuda:0')","tensor(8.5499, device='cuda:0')","tensor(2.2864, device='cuda:0')"
+55,700,"tensor(1.00000e-03 *
+       4.8164, device='cuda:0')","tensor(5.8434, device='cuda:0')","tensor(2.3103, device='cuda:0')"
+55,800,"tensor(1.00000e-03 *
+       1.9319, device='cuda:0')","tensor(7.0684, device='cuda:0')","tensor(2.3152, device='cuda:0')"
+55,900,"tensor(1.00000e-03 *
+       7.1137, device='cuda:0')","tensor(6.9944, device='cuda:0')","tensor(2.2991, device='cuda:0')"
+56,0,"tensor(1.00000e-03 *
+       1.8054, device='cuda:0')","tensor(7.8488, device='cuda:0')","tensor(2.3187, device='cuda:0')"
+56,100,"tensor(1.00000e-03 *
+       2.2906, device='cuda:0')","tensor(7.3861, device='cuda:0')","tensor(2.3017, device='cuda:0')"
+56,200,"tensor(1.00000e-03 *
+       1.1114, device='cuda:0')","tensor(7.4138, device='cuda:0')","tensor(2.3140, device='cuda:0')"
+56,300,"tensor(1.00000e-03 *
+       1.6149, device='cuda:0')","tensor(8.1453, device='cuda:0')","tensor(2.3279, device='cuda:0')"
+56,400,"tensor(1.00000e-04 *
+       8.4630, device='cuda:0')","tensor(7.6641, device='cuda:0')","tensor(2.3293, device='cuda:0')"
+56,500,"tensor(1.00000e-04 *
+       9.0934, device='cuda:0')","tensor(7.8187, device='cuda:0')","tensor(2.3200, device='cuda:0')"
+56,600,"tensor(1.00000e-02 *
+       2.2809, device='cuda:0')","tensor(7.2198, device='cuda:0')","tensor(2.3090, device='cuda:0')"
+56,700,"tensor(1.00000e-04 *
+       6.1923, device='cuda:0')","tensor(9.3659, device='cuda:0')","tensor(2.3076, device='cuda:0')"
+56,800,"tensor(1.00000e-03 *
+       1.1209, device='cuda:0')","tensor(7.8646, device='cuda:0')","tensor(2.3158, device='cuda:0')"
+56,900,"tensor(1.00000e-03 *
+       1.4215, device='cuda:0')","tensor(7.6465, device='cuda:0')","tensor(2.3048, device='cuda:0')"
+57,0,"tensor(1.00000e-04 *
+       5.3157, device='cuda:0')","tensor(8.1537, device='cuda:0')","tensor(2.3026, device='cuda:0')"
+57,100,"tensor(1.00000e-04 *
+       6.6202, device='cuda:0')","tensor(7.9570, device='cuda:0')","tensor(2.2901, device='cuda:0')"
+57,200,"tensor(1.00000e-03 *
+       1.3743, device='cuda:0')","tensor(7.7187, device='cuda:0')","tensor(2.3192, device='cuda:0')"
+57,300,"tensor(1.00000e-03 *
+       1.2546, device='cuda:0')","tensor(7.8110, device='cuda:0')","tensor(2.2830, device='cuda:0')"
+57,400,"tensor(1.00000e-04 *
+       6.7209, device='cuda:0')","tensor(8.2471, device='cuda:0')","tensor(2.3103, device='cuda:0')"
+57,500,"tensor(1.00000e-04 *
+       7.1354, device='cuda:0')","tensor(7.8970, device='cuda:0')","tensor(2.3071, device='cuda:0')"
+57,600,"tensor(1.00000e-04 *
+       5.9226, device='cuda:0')","tensor(8.2144, device='cuda:0')","tensor(2.3144, device='cuda:0')"
+57,700,"tensor(1.00000e-03 *
+       1.1715, device='cuda:0')","tensor(8.4052, device='cuda:0')","tensor(2.2750, device='cuda:0')"
+57,800,"tensor(1.00000e-06 *
+       1.8161, device='cuda:0')","tensor(27.6306, device='cuda:0')","tensor(2.3252, device='cuda:0')"
+57,900,"tensor(1.00000e-06 *
+       1.8478, device='cuda:0')","tensor(27.6205, device='cuda:0')","tensor(2.3042, device='cuda:0')"
+58,0,"tensor(1.00000e-02 *
+       1.2092, device='cuda:0')","tensor(6.2524, device='cuda:0')","tensor(2.3179, device='cuda:0')"
+58,100,"tensor(1.00000e-04 *
+       2.4939, device='cuda:0')","tensor(27.6234, device='cuda:0')","tensor(2.2921, device='cuda:0')"
+58,200,"tensor(1.00000e-02 *
+       2.7931, device='cuda:0')","tensor(9.4005, device='cuda:0')","tensor(2.3185, device='cuda:0')"
+58,300,"tensor(1.00000e-02 *
+       2.2735, device='cuda:0')","tensor(6.9142, device='cuda:0')","tensor(2.3244, device='cuda:0')"
+58,400,"tensor(1.00000e-03 *
+       4.8179, device='cuda:0')","tensor(7.0860, device='cuda:0')","tensor(2.3066, device='cuda:0')"
+58,500,"tensor(1.00000e-03 *
+       3.0157, device='cuda:0')","tensor(7.5015, device='cuda:0')","tensor(2.3098, device='cuda:0')"
+58,600,"tensor(1.00000e-03 *
+       1.0847, device='cuda:0')","tensor(7.6202, device='cuda:0')","tensor(2.2945, device='cuda:0')"
+58,700,"tensor(1.00000e-04 *
+       1.1475, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3063, device='cuda:0')"
+58,800,"tensor(1.00000e-08 *
+       7.0781, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3341, device='cuda:0')"
+58,900,"tensor(1.00000e-06 *
+       1.1083, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3052, device='cuda:0')"
+59,0,"tensor(1.00000e-08 *
+       1.3039, device='cuda:0')","tensor(27.6309, device='cuda:0')","tensor(2.3116, device='cuda:0')"
+59,100,"tensor(1.00000e-09 *
+       1.8626, device='cuda:0')","tensor(27.6305, device='cuda:0')","tensor(2.3012, device='cuda:0')"
+59,200,"tensor(1.00000e-08 *
+       4.0978, device='cuda:0')","tensor(27.6067, device='cuda:0')","tensor(2.2946, device='cuda:0')"
+59,300,"tensor(1.00000e-05 *
+       9.9925, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2931, device='cuda:0')"
+59,400,"tensor(1.00000e-04 *
+       1.2450, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.3180, device='cuda:0')"
+59,500,"tensor(1.00000e-06 *
+       2.8294, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2884, device='cuda:0')"
+59,600,"tensor(1.00000e-06 *
+       1.0263, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2846, device='cuda:0')"
+59,700,"tensor(1.00000e-05 *
+       7.7154, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2705, device='cuda:0')"
+59,800,"tensor(1.00000e-06 *
+       8.7702, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2453, device='cuda:0')"
+59,900,"tensor(1.00000e-06 *
+       5.9198, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2288, device='cuda:0')"
+60,0,"tensor(1.00000e-06 *
+       2.5500, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.2363, device='cuda:0')"
+60,100,"tensor(1.00000e-06 *
+       6.9257, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1986, device='cuda:0')"
+60,200,"tensor(1.00000e-06 *
+       5.7180, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1568, device='cuda:0')"
+60,300,"tensor(1.00000e-06 *
+       1.4883, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.0624, device='cuda:0')"
+60,400,"tensor(1.00000e-06 *
+       2.4737, device='cuda:0')","tensor(27.6308, device='cuda:0')","tensor(2.0216, device='cuda:0')"
+60,500,"tensor(1.00000e-05 *
+       8.9037, device='cuda:0')","tensor(27.6310, device='cuda:0')","tensor(2.1928, device='cuda:0')"
+60,600,"tensor(1.00000e-06 *
+       9.9326, device='cuda:0')","tensor(27.6307, device='cuda:0')","tensor(2.0560, device='cuda:0')"
+60,700,"tensor(1.00000e-02 *
+       4.5239, device='cuda:0')","tensor(10.2708, device='cuda:0')","tensor(2.2896, device='cuda:0')"
+60,800,"tensor(1.00000e-02 *
+       4.1977, device='cuda:0')","tensor(5.3271, device='cuda:0')","tensor(2.3056, device='cuda:0')"
+60,900,"tensor(1.00000e-02 *
+       3.2898, device='cuda:0')","tensor(5.8410, device='cuda:0')","tensor(2.3273, device='cuda:0')"
+61,0,"tensor(1.00000e-02 *
+       2.2471, device='cuda:0')","tensor(6.1303, device='cuda:0')","tensor(2.2758, device='cuda:0')"
+61,100,"tensor(1.00000e-02 *
+       1.8148, device='cuda:0')","tensor(5.8553, device='cuda:0')","tensor(2.3223, device='cuda:0')"
+61,200,"tensor(1.00000e-03 *
+       2.5639, device='cuda:0')","tensor(6.5327, device='cuda:0')","tensor(2.2649, device='cuda:0')"
+61,300,"tensor(1.00000e-04 *
+       9.9720, device='cuda:0')","tensor(7.6771, device='cuda:0')","tensor(2.3196, device='cuda:0')"
+61,400,"tensor(1.00000e-03 *
+       3.6001, device='cuda:0')","tensor(8.3329, device='cuda:0')","tensor(2.2914, device='cuda:0')"
+61,500,"tensor(1.00000e-02 *
+       1.2378, device='cuda:0')","tensor(5.5961, device='cuda:0')","tensor(2.2899, device='cuda:0')"
+61,600,"tensor(1.00000e-02 *
+       3.4708, device='cuda:0')","tensor(8.9465, device='cuda:0')","tensor(2.3131, device='cuda:0')"
+61,700,"tensor(1.00000e-02 *
+       3.2590, device='cuda:0')","tensor(5.8080, device='cuda:0')","tensor(2.2891, device='cuda:0')"
+61,800,"tensor(1.00000e-02 *
+       2.3411, device='cuda:0')","tensor(6.2230, device='cuda:0')","tensor(2.3011, device='cuda:0')"
+61,900,"tensor(1.00000e-03 *
+       8.6143, device='cuda:0')","tensor(6.3873, device='cuda:0')","tensor(2.3093, device='cuda:0')"
+62,0,"tensor(1.00000e-03 *
+       1.0669, device='cuda:0')","tensor(8.1770, device='cuda:0')","tensor(2.3177, device='cuda:0')"
+62,100,"tensor(1.00000e-03 *
+       4.4702, device='cuda:0')","tensor(7.9107, device='cuda:0')","tensor(2.3319, device='cuda:0')"
+62,200,"tensor(1.00000e-02 *
+       2.6145, device='cuda:0')","tensor(4.7823, device='cuda:0')","tensor(2.2804, device='cuda:0')"
+62,300,"tensor(1.00000e-02 *
+       1.2331, device='cuda:0')","tensor(7.0610, device='cuda:0')","tensor(2.2909, device='cuda:0')"
+62,400,"tensor(1.00000e-03 *
+       1.7107, device='cuda:0')","tensor(7.1852, device='cuda:0')","tensor(2.2910, device='cuda:0')"
+62,500,"tensor(1.00000e-02 *
+       1.5802, device='cuda:0')","tensor(6.2077, device='cuda:0')","tensor(2.3256, device='cuda:0')"
+62,600,"tensor(1.00000e-03 *
+       5.3605, device='cuda:0')","tensor(5.3764, device='cuda:0')","tensor(2.2906, device='cuda:0')"
+62,700,"tensor(1.00000e-03 *
+       5.2150, device='cuda:0')","tensor(6.0114, device='cuda:0')","tensor(2.3059, device='cuda:0')"
+62,800,"tensor(1.00000e-03 *
+       8.1509, device='cuda:0')","tensor(6.5245, device='cuda:0')","tensor(2.3267, device='cuda:0')"
+62,900,"tensor(1.00000e-02 *
+       1.3325, device='cuda:0')","tensor(6.1846, device='cuda:0')","tensor(2.2899, device='cuda:0')"
+63,0,"tensor(1.00000e-03 *
+       9.5064, device='cuda:0')","tensor(7.2064, device='cuda:0')","tensor(2.3302, device='cuda:0')"
+63,100,"tensor(1.00000e-02 *
+       3.0394, device='cuda:0')","tensor(6.5305, device='cuda:0')","tensor(2.3024, device='cuda:0')"
+63,200,"tensor(1.00000e-03 *
+       2.3837, device='cuda:0')","tensor(6.9720, device='cuda:0')","tensor(2.2930, device='cuda:0')"
+63,300,"tensor(1.00000e-03 *
+       4.8473, device='cuda:0')","tensor(6.2343, device='cuda:0')","tensor(2.3268, device='cuda:0')"
+63,400,"tensor(1.00000e-03 *
+       3.0627, device='cuda:0')","tensor(6.8608, device='cuda:0')","tensor(2.3025, device='cuda:0')"
+63,500,"tensor(1.00000e-02 *
+       5.8667, device='cuda:0')","tensor(9.0870, device='cuda:0')","tensor(2.2832, device='cuda:0')"
+63,600,"tensor(1.00000e-03 *
+       6.8800, device='cuda:0')","tensor(6.1917, device='cuda:0')","tensor(2.2990, device='cuda:0')"
+63,700,"tensor(1.00000e-02 *
+       1.1547, device='cuda:0')","tensor(5.9671, device='cuda:0')","tensor(2.2995, device='cuda:0')"
+63,800,"tensor(1.00000e-03 *
+       7.0300, device='cuda:0')","tensor(5.9953, device='cuda:0')","tensor(2.3087, device='cuda:0')"
+63,900,"tensor(1.00000e-03 *
+       4.9257, device='cuda:0')","tensor(6.1002, device='cuda:0')","tensor(2.3039, device='cuda:0')"
+64,0,"tensor(1.00000e-03 *
+       3.3196, device='cuda:0')","tensor(6.4954, device='cuda:0')","tensor(2.3022, device='cuda:0')"
+64,100,"tensor(1.00000e-03 *
+       2.4819, device='cuda:0')","tensor(7.1732, device='cuda:0')","tensor(2.3134, device='cuda:0')"
+64,200,"tensor(1.00000e-03 *
+       1.0596, device='cuda:0')","tensor(8.4391, device='cuda:0')","tensor(2.3321, device='cuda:0')"
+64,300,"tensor(1.00000e-03 *
+       2.6887, device='cuda:0')","tensor(8.9231, device='cuda:0')","tensor(2.3312, device='cuda:0')"
+64,400,"tensor(1.00000e-04 *
+       8.1106, device='cuda:0')","tensor(7.9247, device='cuda:0')","tensor(2.2900, device='cuda:0')"
+64,500,"tensor(1.00000e-03 *
+       2.8550, device='cuda:0')","tensor(7.0144, device='cuda:0')","tensor(2.3269, device='cuda:0')"
+64,600,"tensor(1.00000e-02 *
+       8.6425, device='cuda:0')","tensor(6.3755, device='cuda:0')","tensor(2.3206, device='cuda:0')"
+64,700,"tensor(1.00000e-02 *
+       2.7572, device='cuda:0')","tensor(5.3305, device='cuda:0')","tensor(2.2927, device='cuda:0')"
+64,800,"tensor(1.00000e-03 *
+       3.0008, device='cuda:0')","tensor(6.7571, device='cuda:0')","tensor(2.3047, device='cuda:0')"
+64,900,"tensor(1.00000e-03 *
+       7.8609, device='cuda:0')","tensor(6.4344, device='cuda:0')","tensor(2.3424, device='cuda:0')"
+65,0,"tensor(1.00000e-02 *
+       1.7304, device='cuda:0')","tensor(5.2556, device='cuda:0')","tensor(2.3400, device='cuda:0')"
+65,100,"tensor(1.00000e-03 *
+       4.9531, device='cuda:0')","tensor(6.9988, device='cuda:0')","tensor(2.3425, device='cuda:0')"
+65,200,"tensor(1.00000e-03 *
+       4.9469, device='cuda:0')","tensor(6.7956, device='cuda:0')","tensor(2.2895, device='cuda:0')"
+65,300,"tensor(1.00000e-02 *
+       2.2170, device='cuda:0')","tensor(5.8045, device='cuda:0')","tensor(2.3371, device='cuda:0')"
+65,400,"tensor(1.00000e-02 *
+       2.1368, device='cuda:0')","tensor(6.2514, device='cuda:0')","tensor(2.3557, device='cuda:0')"
+65,500,"tensor(1.00000e-03 *
+       3.1407, device='cuda:0')","tensor(7.0695, device='cuda:0')","tensor(2.2693, device='cuda:0')"
+65,600,"tensor(1.00000e-02 *
+       7.6939, device='cuda:0')","tensor(5.8112, device='cuda:0')","tensor(2.3027, device='cuda:0')"
+65,700,"tensor(1.00000e-02 *
+       4.9793, device='cuda:0')","tensor(6.3145, device='cuda:0')","tensor(2.3372, device='cuda:0')"
+65,800,"tensor(1.00000e-02 *
+       1.4733, device='cuda:0')","tensor(6.1007, device='cuda:0')","tensor(2.3327, device='cuda:0')"
+65,900,"tensor(1.00000e-03 *
+       2.7338, device='cuda:0')","tensor(7.0548, device='cuda:0')","tensor(2.2777, device='cuda:0')"
+66,0,"tensor(1.00000e-02 *
+       2.4404, device='cuda:0')","tensor(4.5284, device='cuda:0')","tensor(2.2597, device='cuda:0')"
+66,100,"tensor(1.00000e-03 *
+       2.4259, device='cuda:0')","tensor(7.2629, device='cuda:0')","tensor(2.3355, device='cuda:0')"
+66,200,"tensor(1.00000e-03 *
+       3.9451, device='cuda:0')","tensor(6.5015, device='cuda:0')","tensor(2.3288, device='cuda:0')"
+66,300,"tensor(1.00000e-03 *
+       6.6279, device='cuda:0')","tensor(6.8298, device='cuda:0')","tensor(2.3410, device='cuda:0')"
+66,400,"tensor(1.00000e-02 *
+       8.6660, device='cuda:0')","tensor(5.5033, device='cuda:0')","tensor(2.2850, device='cuda:0')"
+66,500,"tensor(1.00000e-02 *
+       1.0818, device='cuda:0')","tensor(6.1021, device='cuda:0')","tensor(2.3174, device='cuda:0')"
+66,600,"tensor(1.00000e-02 *
+       1.3547, device='cuda:0')","tensor(5.7467, device='cuda:0')","tensor(2.2891, device='cuda:0')"
+66,700,"tensor(1.00000e-03 *
+       2.3394, device='cuda:0')","tensor(6.9018, device='cuda:0')","tensor(2.3009, device='cuda:0')"
+66,800,"tensor(1.00000e-03 *
+       1.0507, device='cuda:0')","tensor(8.1446, device='cuda:0')","tensor(2.3161, device='cuda:0')"
+66,900,"tensor(1.00000e-03 *
+       1.2476, device='cuda:0')","tensor(7.8279, device='cuda:0')","tensor(2.3183, device='cuda:0')"
+67,0,"tensor(1.00000e-03 *
+       2.5331, device='cuda:0')","tensor(7.0784, device='cuda:0')","tensor(2.2894, device='cuda:0')"
+67,100,"tensor(1.00000e-03 *
+       1.4299, device='cuda:0')","tensor(7.5518, device='cuda:0')","tensor(2.2978, device='cuda:0')"
+67,200,"tensor(1.00000e-02 *
+       4.1823, device='cuda:0')","tensor(5.8978, device='cuda:0')","tensor(2.3046, device='cuda:0')"
+67,300,"tensor(1.00000e-02 *
+       1.5274, device='cuda:0')","tensor(5.4967, device='cuda:0')","tensor(2.3257, device='cuda:0')"
+67,400,"tensor(1.00000e-02 *
+       1.1301, device='cuda:0')","tensor(5.8539, device='cuda:0')","tensor(2.3139, device='cuda:0')"
+67,500,"tensor(1.00000e-03 *
+       2.3764, device='cuda:0')","tensor(6.8647, device='cuda:0')","tensor(2.2926, device='cuda:0')"
+67,600,"tensor(1.00000e-03 *
+       1.3137, device='cuda:0')","tensor(7.5769, device='cuda:0')","tensor(2.2970, device='cuda:0')"
+67,700,"tensor(1.00000e-03 *
+       3.2833, device='cuda:0')","tensor(7.2727, device='cuda:0')","tensor(2.3087, device='cuda:0')"
+67,800,"tensor(1.00000e-03 *
+       2.9879, device='cuda:0')","tensor(6.5550, device='cuda:0')","tensor(2.3273, device='cuda:0')"
+67,900,"tensor(1.00000e-03 *
+       1.5547, device='cuda:0')","tensor(7.3594, device='cuda:0')","tensor(2.3001, device='cuda:0')"
+68,0,"tensor(1.00000e-03 *
+       2.5674, device='cuda:0')","tensor(6.8537, device='cuda:0')","tensor(2.3294, device='cuda:0')"
+68,100,"tensor(1.00000e-02 *
+       1.7101, device='cuda:0')","tensor(9.6114, device='cuda:0')","tensor(2.2869, device='cuda:0')"
+68,200,"tensor(1.00000e-03 *
+       3.0384, device='cuda:0')","tensor(7.8232, device='cuda:0')","tensor(2.3369, device='cuda:0')"
+68,300,"tensor(1.00000e-02 *
+       4.0418, device='cuda:0')","tensor(5.8573, device='cuda:0')","tensor(2.3278, device='cuda:0')"
+68,400,"tensor(1.00000e-03 *
+       5.2291, device='cuda:0')","tensor(6.0517, device='cuda:0')","tensor(2.2952, device='cuda:0')"
+68,500,"tensor(1.00000e-03 *
+       5.1936, device='cuda:0')","tensor(6.2462, device='cuda:0')","tensor(2.3215, device='cuda:0')"
+68,600,"tensor(1.00000e-03 *
+       4.9340, device='cuda:0')","tensor(7.1559, device='cuda:0')","tensor(2.2992, device='cuda:0')"
+68,700,"tensor(1.00000e-03 *
+       1.1267, device='cuda:0')","tensor(7.2637, device='cuda:0')","tensor(2.3081, device='cuda:0')"
+68,800,"tensor(1.00000e-02 *
+       2.4252, device='cuda:0')","tensor(5.4575, device='cuda:0')","tensor(2.2867, device='cuda:0')"
+68,900,"tensor(1.00000e-02 *
+       1.1423, device='cuda:0')","tensor(5.7047, device='cuda:0')","tensor(2.2922, device='cuda:0')"
+69,0,"tensor(1.00000e-03 *
+       9.7235, device='cuda:0')","tensor(6.0816, device='cuda:0')","tensor(2.3051, device='cuda:0')"
+69,100,"tensor(1.00000e-02 *
+       1.1023, device='cuda:0')","tensor(6.2274, device='cuda:0')","tensor(2.3317, device='cuda:0')"
+69,200,"tensor(1.00000e-02 *
+       2.5472, device='cuda:0')","tensor(4.5658, device='cuda:0')","tensor(2.3243, device='cuda:0')"
+69,300,"tensor(1.00000e-03 *
+       1.7636, device='cuda:0')","tensor(8.6705, device='cuda:0')","tensor(2.3181, device='cuda:0')"
+69,400,"tensor(1.00000e-02 *
+       7.8209, device='cuda:0')","tensor(4.4821, device='cuda:0')","tensor(2.3146, device='cuda:0')"
+69,500,"tensor(1.00000e-02 *
+       5.0318, device='cuda:0')","tensor(5.0220, device='cuda:0')","tensor(2.3057, device='cuda:0')"
+69,600,"tensor(1.00000e-03 *
+       7.6241, device='cuda:0')","tensor(5.6991, device='cuda:0')","tensor(2.3174, device='cuda:0')"
+69,700,"tensor(1.00000e-02 *
+       4.2165, device='cuda:0')","tensor(6.9417, device='cuda:0')","tensor(2.3045, device='cuda:0')"
+69,800,"tensor(1.00000e-03 *
+       8.8622, device='cuda:0')","tensor(6.3222, device='cuda:0')","tensor(2.3031, device='cuda:0')"
+69,900,"tensor(1.00000e-03 *
+       9.7386, device='cuda:0')","tensor(6.8054, device='cuda:0')","tensor(2.3188, device='cuda:0')"
+70,0,"tensor(1.00000e-03 *
+       2.1860, device='cuda:0')","tensor(7.1262, device='cuda:0')","tensor(2.3027, device='cuda:0')"
+70,100,"tensor(1.00000e-02 *
+       1.7562, device='cuda:0')","tensor(5.3516, device='cuda:0')","tensor(2.3030, device='cuda:0')"
+70,200,"tensor(1.00000e-03 *
+       6.5130, device='cuda:0')","tensor(7.1330, device='cuda:0')","tensor(2.3171, device='cuda:0')"
+70,300,"tensor(1.00000e-02 *
+       1.8763, device='cuda:0')","tensor(5.5725, device='cuda:0')","tensor(2.3089, device='cuda:0')"
+70,400,"tensor(1.00000e-02 *
+       6.6549, device='cuda:0')","tensor(5.0596, device='cuda:0')","tensor(2.3137, device='cuda:0')"
+70,500,"tensor(1.00000e-02 *
+       2.6418, device='cuda:0')","tensor(4.8931, device='cuda:0')","tensor(2.3021, device='cuda:0')"
+70,600,"tensor(1.00000e-02 *
+       6.1074, device='cuda:0')","tensor(6.6255, device='cuda:0')","tensor(2.3108, device='cuda:0')"
+70,700,"tensor(1.00000e-03 *
+       4.6966, device='cuda:0')","tensor(5.8517, device='cuda:0')","tensor(2.3076, device='cuda:0')"
+70,800,"tensor(1.00000e-03 *
+       4.2472, device='cuda:0')","tensor(6.3350, device='cuda:0')","tensor(2.3166, device='cuda:0')"
+70,900,"tensor(1.00000e-03 *
+       1.9000, device='cuda:0')","tensor(7.9163, device='cuda:0')","tensor(2.3127, device='cuda:0')"
+71,0,"tensor(1.00000e-03 *
+       1.3469, device='cuda:0')","tensor(8.2234, device='cuda:0')","tensor(2.3255, device='cuda:0')"
+71,100,"tensor(1.00000e-02 *
+       5.0533, device='cuda:0')","tensor(6.3697, device='cuda:0')","tensor(2.3171, device='cuda:0')"
+71,200,"tensor(1.00000e-02 *
+       1.4019, device='cuda:0')","tensor(5.2783, device='cuda:0')","tensor(2.3511, device='cuda:0')"
+71,300,"tensor(1.00000e-03 *
+       8.6943, device='cuda:0')","tensor(5.9791, device='cuda:0')","tensor(2.3217, device='cuda:0')"
+71,400,"tensor(1.00000e-03 *
+       4.2031, device='cuda:0')","tensor(7.1229, device='cuda:0')","tensor(2.2971, device='cuda:0')"
+71,500,"tensor(1.00000e-03 *
+       5.4722, device='cuda:0')","tensor(6.1760, device='cuda:0')","tensor(2.3200, device='cuda:0')"
+71,600,"tensor(1.00000e-03 *
+       4.7977, device='cuda:0')","tensor(6.8537, device='cuda:0')","tensor(2.2962, device='cuda:0')"
+71,700,"tensor(1.00000e-02 *
+       1.0196, device='cuda:0')","tensor(5.8863, device='cuda:0')","tensor(2.3151, device='cuda:0')"
+71,800,"tensor(1.00000e-02 *
+       1.3014, device='cuda:0')","tensor(6.5649, device='cuda:0')","tensor(2.2932, device='cuda:0')"
+71,900,"tensor(1.00000e-03 *
+       1.4130, device='cuda:0')","tensor(7.3134, device='cuda:0')","tensor(2.3388, device='cuda:0')"
+72,0,"tensor(1.00000e-03 *
+       1.2378, device='cuda:0')","tensor(10.8068, device='cuda:0')","tensor(2.3193, device='cuda:0')"
+72,100,"tensor(1.00000e-02 *
+       2.9829, device='cuda:0')","tensor(4.7397, device='cuda:0')","tensor(2.2959, device='cuda:0')"
+72,200,"tensor(1.00000e-03 *
+       9.4789, device='cuda:0')","tensor(5.8175, device='cuda:0')","tensor(2.2919, device='cuda:0')"
+72,300,"tensor(1.00000e-02 *
+       1.8971, device='cuda:0')","tensor(5.6476, device='cuda:0')","tensor(2.2875, device='cuda:0')"
+72,400,"tensor(1.00000e-02 *
+       2.0446, device='cuda:0')","tensor(6.5686, device='cuda:0')","tensor(2.2666, device='cuda:0')"
+72,500,"tensor(1.00000e-03 *
+       5.5914, device='cuda:0')","tensor(6.5239, device='cuda:0')","tensor(2.3131, device='cuda:0')"
+72,600,"tensor(1.00000e-03 *
+       5.7352, device='cuda:0')","tensor(6.8873, device='cuda:0')","tensor(2.3075, device='cuda:0')"
+72,700,"tensor(1.00000e-03 *
+       3.5722, device='cuda:0')","tensor(8.3886, device='cuda:0')","tensor(2.3065, device='cuda:0')"
+72,800,"tensor(1.00000e-03 *
+       1.6583, device='cuda:0')","tensor(7.6199, device='cuda:0')","tensor(2.3279, device='cuda:0')"
+72,900,"tensor(1.00000e-02 *
+       1.3400, device='cuda:0')","tensor(6.4357, device='cuda:0')","tensor(2.2921, device='cuda:0')"
+73,0,"tensor(1.00000e-03 *
+       1.5434, device='cuda:0')","tensor(7.5764, device='cuda:0')","tensor(2.2925, device='cuda:0')"
+73,100,"tensor(1.00000e-03 *
+       2.4926, device='cuda:0')","tensor(6.7717, device='cuda:0')","tensor(2.3122, device='cuda:0')"
+73,200,"tensor(1.00000e-04 *
+       2.8807, device='cuda:0')","tensor(9.1166, device='cuda:0')","tensor(2.3096, device='cuda:0')"
+73,300,"tensor(1.00000e-03 *
+       2.4580, device='cuda:0')","tensor(7.7062, device='cuda:0')","tensor(2.3193, device='cuda:0')"
+73,400,"tensor(1.00000e-02 *
+       1.3851, device='cuda:0')","tensor(6.9386, device='cuda:0')","tensor(2.2662, device='cuda:0')"
+73,500,"tensor(1.00000e-02 *
+       1.6329, device='cuda:0')","tensor(6.1701, device='cuda:0')","tensor(2.2894, device='cuda:0')"
+73,600,"tensor(1.00000e-03 *
+       7.6426, device='cuda:0')","tensor(5.7818, device='cuda:0')","tensor(2.2850, device='cuda:0')"
+73,700,"tensor(1.00000e-03 *
+       9.6024, device='cuda:0')","tensor(5.8661, device='cuda:0')","tensor(2.3333, device='cuda:0')"
+73,800,"tensor(1.00000e-03 *
+       4.9217, device='cuda:0')","tensor(6.0111, device='cuda:0')","tensor(2.3167, device='cuda:0')"
+73,900,"tensor(1.00000e-03 *
+       1.2097, device='cuda:0')","tensor(8.3816, device='cuda:0')","tensor(2.3416, device='cuda:0')"
+74,0,"tensor(1.00000e-04 *
+       6.3790, device='cuda:0')","tensor(7.9496, device='cuda:0')","tensor(2.3364, device='cuda:0')"
+74,100,"tensor(1.00000e-02 *
+       6.0289, device='cuda:0')","tensor(6.0484, device='cuda:0')","tensor(2.3571, device='cuda:0')"
+74,200,"tensor(1.00000e-03 *
+       9.4140, device='cuda:0')","tensor(5.5999, device='cuda:0')","tensor(2.3035, device='cuda:0')"
+74,300,"tensor(1.00000e-03 *
+       1.2669, device='cuda:0')","tensor(8.4670, device='cuda:0')","tensor(2.3070, device='cuda:0')"
+74,400,"tensor(1.00000e-03 *
+       6.8462, device='cuda:0')","tensor(6.9222, device='cuda:0')","tensor(2.3114, device='cuda:0')"
+74,500,"tensor(1.00000e-02 *
+       5.0737, device='cuda:0')","tensor(7.3022, device='cuda:0')","tensor(2.2815, device='cuda:0')"
+74,600,"tensor(1.00000e-02 *
+       1.1118, device='cuda:0')","tensor(5.9062, device='cuda:0')","tensor(2.3256, device='cuda:0')"
+74,700,"tensor(1.00000e-02 *
+       3.6778, device='cuda:0')","tensor(7.0303, device='cuda:0')","tensor(2.3200, device='cuda:0')"
+74,800,"tensor(1.00000e-03 *
+       7.5164, device='cuda:0')","tensor(5.7475, device='cuda:0')","tensor(2.2990, device='cuda:0')"
+74,900,"tensor(1.00000e-03 *
+       4.3812, device='cuda:0')","tensor(6.5016, device='cuda:0')","tensor(2.2764, device='cuda:0')"
+75,0,"tensor(1.00000e-03 *
+       6.1615, device='cuda:0')","tensor(10.5514, device='cuda:0')","tensor(2.2959, device='cuda:0')"
+75,100,"tensor(1.00000e-02 *
+       4.9251, device='cuda:0')","tensor(4.9424, device='cuda:0')","tensor(2.3182, device='cuda:0')"
+75,200,"tensor(1.00000e-03 *
+       7.1222, device='cuda:0')","tensor(6.0062, device='cuda:0')","tensor(2.3106, device='cuda:0')"
+75,300,"tensor(1.00000e-03 *
+       3.9232, device='cuda:0')","tensor(6.3905, device='cuda:0')","tensor(2.3329, device='cuda:0')"
+75,400,"tensor(1.00000e-02 *
+       1.2156, device='cuda:0')","tensor(5.8167, device='cuda:0')","tensor(2.3191, device='cuda:0')"
+75,500,"tensor(1.00000e-03 *
+       1.6977, device='cuda:0')","tensor(7.8338, device='cuda:0')","tensor(2.3338, device='cuda:0')"
+75,600,"tensor(1.00000e-02 *
+       4.3093, device='cuda:0')","tensor(5.5584, device='cuda:0')","tensor(2.2872, device='cuda:0')"
+75,700,"tensor(1.00000e-03 *
+       1.8331, device='cuda:0')","tensor(8.2970, device='cuda:0')","tensor(2.3051, device='cuda:0')"
+75,800,"tensor(1.00000e-03 *
+       4.7700, device='cuda:0')","tensor(7.1112, device='cuda:0')","tensor(2.3046, device='cuda:0')"
+75,900,"tensor(1.00000e-03 *
+       1.9765, device='cuda:0')","tensor(7.2522, device='cuda:0')","tensor(2.3202, device='cuda:0')"
+76,0,"tensor(1.00000e-03 *
+       5.2640, device='cuda:0')","tensor(8.2664, device='cuda:0')","tensor(2.3179, device='cuda:0')"
+76,100,"tensor(1.00000e-04 *
+       4.7233, device='cuda:0')","tensor(9.3867, device='cuda:0')","tensor(2.3170, device='cuda:0')"
+76,200,"tensor(1.00000e-02 *
+       1.0048, device='cuda:0')","tensor(8.3617, device='cuda:0')","tensor(2.3175, device='cuda:0')"
+76,300,"tensor(1.00000e-03 *
+       2.0351, device='cuda:0')","tensor(7.8872, device='cuda:0')","tensor(2.2952, device='cuda:0')"
+76,400,"tensor(1.00000e-04 *
+       8.1699, device='cuda:0')","tensor(7.9092, device='cuda:0')","tensor(2.2918, device='cuda:0')"
+76,500,"tensor(1.00000e-02 *
+       2.3241, device='cuda:0')","tensor(5.5724, device='cuda:0')","tensor(2.3274, device='cuda:0')"
+76,600,"tensor(1.00000e-02 *
+       2.5838, device='cuda:0')","tensor(4.8546, device='cuda:0')","tensor(2.2681, device='cuda:0')"
+76,700,"tensor(1.00000e-03 *
+       4.9218, device='cuda:0')","tensor(7.4949, device='cuda:0')","tensor(2.3238, device='cuda:0')"
+76,800,"tensor(1.00000e-02 *
+       2.4281, device='cuda:0')","tensor(5.2847, device='cuda:0')","tensor(2.3244, device='cuda:0')"
+76,900,"tensor(1.00000e-03 *
+       9.9321, device='cuda:0')","tensor(6.4511, device='cuda:0')","tensor(2.3307, device='cuda:0')"
+77,0,"tensor(1.00000e-03 *
+       7.4599, device='cuda:0')","tensor(6.3120, device='cuda:0')","tensor(2.3093, device='cuda:0')"
+77,100,"tensor(0.5015, device='cuda:0')","tensor(11.4882, device='cuda:0')","tensor(2.2999, device='cuda:0')"
+77,200,"tensor(1.00000e-02 *
+       1.5033, device='cuda:0')","tensor(5.5523, device='cuda:0')","tensor(2.3288, device='cuda:0')"
+77,300,"tensor(1.00000e-02 *
+       3.1017, device='cuda:0')","tensor(6.8600, device='cuda:0')","tensor(2.3221, device='cuda:0')"
+77,400,"tensor(1.00000e-02 *
+       2.1323, device='cuda:0')","tensor(7.2458, device='cuda:0')","tensor(2.3243, device='cuda:0')"
+77,500,"tensor(1.00000e-03 *
+       2.2621, device='cuda:0')","tensor(6.7979, device='cuda:0')","tensor(2.3163, device='cuda:0')"
+77,600,"tensor(1.00000e-03 *
+       6.1844, device='cuda:0')","tensor(6.6707, device='cuda:0')","tensor(2.3184, device='cuda:0')"
+77,700,"tensor(1.00000e-02 *
+       1.8126, device='cuda:0')","tensor(4.8289, device='cuda:0')","tensor(2.3345, device='cuda:0')"
+77,800,"tensor(1.00000e-03 *
+       4.6649, device='cuda:0')","tensor(7.0912, device='cuda:0')","tensor(2.3149, device='cuda:0')"
+77,900,"tensor(1.00000e-02 *
+       4.7525, device='cuda:0')","tensor(4.7822, device='cuda:0')","tensor(2.2945, device='cuda:0')"
+78,0,"tensor(1.00000e-02 *
+       9.3614, device='cuda:0')","tensor(4.4513, device='cuda:0')","tensor(2.3093, device='cuda:0')"
+78,100,"tensor(1.00000e-03 *
+       4.2274, device='cuda:0')","tensor(6.6252, device='cuda:0')","tensor(2.3280, device='cuda:0')"
+78,200,"tensor(1.00000e-03 *
+       8.0966, device='cuda:0')","tensor(7.5880, device='cuda:0')","tensor(2.3212, device='cuda:0')"
+78,300,"tensor(1.00000e-03 *
+       3.0886, device='cuda:0')","tensor(6.7811, device='cuda:0')","tensor(2.3229, device='cuda:0')"
+78,400,"tensor(1.00000e-02 *
+       1.1108, device='cuda:0')","tensor(6.2502, device='cuda:0')","tensor(2.2791, device='cuda:0')"
+78,500,"tensor(1.00000e-03 *
+       7.6783, device='cuda:0')","tensor(6.5159, device='cuda:0')","tensor(2.3093, device='cuda:0')"
+78,600,"tensor(1.00000e-03 *
+       3.0666, device='cuda:0')","tensor(6.8961, device='cuda:0')","tensor(2.3240, device='cuda:0')"
+78,700,"tensor(1.00000e-03 *
+       1.8602, device='cuda:0')","tensor(7.1132, device='cuda:0')","tensor(2.3049, device='cuda:0')"
+78,800,"tensor(1.00000e-03 *
+       1.0197, device='cuda:0')","tensor(8.0173, device='cuda:0')","tensor(2.3112, device='cuda:0')"
+78,900,"tensor(1.00000e-04 *
+       6.4224, device='cuda:0')","tensor(7.6524, device='cuda:0')","tensor(2.2920, device='cuda:0')"
+79,0,"tensor(1.00000e-04 *
+       7.3090, device='cuda:0')","tensor(7.7471, device='cuda:0')","tensor(2.2877, device='cuda:0')"
+79,100,"tensor(1.00000e-04 *
+       4.8945, device='cuda:0')","tensor(7.9901, device='cuda:0')","tensor(2.2842, device='cuda:0')"
+79,200,"tensor(1.00000e-04 *
+       2.1951, device='cuda:0')","tensor(8.6277, device='cuda:0')","tensor(2.3147, device='cuda:0')"
+79,300,"tensor(1.00000e-04 *
+       1.9795, device='cuda:0')","tensor(8.9022, device='cuda:0')","tensor(2.3108, device='cuda:0')"
+79,400,"tensor(1.00000e-04 *
+       1.2525, device='cuda:0')","tensor(9.6798, device='cuda:0')","tensor(2.3302, device='cuda:0')"
+79,500,"tensor(1.00000e-04 *
+       3.1959, device='cuda:0')","tensor(8.7407, device='cuda:0')","tensor(2.3209, device='cuda:0')"
+79,600,"tensor(1.00000e-04 *
+       1.2143, device='cuda:0')","tensor(9.5598, device='cuda:0')","tensor(2.3179, device='cuda:0')"
+79,700,"tensor(1.00000e-05 *
+       6.7914, device='cuda:0')","tensor(9.9881, device='cuda:0')","tensor(2.3249, device='cuda:0')"
+79,800,"tensor(1.00000e-04 *
+       2.1577, device='cuda:0')","tensor(9.7426, device='cuda:0')","tensor(2.2814, device='cuda:0')"
+79,900,"tensor(1.00000e-05 *
+       5.8056, device='cuda:0')","tensor(10.1286, device='cuda:0')","tensor(2.3124, device='cuda:0')"
