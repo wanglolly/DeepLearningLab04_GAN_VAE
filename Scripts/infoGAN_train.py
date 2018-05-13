@@ -117,7 +117,10 @@ for epoch in range(opt.niter):
 
         target = torch.LongTensor(idx).cuda()
         err_c = criterion_Q(q_output.squeeze(), target)
-        err_c.backward()
+        if epoch == 0 and i == 0 :
+            err_c.backward(retain_graph=True)
+        else:
+            err_c.backward()
 
         optimizerG.step()
 
