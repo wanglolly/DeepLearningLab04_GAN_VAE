@@ -47,7 +47,7 @@ for i in range(args.sets):
 
     #plot image  
     for p in range(x.size(0)):
-        plt.subplot(args.sets, 10, plotImageCount + 1)
+        plt.subplot(args.sets, x.size(0), plotImageCount + 1)
         plt.imshow(x[p].view(28,28).cpu().data.numpy(), norm = matplotlib.colors.Normalize(vmin = 0, vmax = 1), cmap=plt.get_cmap('gray'))
         plt.axis('off')
         plotImageCount = plotImageCount + 1
