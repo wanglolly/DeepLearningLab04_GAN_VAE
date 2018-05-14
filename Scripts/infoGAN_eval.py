@@ -56,7 +56,9 @@ for i in range(args.sets):
         plt.imshow(x[p].view(64,64).cpu().data.numpy(), norm = matplotlib.colors.Normalize(vmin = 0, vmax = 1), cmap=plt.get_cmap('gray'))
         plt.axis('off')
         plotImageCount = plotImageCount + 1
-
-plt.savefig('infoGAN_Results/GeneratedImage.png', dpi=500)
+if args.single_num == 0:
+    plt.savefig('infoGAN_Results/GeneratedImage.png', dpi=500)
+else:
+    plt.savefig('infoGAN_Results/GeneratedImage' + args.num + '.png', dpi=500)
 plt.clf()
 plt.close()
