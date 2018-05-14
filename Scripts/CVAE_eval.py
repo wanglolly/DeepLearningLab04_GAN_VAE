@@ -21,6 +21,11 @@ parser.add_argument('--model', type=str, default='',
                     help='path to model to evaluate')
 parser.add_argument('--sets', type=int, default=10,
                     help='number of set to plot (default: 10)')
+parser.add_argument('--single_num', type=int, default=0,
+                    help='plot single_num:1, default: plot 10 numbers(0)')
+parser.add_argument('--num', type=int, default=0,
+                    help='The single number you want to plot')
+
 args = parser.parse_args()
 
 #setup models
@@ -33,7 +38,11 @@ plt.clf()
 plotImageCount = 0
 plt.subplots_adjust(wspace = 0.01, hspace = 0.01)
 for i in range(args.sets):
-    c = to_var(torch.arange(0,10).long().view(-1,1))
+    if args.single_num == 0:
+        c = to_var(torch.arange(0,10).long().view(-1,1))
+    else:
+        c = to_var(torch.arange(args.num, args.num + 1).long().view(-1, 1))
+        
     x = model.inference(n = c.size(0), c = c)
 
     #plot image  
