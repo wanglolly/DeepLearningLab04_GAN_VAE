@@ -59,6 +59,6 @@ for i in range(args.sets):
 if args.single_num == 0:
     plt.savefig('infoGAN_Results/GeneratedImage.png', dpi=500)
 else:
-    plt.savefig('infoGAN_Results/GeneratedImage' + args.num + '.png', dpi=500)
+    plt.savefig('infoGAN_Results/GeneratedImage' + str(args.num) + '.png', dpi=500)
 plt.clf()
 plt.close()
