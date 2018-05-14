@@ -117,3 +117,13 @@ def fixedNoise_sample(nz, nc, device):
     c_tensor.data.copy_(torch.Tensor(c))
     z = torch.cat([noise, c_tensor], 1).view(-1, nz, 1, 1)
     return z
+
+def fixedNoise_single_sample(nz, nc, num, device):
+    idx = np.arange(num, num + 1)
+    c = np.zeros((1, nc))
+    c[range(nc),idx] = 1.0
+    noise = torch.randn(1, nz - nc, device=device)
+    c_tensor = torch.FloatTensor(1, nc).cuda()
+    c_tensor.data.copy_(torch.Tensor(c))
+    z = torch.cat([noise, c_tensor], 1).view(-1, nz, 1, 1)
+    return z

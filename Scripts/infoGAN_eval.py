@@ -14,7 +14,7 @@ from torch.nn import functional as F
 from torchvision import datasets, transforms
 from torchvision.utils import save_image
 from utils import to_var, idx2onehot
-from infoGAN import Generator, fixedNoise_sample
+from infoGAN import Generator, fixedNoise_sample, fixedNoise_single_sample
 
 #input parser
 parser = argparse.ArgumentParser()
@@ -23,6 +23,10 @@ parser.add_argument('--model', type=str, default='',
 parser.add_argument('--sets', type=int, default=10,
                     help='number of set to plot (default: 10)')
 parser.add_argument('--no-cuda', action='store_true', default=False, help='enables CUDA training')
+parser.add_argument('--single_num', type=int, default=0,
+                    help='plot single_num:1, default: plot 10 numbers(0)')
+parser.add_argument('--num', type=int, default=0,
+                    help='The single number you want to plot')
 args = parser.parse_args()
 args.cuda = not args.no_cuda and torch.cuda.is_available()
 device = torch.device("cuda:0" if args.cuda else "cpu")
@@ -38,7 +42,11 @@ plt.clf()
 plotImageCount = 0
 plt.subplots_adjust(wspace = 0.01, hspace = 0.01)
 for i in range(args.sets):
-    z = fixedNoise_sample(64, 10, device = device)
+    if args.single_num == 0:
+        z = fixedNoise_sample(64, 10, device = device)
+    else:
+        z = fixedNoise_single_sample(64, 10, args.num, device = device)
+
     x = netG(z)
     print(x.size())
 
