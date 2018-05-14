@@ -52,6 +52,9 @@ for i in range(args.sets):
         plt.axis('off')
         plotImageCount = plotImageCount + 1
 
-plt.savefig('CVAE_Results/PARRImage.png', dpi=500)
+if args.single_num == 0:
+    plt.savefig('CVAE_Results/PARRImage.png', dpi=500)
+else:
+    plt.savefig('CVAE_Results/PARRImage' + args.num + '.png', dpi=500)
 plt.clf()
 plt.close()
