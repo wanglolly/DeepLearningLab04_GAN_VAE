@@ -55,6 +55,6 @@ for i in range(args.sets):
 if args.single_num == 0:
     plt.savefig('CVAE_Results/PARRImage.png', dpi=500)
 else:
-    plt.savefig('CVAE_Results/PARRImage' + args.num + '.png', dpi=500)
+    plt.savefig('CVAE_Results/PARRImage' + str(args.num) + '.png', dpi=500)
 plt.clf()
 plt.close()
